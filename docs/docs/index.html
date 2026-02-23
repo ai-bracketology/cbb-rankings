@@ -177,6 +177,43 @@
   /* heatmap cell */
   .heatmap  { border-radius: 4px; }
 
+  /* quadrant record tooltip */
+  .quad-tip-cell {
+    position: relative;
+    cursor: default;
+  }
+  .quad-tip {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 12px;
+    z-index: 50;
+    white-space: nowrap;
+    box-shadow: 0 4px 16px rgba(0,0,0,.3);
+    font-size: .78rem;
+    line-height: 1.7;
+    min-width: 160px;
+    pointer-events: none;
+  }
+  .quad-tip-cell:hover .quad-tip { display: block; }
+  /* flip tooltip below the cell for top rows so it isn't clipped */
+  .quad-tip-below .quad-tip {
+    bottom: auto;
+    top: 100%;
+  }
+  .quad-tip-game { display: flex; gap: 6px; align-items: center; }
+  .quad-tip-game a { color: var(--accent); text-decoration: none; }
+  .quad-tip-game a:hover { text-decoration: underline; }
+  .quad-tip-win { color: var(--green); font-weight: 600; }
+  .quad-tip-loss { color: var(--red); }
+  .quad-tip-rank { color: var(--text-dim); font-size: .7rem; min-width: 28px; text-align: right; }
+  .quad-tip-loc { color: var(--text-dim); font-size: .72rem; min-width: 16px; }
+
   /* section divider for grouped columns */
   .section-start {
     border-left: 2px solid var(--accent) !important;
@@ -717,6 +754,77 @@
     font-size: .95rem;
   }
 
+  /* ---------- team sheets tab ---------- */
+  .team-sheets-wrap {
+    display: none;
+    max-width: 1400px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+  }
+  .team-sheets-controls {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .team-sheets-controls input[type="text"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: .9rem;
+    width: 280px;
+    outline: none;
+  }
+  .team-sheets-controls input[type="text"]:focus { border-color: var(--accent); }
+  .team-sheets-table-wrap { overflow-x: auto; }
+  .team-sheets-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .82rem;
+  }
+  .team-sheets-table thead th {
+    background: var(--surface);
+    border-bottom: 2px solid var(--border);
+    color: var(--text-dim);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+    padding: 10px 8px;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .team-sheets-table thead th:hover { color: var(--accent); }
+  .team-sheets-table td {
+    padding: 8px 8px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    white-space: nowrap;
+  }
+  .team-sheets-table td.team-cell {
+    text-align: left;
+    font-weight: 500;
+  }
+  .team-sheets-table td.team-cell a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .team-sheets-table td.team-cell a:hover { text-decoration: underline; }
+  .team-sheets-table td.conf-cell { text-align: left; }
+  .team-sheets-table td.conf-cell a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .team-sheets-table tbody tr:hover { background: rgba(88,166,255,.06); }
+  .team-sheets-table .heatmap { border-radius: 4px; }
+
   /* ---------- mobile responsive ---------- */
   @media (max-width: 768px) {
     header { padding: 16px 16px; }
@@ -760,6 +868,12 @@
     .compare-table td.game-list-cell { min-width: 150px; }
     .game-list-item { font-size: .68rem; }
     .game-list-rank { font-size: .64rem; min-width: 22px; }
+
+    .team-sheets-wrap { padding: 0 12px; }
+    .team-sheets-controls input[type="text"] { width: 100%; }
+    .team-sheets-table { font-size: .72rem; }
+    .team-sheets-table thead th { padding: 7px 4px; font-size: .68rem; }
+    .team-sheets-table td { padding: 5px 4px; }
   }
 </style>
 </head>
@@ -784,6 +898,7 @@
   <button class="tab-btn" id="tabBubble">Bubble Watch</button>
   <button class="tab-btn" id="tabSeedOdds">Seed Odds</button>
   <button class="tab-btn" id="tabCompare">Comparison Tool</button>
+  <button class="tab-btn" id="tabSheets">Teamsheet Ranks</button>
 </div>
 
 <div class="controls">
@@ -830,6 +945,23 @@
       <tbody id="compareTbody"></tbody>
     </table>
     <div class="compare-empty" id="compareEmpty">Search for teams above to compare resumes side-by-side</div>
+  </div>
+</div>
+
+<div class="team-sheets-wrap" id="teamSheetsWrap">
+  <p style="color:var(--text-dim);font-size:.8rem;margin-bottom:10px">Data sourced from <a href="https://www.warrennolan.com/basketball/2026/net-teamsheets-plus" style="color:var(--accent);text-decoration:none">Warren Nolan</a></p>
+  <div class="team-sheets-controls">
+    <input type="text" id="sheetsSearch" placeholder="Search teams…" autocomplete="off">
+    <span class="stat-count" id="sheetsCount"></span>
+  </div>
+  <div class="team-sheets-table-wrap">
+    <table class="team-sheets-table" id="sheetsTable">
+      <thead>
+        <tr id="sheetsSectionRow"></tr>
+        <tr id="sheetsHeader"></tr>
+      </thead>
+      <tbody id="sheetsTbody"></tbody>
+    </table>
   </div>
 </div>
 
@@ -888,12 +1020,12 @@ const QUAD_COLS = [
   { key: "proj_seed",        label: "Proj Seed",    fmt: v => v ?? "",        align: "center" },
   { key: "conference",       label: "Conf",         fmt: v => v ?? "–",       align: "left" },
   { key: "record",           label: "Record",       fmt: v => v ?? "–",       align: "center" },
-  { key: "q1a_record",       label: "Q1A",          fmt: v => v ?? "–",       align: "center", sortKey: "q1a_w" },
-  { key: "q1_record",        label: "Q1",           fmt: v => v ?? "–",       align: "center", sortKey: "q1_w" },
-  { key: "q2_record",        label: "Q2",           fmt: v => v ?? "–",       align: "center", sortKey: "q2_w" },
+  { key: "q1a_record",       label: "Q1A",          fmt: v => v ?? "–",       align: "center", sortKey: "q1a_w", quadTip: "q1a" },
+  { key: "q1_record",        label: "Q1",           fmt: v => v ?? "–",       align: "center", sortKey: "q1_w",  quadTip: 1 },
+  { key: "q2_record",        label: "Q2",           fmt: v => v ?? "–",       align: "center", sortKey: "q2_w",  quadTip: 2 },
   { key: "q12_record",       label: "Q1+Q2",        fmt: v => v ?? "–",       align: "center", sortKey: "q12_w" },
-  { key: "q3_record",        label: "Q3",           fmt: v => v ?? "–",       align: "center", sortKey: "q3_w" },
-  { key: "q4_record",        label: "Q4",           fmt: v => v ?? "–",       align: "center", sortKey: "q4_w" },
+  { key: "q3_record",        label: "Q3",           fmt: v => v ?? "–",       align: "center", sortKey: "q3_w",  quadTip: 3 },
+  { key: "q4_record",        label: "Q4",           fmt: v => v ?? "–",       align: "center", sortKey: "q4_w",  quadTip: 4 },
   { key: "season_wab",       label: "WAB",          fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(1), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", heat: "high", rank: "rank_wab" },
 ];
 
@@ -973,11 +1105,13 @@ const BUBBLE_COLS = [
 
 let DATA = [];
 let SIM_DATA = [];
-let activeTab = "rank";   // "rank", "quad", "advOff", "advDef", "brack", "bubble", "seedOdds"
+let activeTab = "rank";   // "rank", "quad", "advOff", "advDef", "brack", "bubble", "seedOdds", "compare", "sheets"
 let sortCol = "net_srs";
 let sortAsc = false;
 let seedOddsSortCol = "make_pct";
 let seedOddsSortAsc = false;
+let sheetsSortCol = "NET";
+let sheetsSortAsc = true;
 
 /* ---- restore saved sort/tab state ---- */
 (function restoreState() {
@@ -989,12 +1123,14 @@ let seedOddsSortAsc = false;
       sortAsc = s.sortAsc ?? sortAsc;
       seedOddsSortCol = s.seedOddsSortCol || seedOddsSortCol;
       seedOddsSortAsc = s.seedOddsSortAsc ?? seedOddsSortAsc;
+      sheetsSortCol = s.sheetsSortCol || sheetsSortCol;
+      sheetsSortAsc = s.sheetsSortAsc ?? sheetsSortAsc;
     }
   } catch(e) {}
 })();
 function saveState() {
   localStorage.setItem("cbb_index_state", JSON.stringify({
-    activeTab, sortCol, sortAsc, seedOddsSortCol, seedOddsSortAsc
+    activeTab, sortCol, sortAsc, seedOddsSortCol, seedOddsSortAsc, sheetsSortCol, sheetsSortAsc
   }));
 }
 
@@ -1028,6 +1164,23 @@ fetch("games.json")
   .then(r => r.json())
   .then(d => { GAMES_DATA = d; })
   .catch(() => { GAMES_DATA = {}; });
+
+let SHEETS_DATA = [];
+fetch("teamsheets.json")
+  .then(r => r.json())
+  .then(d => {
+    /* convert {abbr: {team, NET, KPI, ...}} to array with team_abbr */
+    SHEETS_DATA = Object.entries(d).map(([abbr, obj]) => ({
+      team_abbr: abbr,
+      team_displayName: obj.team,
+      ...obj,
+    }));
+    /* look up conf from DATA if available */
+    const confLookup = {};
+    DATA.forEach(t => { confLookup[t.team_abbr] = t.conference; });
+    SHEETS_DATA.forEach(s => { s.conference = confLookup[s.team_abbr] || ""; });
+  })
+  .catch(() => { SHEETS_DATA = []; });
 
 /* ---- heatmap helper ---- */
 function heatColor(val, min, max, invert) {
@@ -1124,6 +1277,43 @@ function buildHeader() {
   thead.appendChild(tr);
 }
 
+/* ---- quadrant tooltip helpers ---- */
+function isQ1A(location, oppRank) {
+  if (oppRank == null) return false;
+  if (location === "home") return oppRank <= 15;
+  if (location === "away") return oppRank <= 37;
+  return oppRank <= 25; // neutral
+}
+
+function getQuadGames(abbr, quadTip) {
+  const games = GAMES_DATA[abbr];
+  if (!games) return [];
+  return games.filter(g => {
+    if (quadTip === "q1a") return isQ1A(g.homeAway, g.opp_seed_rank);
+    return g.quad === quadTip;
+  });
+}
+
+function buildQuadTip(abbr, quadTip) {
+  const games = getQuadGames(abbr, quadTip);
+  if (games.length === 0) return "";
+  const lines = games.map(g => {
+    const won = g._won;
+    const cls = won ? "quad-tip-win" : "quad-tip-loss";
+    const result = won ? "W" : "L";
+    const loc = g.homeAway === "away" ? "@" : "vs";
+    const rank = g.opp_seed_rank ?? "–";
+    /* strip mascot from display name */
+    const full = g.opp_team_displayName || g.opp_team_abbr;
+    const parts = full.split(" ");
+    let name = parts.length > 1 ? parts.slice(0, -1).join(" ") : full;
+    if (!name) name = g.opp_team_abbr;
+    const score = `${Math.round(g.points)}-${Math.round(g.points_allowed)}`;
+    return `<div class="quad-tip-game ${cls}"><span class="quad-tip-loc">${loc}</span><span class="quad-tip-rank">#${rank}</span> <a href="team.html?team=${encodeURIComponent(g.opp_team_abbr)}">${name}</a> <span>${result} ${score}</span></div>`;
+  }).join("");
+  return `<div class="quad-tip">${lines}</div>`;
+}
+
 /* ---- render table ---- */
 function render() {
   const COLS = getCols();
@@ -1191,6 +1381,14 @@ function render() {
       if (c.heat && v != null && bounds[c.key]) {
         const bg = heatColor(v, bounds[c.key].min, bounds[c.key].max, c.heat === "low");
         if (bg) style += `;background:${bg}`;
+      }
+      /* quadrant tooltip */
+      if (c.quadTip != null && r.team_abbr) {
+        const tip = buildQuadTip(r.team_abbr, c.quadTip);
+        if (tip) {
+          const belowCls = i < 10 ? ' quad-tip-below' : '';
+          return `<td style="${style}" class="quad-tip-cell${belowCls} ${cls} ${c.sectionStart ? 'section-start' : ''} ${c.sectionEnd ? 'section-end' : ''}">${display}${tip}</td>`;
+        }
       }
       return `<td style="${style}" class="${cls} ${c.heat ? 'heatmap' : ''} ${c.sectionStart ? 'section-start' : ''} ${c.sectionEnd ? 'section-end' : ''}">${display}</td>`;
     }).join("");
@@ -1322,6 +1520,205 @@ function renderSeedOdds() {
   document.getElementById("seedOddsCount").textContent = `${filtered.length} teams`;
 }
 
+/* ---- team sheets table ---- */
+const RES_COLS = [
+  { key: "KPI",  label: "KPI",  sectionStart: true, section: "Result-Based" },
+  { key: "SOR",  label: "SOR" },
+  { key: "WAB",  label: "WAB" },
+];
+const PRED_COLS = [
+  { key: "BPI",  label: "BPI",  sectionStart: true, section: "Predictive" },
+  { key: "POM",  label: "KP" },
+  { key: "TRK",  label: "TRK" },
+];
+const ALL_METRIC_COLS = [...RES_COLS, ...PRED_COLS];
+
+function sheetsRankHeat(rank, maxRank) {
+  /* rank 1 = best (bright green), high rank = worst (bright red)
+     Scale relative to # of teams we have, not the raw max rank,
+     so top teams get vivid green and bottom teams get vivid red */
+  if (rank == null || maxRank <= 1) return "";
+  const n = maxRank;  // already capped to team count by caller
+  const t = Math.min((rank - 1) / (n - 1), 1);   // 0 = best, 1 = worst
+  if (t <= 0.5) {
+    const s = t / 0.5;
+    const r = Math.round(63 + (100 - 63) * s);
+    const g = Math.round(185 + (140 - 185) * s);
+    const b = Math.round(80 + (90 - 80) * s);
+    const a = (0.40 - 0.15 * s).toFixed(2);
+    return `rgba(${r},${g},${b},${a})`;
+  } else {
+    const s = (t - 0.5) / 0.5;
+    const r = Math.round(180 + (248 - 180) * s);
+    const g = Math.round(120 + (81 - 120) * s);
+    const b = Math.round(90 + (73 - 90) * s);
+    const a = (0.25 + 0.20 * s).toFixed(2);
+    return `rgba(${r},${g},${b},${a})`;
+  }
+}
+
+function renderTeamSheets() {
+  if (!SHEETS_DATA.length) return;
+
+  /* re-attach conf + proj_seed from DATA (in case DATA loaded after SHEETS_DATA) */
+  const dataLookup = {};
+  DATA.forEach(t => { dataLookup[t.team_abbr] = t; });
+  SHEETS_DATA.forEach(s => {
+    const d = dataLookup[s.team_abbr];
+    if (d) {
+      if (!s.conference) s.conference = d.conference || "";
+      s.proj_seed = d.proj_seed ?? null;
+    }
+  });
+
+  /* filter by search */
+  const q = document.getElementById("sheetsSearch").value.toLowerCase();
+  let rows = SHEETS_DATA;
+  if (q) rows = rows.filter(r => r.team_displayName?.toLowerCase().includes(q) || r.team_abbr?.toLowerCase().includes(q) || r.conference?.toLowerCase().includes(q));
+
+  /* compute avgs for each row */
+  rows.forEach(r => {
+    r._resAvg = RES_COLS.reduce((sum, c) => sum + (r[c.key] || 0), 0) / RES_COLS.length;
+    r._predAvg = PRED_COLS.reduce((sum, c) => sum + (r[c.key] || 0), 0) / PRED_COLS.length;
+  });
+
+  /* sort */
+  rows = [...rows].sort((a, b) => {
+    let va = a[sheetsSortCol], vb = b[sheetsSortCol];
+    if (sheetsSortCol === "team_displayName" || sheetsSortCol === "conference") {
+      va = (va || "").toLowerCase(); vb = (vb || "").toLowerCase();
+    }
+    if (va == null) return 1; if (vb == null) return -1;
+    return sheetsSortAsc ? (va > vb ? 1 : va < vb ? -1 : 0) : (va < vb ? 1 : va > vb ? -1 : 0);
+  });
+
+  /* compute heatmap scale: use # of teams so colors span the full
+     range of teams we actually have, not raw rank values (which go to 300+) */
+  const nTeams = SHEETS_DATA.length;  // ~118
+  const maxRanks = {};
+  ALL_METRIC_COLS.forEach(c => { maxRanks[c.key] = nTeams; });
+  maxRanks.NET = nTeams;
+  const resAvgMax = nTeams;
+  const predAvgMax = nTeams;
+
+  /* ---- section header row ---- */
+  /* Layout: #, Team, Conf, Seed, NET, | KPI SOR WAB ResAvg |, | BPI KP TRK PredAvg | */
+  const sectionRow = document.getElementById("sheetsSectionRow");
+  sectionRow.innerHTML = "";
+
+  const sectionStyle = (th, label) => {
+    th.style.background = "rgba(88,166,255,.06)";
+    th.style.color = "var(--text-dim)";
+    th.style.fontSize = ".7rem";
+    th.style.fontWeight = "700";
+    th.style.textTransform = "uppercase";
+    th.style.letterSpacing = ".05em";
+    th.style.borderBottom = "2px solid var(--accent)";
+    th.style.padding = "3px 7px";
+    th.textContent = label;
+  };
+
+  // 5 leading cols: #, Team, Conf, Seed, NET
+  const blankTh = document.createElement("th");
+  blankTh.setAttribute("colspan", "5");
+  blankTh.style.borderBottom = "none";
+  sectionRow.appendChild(blankTh);
+
+  // Result-Based: KPI, SOR, WAB, Res Avg = 4 cols
+  const rbTh = document.createElement("th");
+  rbTh.setAttribute("colspan", "4");
+  sectionStyle(rbTh, "Result-Based");
+  sectionRow.appendChild(rbTh);
+
+  // Predictive: BPI, KP, TRK, Pred Avg = 4 cols
+  const prTh = document.createElement("th");
+  prTh.setAttribute("colspan", "4");
+  sectionStyle(prTh, "Predictive");
+  sectionRow.appendChild(prTh);
+
+  /* ---- column header row ---- */
+  const allCols = [
+    { key: "_rank",            label: "#",      sortKey: "NET" },
+    { key: "team_displayName", label: "Team" },
+    { key: "conference",       label: "Conf" },
+    { key: "proj_seed",        label: "AIB Proj Seed" },
+    { key: "NET",              label: "NET" },
+    ...RES_COLS,
+    { key: "_resAvg",          label: "Res Avg", sectionEnd: true },
+    ...PRED_COLS,
+    { key: "_predAvg",         label: "Pred Avg", sectionEnd: true },
+  ];
+
+  const headerRow = document.getElementById("sheetsHeader");
+  headerRow.innerHTML = "";
+  allCols.forEach(c => {
+    const th = document.createElement("th");
+    const sk = c.sortKey || c.key;
+    const arrow = sk === sheetsSortCol ? (sheetsSortAsc ? " ▲" : " ▼") : "";
+    th.textContent = c.label + arrow;
+    if (c.key === "team_displayName" || c.key === "conference") th.style.textAlign = "left";
+    if (c.sectionStart) th.classList.add("section-start");
+    if (c.sectionEnd) th.classList.add("section-end");
+    th.addEventListener("click", () => {
+      const sortKey = c.sortKey || c.key;
+      if (sheetsSortCol === sortKey) sheetsSortAsc = !sheetsSortAsc;
+      else { sheetsSortCol = sortKey; sheetsSortAsc = sortKey === "team_displayName" || sortKey === "conference"; }
+      saveState();
+      renderTeamSheets();
+    });
+    headerRow.appendChild(th);
+  });
+
+  /* ---- build rows ---- */
+  const tbody = document.getElementById("sheetsTbody");
+  const frags = [];
+  rows.forEach((r, i) => {
+    const cells = [];
+    // # column (NET rank)
+    cells.push(`<td style="text-align:center;color:var(--text-dim)">${r.NET ?? "–"}</td>`);
+    // Team
+    const teamLink = r.team_abbr
+      ? `<a href="team.html?team=${encodeURIComponent(r.team_abbr)}">${r.team_displayName}</a>`
+      : r.team_displayName;
+    cells.push(`<td class="team-cell" style="text-align:left">${teamLink}</td>`);
+    // Conf
+    const confLink = r.conference
+      ? `<a href="conference.html?conf=${encodeURIComponent(r.conference)}">${r.conference}</a>`
+      : "–";
+    cells.push(`<td class="conf-cell" style="text-align:left">${confLink}</td>`);
+    // Proj Seed
+    cells.push(`<td style="text-align:center">${r.proj_seed ?? "–"}</td>`);
+    // NET (standalone)
+    const netBg = sheetsRankHeat(r.NET, maxRanks.NET);
+    cells.push(`<td class="heatmap" style="text-align:center;${netBg ? 'background:'+netBg : ''}">${r.NET ?? "–"}</td>`);
+    // Result-Based metrics
+    RES_COLS.forEach(c => {
+      const v = r[c.key];
+      const bg = sheetsRankHeat(v, maxRanks[c.key]);
+      const style = bg ? `background:${bg}` : "";
+      const cls = `heatmap ${c.sectionStart ? "section-start" : ""} ${c.sectionEnd ? "section-end" : ""}`;
+      cells.push(`<td class="${cls}" style="text-align:center;${style}">${v ?? "–"}</td>`);
+    });
+    // Res Avg
+    const raBg = sheetsRankHeat(r._resAvg, resAvgMax);
+    cells.push(`<td class="heatmap section-end" style="text-align:center;font-weight:600;${raBg ? 'background:'+raBg : ''}">${r._resAvg.toFixed(1)}</td>`);
+    // Predictive metrics
+    PRED_COLS.forEach(c => {
+      const v = r[c.key];
+      const bg = sheetsRankHeat(v, maxRanks[c.key]);
+      const style = bg ? `background:${bg}` : "";
+      const cls = `heatmap ${c.sectionStart ? "section-start" : ""} ${c.sectionEnd ? "section-end" : ""}`;
+      cells.push(`<td class="${cls}" style="text-align:center;${style}">${v ?? "–"}</td>`);
+    });
+    // Pred Avg
+    const paBg = sheetsRankHeat(r._predAvg, predAvgMax);
+    cells.push(`<td class="heatmap section-end" style="text-align:center;font-weight:600;${paBg ? 'background:'+paBg : ''}">${r._predAvg.toFixed(1)}</td>`);
+    frags.push(`<tr>${cells.join("")}</tr>`);
+  });
+  tbody.innerHTML = frags.join("");
+  document.getElementById("sheetsCount").textContent = `${rows.length} teams`;
+}
+
 /* ---- bracket grid view ---- */
 function renderBracket() {
   const teams = DATA.filter(r => r.bracket === "auto" || r.bracket === "at-large")
@@ -1418,6 +1815,7 @@ function switchTab(tab, col, asc) {
   const bracketWrap = document.getElementById("bracketWrap");
   const seedOddsWrap = document.getElementById("seedOddsWrap");
   const compareWrap = document.getElementById("compareWrap");
+  const teamSheetsWrap = document.getElementById("teamSheetsWrap");
   const controls = document.querySelector(".controls");
   if (tab === "brack") {
     tableWrap.style.display = "none";
@@ -1425,6 +1823,7 @@ function switchTab(tab, col, asc) {
     bracketWrap.style.display = "block";
     seedOddsWrap.style.display = "none";
     compareWrap.style.display = "none";
+    teamSheetsWrap.style.display = "none";
     renderBracket();
   } else if (tab === "seedOdds") {
     tableWrap.style.display = "none";
@@ -1432,6 +1831,7 @@ function switchTab(tab, col, asc) {
     bracketWrap.style.display = "none";
     seedOddsWrap.style.display = "block";
     compareWrap.style.display = "none";
+    teamSheetsWrap.style.display = "none";
     renderSeedOdds();
   } else if (tab === "compare") {
     tableWrap.style.display = "none";
@@ -1439,14 +1839,24 @@ function switchTab(tab, col, asc) {
     bracketWrap.style.display = "none";
     seedOddsWrap.style.display = "none";
     compareWrap.style.display = "block";
+    teamSheetsWrap.style.display = "none";
     renderCompareTags();
     renderCompareTable();
+  } else if (tab === "sheets") {
+    tableWrap.style.display = "none";
+    controls.style.display = "none";
+    bracketWrap.style.display = "none";
+    seedOddsWrap.style.display = "none";
+    compareWrap.style.display = "none";
+    teamSheetsWrap.style.display = "block";
+    renderTeamSheets();
   } else {
     tableWrap.style.display = "";
     controls.style.display = "";
     bracketWrap.style.display = "none";
     seedOddsWrap.style.display = "none";
     compareWrap.style.display = "none";
+    teamSheetsWrap.style.display = "none";
     document.getElementById("mainTable").classList.toggle("adv-mode", tab === "advOff" || tab === "advDef");
     buildHeader(); render();
   }
@@ -1459,6 +1869,7 @@ document.getElementById("tabBrack").addEventListener("click", () => switchTab("b
 document.getElementById("tabBubble").addEventListener("click", () => switchTab("bubble", "rank_slct", true));
 document.getElementById("tabSeedOdds").addEventListener("click", () => switchTab("seedOdds", "make_pct", false));
 document.getElementById("tabCompare").addEventListener("click", () => switchTab("compare", null, false));
+document.getElementById("tabSheets").addEventListener("click", () => switchTab("sheets", "NET", true));
 
 /* ---- comparison tool ---- */
 
@@ -1680,6 +2091,7 @@ document.addEventListener("click", (e) => {
 /* ---- search listeners ---- */
 document.getElementById("search").addEventListener("input", render);
 document.getElementById("seedOddsSearch").addEventListener("input", renderSeedOdds);
+document.getElementById("sheetsSearch").addEventListener("input", renderTeamSheets);
 </script>
 </body>
 </html>
