@@ -1185,6 +1185,12 @@ fetch("games.json")
   .then(d => { GAMES_DATA = d; })
   .catch(() => { GAMES_DATA = {}; });
 
+let NET_RANKS = {};
+fetch("net_rankings.json")
+  .then(r => r.json())
+  .then(d => { NET_RANKS = d; })
+  .catch(() => { NET_RANKS = {}; });
+
 let SHEETS_DATA = [];
 fetch("teamsheets.json")
   .then(r => r.json())
@@ -1301,28 +1307,53 @@ function buildHeader() {
 function isQ1A(location, oppRank) {
   if (oppRank == null) return false;
   if (location === "home") return oppRank <= 15;
-  if (location === "away") return oppRank <= 37;
+  if (location === "away") return oppRank <= 40;
   return oppRank <= 25; // neutral
 }
 
-function getQuadGames(abbr, quadTip) {
+/* Official NCAA quad classification based on NET rankings */
+function getOfficialQuad(homeAway, oppNetRank) {
+  if (oppNetRank == null) return null;
+  if (homeAway === "home") {
+    if (oppNetRank <= 30)  return 1;
+    if (oppNetRank <= 75)  return 2;
+    if (oppNetRank <= 160) return 3;
+    return 4;
+  } else if (homeAway === "away") {
+    if (oppNetRank <= 75)  return 1;
+    if (oppNetRank <= 135) return 2;
+    if (oppNetRank <= 240) return 3;
+    return 4;
+  } else { /* neutral */
+    if (oppNetRank <= 50)  return 1;
+    if (oppNetRank <= 100) return 2;
+    if (oppNetRank <= 200) return 3;
+    return 4;
+  }
+}
+
+function getQuadGames(abbr, quadTip, useNet) {
   const games = GAMES_DATA[abbr];
   if (!games) return [];
   return games.filter(g => {
-    if (quadTip === "q1a") return isQ1A(g.homeAway, g.opp_seed_rank);
+    if (quadTip === "q1a") return isQ1A(g.homeAway, useNet ? (NET_RANKS[g.opp_team_abbr] ?? null) : g.opp_seed_rank);
+    if (useNet) {
+      const netRank = NET_RANKS[g.opp_team_abbr];
+      return getOfficialQuad(g.homeAway, netRank) === quadTip;
+    }
     return g.quad === quadTip;
   });
 }
 
-function buildQuadTip(abbr, quadTip) {
-  const games = getQuadGames(abbr, quadTip);
+function buildQuadTip(abbr, quadTip, useNet) {
+  const games = getQuadGames(abbr, quadTip, useNet);
   if (games.length === 0) return "";
   const lines = games.map(g => {
     const won = g._won;
     const cls = won ? "quad-tip-win" : "quad-tip-loss";
     const result = won ? "W" : "L";
     const loc = g.homeAway === "away" ? "@" : "vs";
-    const rank = g.opp_seed_rank ?? "–";
+    const rank = useNet ? (NET_RANKS[g.opp_team_abbr] ?? "–") : (g.opp_seed_rank ?? "–");
     const name = g.opp_team_abbr || "–";
     const score = `${Math.round(g.points)}-${Math.round(g.points_allowed)}`;
     return `<div class="quad-tip-game ${cls}"><span class="quad-tip-loc">${loc}</span><span class="quad-tip-rank">#${rank}</span> <a href="team.html?team=${encodeURIComponent(g.opp_team_abbr)}">${name}</a> <span>${result} ${score}</span></div>`;
@@ -1955,9 +1986,6 @@ const COMPARE_SHEETS_COLS = [
   { key: "_TRK",             label: "TRK",           align: "center", sheet: true, best: "low" },
   { key: "_predAvg",         label: "Pred Avg",      align: "center", sheet: true, best: "low", sectionEnd: true,
     fmt: v => v != null ? v.toFixed(1) : "–" },
-  /* SOS */
-  { key: "sos",              label: "SOS",           align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
-  { key: "nc_sos",           label: "NC SOS",        align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
   /* Quadrant records */
   { key: "q1a_record",       label: "Q1A",           align: "center", quadTip: "q1a" },
   { key: "q1_record",        label: "Q1",            align: "center", quadTip: 1 },
@@ -2026,8 +2054,9 @@ function renderCompareTable() {
   const nSheets = SHEETS_DATA.length || 1;
 
   const teams = compareTeams.map(a => {
-    const t = lookup[a];
-    if (!t) return null;
+    const orig = lookup[a];
+    if (!orig) return null;
+    const t = { ...orig };  /* shallow clone — don't mutate original DATA */
     /* attach sheet ranks if in sheets mode */
     const s = sheetsLookup[a];
     if (s) {
@@ -2041,6 +2070,28 @@ function renderCompareTable() {
       t._NET = null; t._KPI = null; t._SOR = null; t._WAB = null;
       t._BPI = null; t._POM = null; t._TRK = null;
       t._resAvg = null; t._predAvg = null;
+    }
+    /* when showing teamsheet view, recompute quad records using official NET rankings */
+    if (compareShowSheets) {
+      const games = GAMES_DATA[a] || [];
+      const qw = {1:0,2:0,3:0,4:0}, ql = {1:0,2:0,3:0,4:0};
+      let q1aw = 0, q1al = 0;
+      games.forEach(g => {
+        const netRank = NET_RANKS[g.opp_team_abbr];
+        const q = getOfficialQuad(g.homeAway, netRank);
+        if (q == null) return;
+        if (g._won) qw[q]++; else ql[q]++;
+        if (isQ1A(g.homeAway, netRank)) { if (g._won) q1aw++; else q1al++; }
+      });
+      for (const q of [1,2,3,4]) {
+        t["q" + q + "_w"] = qw[q];
+        t["q" + q + "_l"] = ql[q];
+        t["q" + q + "_record"] = qw[q] + "-" + ql[q];
+      }
+      t.q12_w = qw[1] + qw[2]; t.q12_l = ql[1] + ql[2];
+      t.q12_record = t.q12_w + "-" + t.q12_l;
+      t.q1a_w = q1aw; t.q1a_l = q1al;
+      t.q1a_record = q1aw + "-" + q1al;
     }
     /* compute win% for each quadrant (for best-value comparison) */
     for (const q of ["q1a","q1","q2","q3","q4","q12"]) {
@@ -2119,7 +2170,7 @@ function renderCompareTable() {
 
       /* quadrant tooltip — always show below in comparison table */
       if (c.quadTip != null && t.team_abbr) {
-        const tip = buildQuadTip(t.team_abbr, c.quadTip);
+        const tip = buildQuadTip(t.team_abbr, c.quadTip, compareShowSheets);
         if (tip) {
           return `<td class="quad-tip-cell quad-tip-below ${tdCls} ${cls}${extraCls}" style="${style}">${display}${tip}</td>`;
         }
