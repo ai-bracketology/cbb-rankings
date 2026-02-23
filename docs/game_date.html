@@ -426,6 +426,7 @@ document.querySelectorAll(".tab-bar button").forEach(btn => {
     document.querySelectorAll(".tab-bar button").forEach(b => b.classList.remove("active"));
     btn.classList.add("active");
     activeTab = btn.dataset.tab;
+    gtag('event', 'tab_click', { event_category: 'navigation', event_label: activeTab, page: 'game_date' });
     document.getElementById("dailyTab").style.display = activeTab === "daily" ? "" : "none";
     document.getElementById("upsetsTab").style.display = activeTab === "upsets" ? "" : "none";
     if (activeTab === "daily") {

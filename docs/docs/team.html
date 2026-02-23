@@ -1035,6 +1035,7 @@ Promise.all([
 
   // sub-tab switching (Box Score / Offensive / Defensive)
   function switchSubTab(view) {
+    gtag('event', 'tab_click', { event_category: 'navigation', event_label: 'sub_' + view, page: 'team' });
     activeView = view;
     document.querySelectorAll(".sub-tab-btn").forEach(b => b.classList.remove("active"));
     if (view === "box") document.getElementById("subLog").classList.add("active");
@@ -1481,6 +1482,7 @@ Promise.all([
 
   // tab switching
   function switchTab(tab) {
+    gtag('event', 'tab_click', { event_category: 'navigation', event_label: tab, page: 'team' });
     document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
     document.getElementById("tab" + tab).classList.add("active");
     document.getElementById("subTabsWrap").style.display    = tab === "Log" ? "" : "none";

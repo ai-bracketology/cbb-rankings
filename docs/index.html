@@ -1871,6 +1871,7 @@ function renderBracket() {
 /* ---- tab switching ---- */
 function switchTab(tab, col, asc) {
   if (activeTab === tab) return;
+  gtag('event', 'tab_click', { event_category: 'navigation', event_label: tab, page: 'rankings' });
   activeTab = tab;
   sortCol = col; sortAsc = asc;
   saveState();

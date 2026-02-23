@@ -732,6 +732,7 @@ function render() {
 /* ---- tab switching ---- */
 function switchTab(tab, col, asc) {
   if (activeTab === tab) return;
+  gtag('event', 'tab_click', { event_category: 'navigation', event_label: tab, page: 'conference' });
   activeTab = tab;
   sortCol = col; sortAsc = asc;
   document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
