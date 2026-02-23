@@ -1034,6 +1034,7 @@ Promise.all([
   // ---- Future Schedule rendering ----
   // what-if state: { 0: "win"|"loss", 1: "win"|"loss", ... }
   const whatifSelections = {};
+  const MAX_LOSSES = 15;   // teams with ≥ this many total losses cannot make the tournament
 
   function computeWabForGame(oppSrs, homeAway, bubbleEM) {
     const K_WAB = 0.17, HOME_ADV_WAB = 3.0, AVG_POSS = 68.9;
@@ -1157,10 +1158,24 @@ Promise.all([
     }
 
     // Helper: compute weighted make_pct and avg_seed for a given (possibly fractional) loss base
+    // tL is *future* losses; total losses = currentLosses + tL
+    // If total losses >= MAX_LOSSES, force make_pct to 0 for that bucket.
     function weightedProjection(baseLosses) {
       let wMake = 0, wSeed = 0, wSeedW = 0, wTotal = 0;
       for (let j = 0; j <= unselected; j++) {
         const tL = baseLosses + j;
+
+        // Hard cap: if total losses (current + future) >= MAX_LOSSES, this
+        // bucket is ineligible regardless of what seed_by_losses says.
+        const totalLosses = currentLosses + tL;
+        if (totalLosses >= MAX_LOSSES) {
+          // Count this bucket weight but contribute 0% make
+          const bw = binom(unselected, j) * Math.pow(pLoss, j) * Math.pow(pWin, unselected - j);
+          wTotal += bw;
+          // wMake += 0
+          continue;
+        }
+
         // For fractional baseLosses, interpolate between floor and ceil buckets
         const lo = Math.floor(tL), hi = Math.ceil(tL);
         const frac = tL - lo;
@@ -1197,8 +1212,10 @@ Promise.all([
     // Clamp so we don't go below 0 or above totalGames
     const effectiveLosses = Math.max(0, Math.min(totalGames, selectedLosses + lossShift));
     const proj = weightedProjection(effectiveLosses);
-    const projMake = proj.make;
-    const projSeed = proj.seed;
+    // Hard override: if the user's selected losses already push total ≥ MAX_LOSSES,
+    // tournament odds are 0 regardless of WAB residual / interpolation.
+    const projMake = (currentLosses + selectedLosses >= MAX_LOSSES) ? 0 : proj.make;
+    const projSeed = (currentLosses + selectedLosses >= MAX_LOSSES) ? null : proj.seed;
 
     // Tournament odds card
     const makeEl = document.getElementById("wiMakePct");
