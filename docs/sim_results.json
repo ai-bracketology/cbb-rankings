@@ -111,13 +111,13 @@
     "losses": 2,
     "sims": 709,
     "make_pct": 100.0,
-    "avg_seed": 1.04
+    "avg_seed": 1.05
    },
    {
     "losses": 3,
     "sims": 55,
     "make_pct": 100.0,
-    "avg_seed": 1.33
+    "avg_seed": 1.31
    }
   ]
  },
@@ -134,8 +134,8 @@
   "worst_slct_rank": 7,
   "make_pct": 100.0,
   "seed_1_pct": 97.76,
-  "seed_2_pct": 2.2,
-  "seed_3_pct": 0.04,
+  "seed_2_pct": 2.21,
+  "seed_3_pct": 0.03,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
@@ -197,12 +197,12 @@
   "best_slct_rank": 3,
   "worst_slct_rank": 16,
   "make_pct": 100.0,
-  "seed_1_pct": 43.61,
-  "seed_2_pct": 45.5,
-  "seed_3_pct": 9.12,
-  "seed_4_pct": 1.51,
-  "seed_5_pct": 0.24,
-  "seed_6_pct": 0.02,
+  "seed_1_pct": 43.64,
+  "seed_2_pct": 45.57,
+  "seed_3_pct": 9.09,
+  "seed_4_pct": 1.43,
+  "seed_5_pct": 0.26,
+  "seed_6_pct": 0.01,
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
@@ -261,13 +261,13 @@
   "best_slct_rank": 3,
   "worst_slct_rank": 17,
   "make_pct": 100.0,
-  "seed_1_pct": 15.55,
-  "seed_2_pct": 57.27,
-  "seed_3_pct": 21.14,
-  "seed_4_pct": 5.04,
-  "seed_5_pct": 0.9,
+  "seed_1_pct": 15.53,
+  "seed_2_pct": 57.37,
+  "seed_3_pct": 21.13,
+  "seed_4_pct": 5.0,
+  "seed_5_pct": 0.86,
   "seed_6_pct": 0.09,
-  "seed_7_pct": 0.01,
+  "seed_7_pct": 0.02,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
@@ -303,7 +303,7 @@
     "losses": 3,
     "sims": 54,
     "make_pct": 100.0,
-    "avg_seed": 3.91
+    "avg_seed": 3.89
    }
   ]
  },
@@ -319,11 +319,11 @@
   "best_slct_rank": 4,
   "worst_slct_rank": 18,
   "make_pct": 100.0,
-  "seed_1_pct": 18.82,
-  "seed_2_pct": 57.25,
-  "seed_3_pct": 18.68,
-  "seed_4_pct": 4.35,
-  "seed_5_pct": 0.84,
+  "seed_1_pct": 19.03,
+  "seed_2_pct": 57.06,
+  "seed_3_pct": 18.54,
+  "seed_4_pct": 4.49,
+  "seed_5_pct": 0.82,
   "seed_6_pct": 0.06,
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
@@ -355,13 +355,13 @@
     "losses": 2,
     "sims": 1033,
     "make_pct": 100.0,
-    "avg_seed": 2.81
+    "avg_seed": 2.82
    },
    {
     "losses": 3,
     "sims": 106,
     "make_pct": 100.0,
-    "avg_seed": 3.54
+    "avg_seed": 3.53
    },
    {
     "losses": 4,
@@ -381,15 +381,15 @@
   "remaining_games": 3,
   "avg_slct_rank": 8.8,
   "best_slct_rank": 4,
-  "worst_slct_rank": 20,
+  "worst_slct_rank": 21,
   "make_pct": 100.0,
-  "seed_1_pct": 7.04,
-  "seed_2_pct": 49.23,
-  "seed_3_pct": 31.53,
-  "seed_4_pct": 10.1,
-  "seed_5_pct": 1.9,
-  "seed_6_pct": 0.18,
-  "seed_7_pct": 0.02,
+  "seed_1_pct": 6.94,
+  "seed_2_pct": 49.32,
+  "seed_3_pct": 31.64,
+  "seed_4_pct": 10.0,
+  "seed_5_pct": 1.89,
+  "seed_6_pct": 0.2,
+  "seed_7_pct": 0.01,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
@@ -419,13 +419,13 @@
     "losses": 2,
     "sims": 314,
     "make_pct": 100.0,
-    "avg_seed": 3.45
+    "avg_seed": 3.42
    },
    {
     "losses": 3,
     "sims": 6,
     "make_pct": 100.0,
-    "avg_seed": 4.17
+    "avg_seed": 4.0
    }
   ]
  },
@@ -439,14 +439,14 @@
   "remaining_games": 4,
   "avg_slct_rank": 8.8,
   "best_slct_rank": 4,
-  "worst_slct_rank": 22,
+  "worst_slct_rank": 21,
   "make_pct": 100.0,
-  "seed_1_pct": 6.1,
-  "seed_2_pct": 44.7,
-  "seed_3_pct": 32.28,
-  "seed_4_pct": 12.98,
-  "seed_5_pct": 3.41,
-  "seed_6_pct": 0.52,
+  "seed_1_pct": 6.12,
+  "seed_2_pct": 44.58,
+  "seed_3_pct": 32.38,
+  "seed_4_pct": 12.93,
+  "seed_5_pct": 3.49,
+  "seed_6_pct": 0.49,
   "seed_7_pct": 0.01,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
@@ -483,7 +483,7 @@
     "losses": 3,
     "sims": 317,
     "make_pct": 100.0,
-    "avg_seed": 4.01
+    "avg_seed": 4.02
    },
    {
     "losses": 4,
@@ -501,17 +501,17 @@
   "current_slct_rank": 10,
   "current_net_rank": 7,
   "remaining_games": 4,
-  "avg_slct_rank": 8.9,
+  "avg_slct_rank": 9.0,
   "best_slct_rank": 4,
-  "worst_slct_rank": 22,
+  "worst_slct_rank": 23,
   "make_pct": 100.0,
-  "seed_1_pct": 5.87,
-  "seed_2_pct": 41.73,
-  "seed_3_pct": 33.35,
-  "seed_4_pct": 13.7,
-  "seed_5_pct": 4.54,
-  "seed_6_pct": 0.78,
-  "seed_7_pct": 0.03,
+  "seed_1_pct": 5.79,
+  "seed_2_pct": 41.65,
+  "seed_3_pct": 33.36,
+  "seed_4_pct": 13.69,
+  "seed_5_pct": 4.66,
+  "seed_6_pct": 0.79,
+  "seed_7_pct": 0.06,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
@@ -527,33 +527,33 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 3442,
+    "sims": 3419,
     "make_pct": 100.0,
-    "avg_seed": 2.17
+    "avg_seed": 2.16
    },
    {
     "losses": 1,
-    "sims": 4406,
+    "sims": 4421,
     "make_pct": 100.0,
-    "avg_seed": 2.73
+    "avg_seed": 2.74
    },
    {
     "losses": 2,
-    "sims": 1859,
+    "sims": 1870,
     "make_pct": 100.0,
-    "avg_seed": 3.45
+    "avg_seed": 3.44
    },
    {
     "losses": 3,
-    "sims": 283,
+    "sims": 282,
     "make_pct": 100.0,
-    "avg_seed": 4.33
+    "avg_seed": 4.4
    },
    {
     "losses": 4,
-    "sims": 10,
+    "sims": 8,
     "make_pct": 100.0,
-    "avg_seed": 4.9
+    "avg_seed": 5.12
    }
   ]
  },
@@ -569,14 +569,14 @@
   "best_slct_rank": 4,
   "worst_slct_rank": 22,
   "make_pct": 100.0,
-  "seed_1_pct": 3.14,
-  "seed_2_pct": 31.5,
-  "seed_3_pct": 36.57,
-  "seed_4_pct": 19.61,
-  "seed_5_pct": 7.49,
-  "seed_6_pct": 1.57,
-  "seed_7_pct": 0.12,
-  "seed_8_pct": 0.0,
+  "seed_1_pct": 3.19,
+  "seed_2_pct": 31.33,
+  "seed_3_pct": 36.64,
+  "seed_4_pct": 19.56,
+  "seed_5_pct": 7.64,
+  "seed_6_pct": 1.55,
+  "seed_7_pct": 0.08,
+  "seed_8_pct": 0.01,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
   "seed_11_pct": 0.0,
@@ -591,33 +591,33 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 3694,
+    "sims": 3674,
     "make_pct": 100.0,
     "avg_seed": 2.45
    },
    {
     "losses": 1,
-    "sims": 4349,
+    "sims": 4358,
     "make_pct": 100.0,
     "avg_seed": 3.09
    },
    {
     "losses": 2,
-    "sims": 1696,
+    "sims": 1711,
     "make_pct": 100.0,
-    "avg_seed": 3.84
+    "avg_seed": 3.85
    },
    {
     "losses": 3,
-    "sims": 254,
+    "sims": 251,
     "make_pct": 100.0,
-    "avg_seed": 4.61
+    "avg_seed": 4.57
    },
    {
     "losses": 4,
-    "sims": 7,
+    "sims": 6,
     "make_pct": 100.0,
-    "avg_seed": 4.86
+    "avg_seed": 5.67
    }
   ]
  },
@@ -631,17 +631,17 @@
   "remaining_games": 4,
   "avg_slct_rank": 12.1,
   "best_slct_rank": 5,
-  "worst_slct_rank": 24,
+  "worst_slct_rank": 23,
   "make_pct": 100.0,
-  "seed_1_pct": 1.28,
-  "seed_2_pct": 16.88,
-  "seed_3_pct": 32.97,
-  "seed_4_pct": 27.66,
-  "seed_5_pct": 16.36,
-  "seed_6_pct": 4.53,
-  "seed_7_pct": 0.27,
-  "seed_8_pct": 0.05,
-  "seed_9_pct": 0.0,
+  "seed_1_pct": 1.19,
+  "seed_2_pct": 17.15,
+  "seed_3_pct": 32.89,
+  "seed_4_pct": 27.8,
+  "seed_5_pct": 15.93,
+  "seed_6_pct": 4.57,
+  "seed_7_pct": 0.39,
+  "seed_8_pct": 0.06,
+  "seed_9_pct": 0.02,
   "seed_10_pct": 0.0,
   "seed_11_pct": 0.0,
   "seed_12_pct": 0.0,
@@ -655,33 +655,33 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 1799,
+    "sims": 1790,
     "make_pct": 100.0,
-    "avg_seed": 2.61
+    "avg_seed": 2.62
    },
    {
     "losses": 1,
-    "sims": 4275,
+    "sims": 4326,
     "make_pct": 100.0,
-    "avg_seed": 3.31
+    "avg_seed": 3.3
    },
    {
     "losses": 2,
-    "sims": 3114,
+    "sims": 3081,
     "make_pct": 100.0,
-    "avg_seed": 4.1
+    "avg_seed": 4.09
    },
    {
     "losses": 3,
-    "sims": 780,
+    "sims": 754,
     "make_pct": 100.0,
-    "avg_seed": 4.89
+    "avg_seed": 4.93
    },
    {
     "losses": 4,
-    "sims": 32,
+    "sims": 49,
     "make_pct": 100.0,
-    "avg_seed": 5.34
+    "avg_seed": 5.8
    }
   ]
  },
@@ -697,14 +697,14 @@
   "best_slct_rank": 4,
   "worst_slct_rank": 23,
   "make_pct": 100.0,
-  "seed_1_pct": 0.6,
-  "seed_2_pct": 12.87,
-  "seed_3_pct": 29.33,
-  "seed_4_pct": 31.34,
-  "seed_5_pct": 19.78,
-  "seed_6_pct": 5.68,
-  "seed_7_pct": 0.36,
-  "seed_8_pct": 0.03,
+  "seed_1_pct": 0.64,
+  "seed_2_pct": 12.78,
+  "seed_3_pct": 29.18,
+  "seed_4_pct": 31.61,
+  "seed_5_pct": 19.83,
+  "seed_6_pct": 5.55,
+  "seed_7_pct": 0.38,
+  "seed_8_pct": 0.02,
   "seed_9_pct": 0.01,
   "seed_10_pct": 0.0,
   "seed_11_pct": 0.0,
@@ -745,7 +745,7 @@
     "losses": 4,
     "sims": 89,
     "make_pct": 100.0,
-    "avg_seed": 5.38
+    "avg_seed": 5.37
    }
   ]
  },
@@ -761,13 +761,13 @@
   "best_slct_rank": 8,
   "worst_slct_rank": 22,
   "make_pct": 100.0,
-  "seed_1_pct": 0.28,
-  "seed_2_pct": 10.59,
-  "seed_3_pct": 31.42,
-  "seed_4_pct": 34.7,
-  "seed_5_pct": 18.21,
-  "seed_6_pct": 4.57,
-  "seed_7_pct": 0.21,
+  "seed_1_pct": 0.25,
+  "seed_2_pct": 10.65,
+  "seed_3_pct": 31.56,
+  "seed_4_pct": 34.4,
+  "seed_5_pct": 18.43,
+  "seed_6_pct": 4.45,
+  "seed_7_pct": 0.24,
   "seed_8_pct": 0.02,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
@@ -791,7 +791,7 @@
     "losses": 1,
     "sims": 3850,
     "make_pct": 100.0,
-    "avg_seed": 4.21
+    "avg_seed": 4.2
    },
    {
     "losses": 2,
@@ -814,14 +814,14 @@
   "worst_slct_rank": 24,
   "make_pct": 100.0,
   "seed_1_pct": 0.29,
-  "seed_2_pct": 7.31,
-  "seed_3_pct": 22.98,
-  "seed_4_pct": 32.12,
-  "seed_5_pct": 26.21,
-  "seed_6_pct": 9.89,
-  "seed_7_pct": 1.08,
-  "seed_8_pct": 0.11,
-  "seed_9_pct": 0.01,
+  "seed_2_pct": 7.38,
+  "seed_3_pct": 23.04,
+  "seed_4_pct": 31.99,
+  "seed_5_pct": 26.35,
+  "seed_6_pct": 9.78,
+  "seed_7_pct": 1.06,
+  "seed_8_pct": 0.09,
+  "seed_9_pct": 0.02,
   "seed_10_pct": 0.0,
   "seed_11_pct": 0.0,
   "seed_12_pct": 0.0,
@@ -843,7 +843,7 @@
     "losses": 1,
     "sims": 3344,
     "make_pct": 100.0,
-    "avg_seed": 3.56
+    "avg_seed": 3.55
    },
    {
     "losses": 2,
@@ -855,13 +855,13 @@
     "losses": 3,
     "sims": 1429,
     "make_pct": 100.0,
-    "avg_seed": 5.08
+    "avg_seed": 5.06
    },
    {
     "losses": 4,
     "sims": 86,
     "make_pct": 100.0,
-    "avg_seed": 5.76
+    "avg_seed": 5.74
    }
   ]
  },
@@ -878,12 +878,12 @@
   "worst_slct_rank": 26,
   "make_pct": 100.0,
   "seed_1_pct": 0.32,
-  "seed_2_pct": 7.44,
-  "seed_3_pct": 22.29,
-  "seed_4_pct": 31.0,
-  "seed_5_pct": 26.4,
-  "seed_6_pct": 11.07,
-  "seed_7_pct": 1.23,
+  "seed_2_pct": 7.36,
+  "seed_3_pct": 22.44,
+  "seed_4_pct": 31.05,
+  "seed_5_pct": 26.28,
+  "seed_6_pct": 11.1,
+  "seed_7_pct": 1.2,
   "seed_8_pct": 0.23,
   "seed_9_pct": 0.02,
   "seed_10_pct": 0.0,
@@ -919,13 +919,13 @@
     "losses": 3,
     "sims": 1106,
     "make_pct": 100.0,
-    "avg_seed": 5.28
+    "avg_seed": 5.27
    },
    {
     "losses": 4,
     "sims": 92,
     "make_pct": 100.0,
-    "avg_seed": 6.05
+    "avg_seed": 6.01
    }
   ]
  },
@@ -939,16 +939,16 @@
   "remaining_games": 4,
   "avg_slct_rank": 16.4,
   "best_slct_rank": 7,
-  "worst_slct_rank": 27,
+  "worst_slct_rank": 26,
   "make_pct": 100.0,
-  "seed_1_pct": 0.11,
-  "seed_2_pct": 3.56,
-  "seed_3_pct": 16.29,
-  "seed_4_pct": 30.47,
-  "seed_5_pct": 31.83,
-  "seed_6_pct": 14.65,
-  "seed_7_pct": 2.66,
-  "seed_8_pct": 0.41,
+  "seed_1_pct": 0.1,
+  "seed_2_pct": 3.64,
+  "seed_3_pct": 16.18,
+  "seed_4_pct": 30.64,
+  "seed_5_pct": 31.43,
+  "seed_6_pct": 15.03,
+  "seed_7_pct": 2.54,
+  "seed_8_pct": 0.42,
   "seed_9_pct": 0.01,
   "seed_10_pct": 0.01,
   "seed_11_pct": 0.0,
@@ -965,7 +965,7 @@
     "losses": 0,
     "sims": 615,
     "make_pct": 100.0,
-    "avg_seed": 3.35
+    "avg_seed": 3.36
    },
    {
     "losses": 1,
@@ -983,7 +983,7 @@
     "losses": 3,
     "sims": 943,
     "make_pct": 100.0,
-    "avg_seed": 5.59
+    "avg_seed": 5.58
    },
    {
     "losses": 4,
@@ -1003,17 +1003,17 @@
   "remaining_games": 4,
   "avg_slct_rank": 16.9,
   "best_slct_rank": 8,
-  "worst_slct_rank": 28,
+  "worst_slct_rank": 29,
   "make_pct": 100.0,
-  "seed_1_pct": 0.06,
-  "seed_2_pct": 2.68,
-  "seed_3_pct": 13.22,
-  "seed_4_pct": 25.75,
-  "seed_5_pct": 32.33,
-  "seed_6_pct": 20.44,
-  "seed_7_pct": 4.48,
-  "seed_8_pct": 0.77,
-  "seed_9_pct": 0.24,
+  "seed_1_pct": 0.05,
+  "seed_2_pct": 2.7,
+  "seed_3_pct": 13.24,
+  "seed_4_pct": 25.47,
+  "seed_5_pct": 32.73,
+  "seed_6_pct": 20.36,
+  "seed_7_pct": 4.45,
+  "seed_8_pct": 0.76,
+  "seed_9_pct": 0.21,
   "seed_10_pct": 0.03,
   "seed_11_pct": 0.0,
   "seed_12_pct": 0.0,
@@ -1041,19 +1041,19 @@
     "losses": 2,
     "sims": 2841,
     "make_pct": 100.0,
-    "avg_seed": 5.32
+    "avg_seed": 5.31
    },
    {
     "losses": 3,
     "sims": 705,
     "make_pct": 100.0,
-    "avg_seed": 6.1
+    "avg_seed": 6.09
    },
    {
     "losses": 4,
     "sims": 77,
     "make_pct": 100.0,
-    "avg_seed": 6.9
+    "avg_seed": 6.92
    }
   ]
  },
@@ -1069,15 +1069,15 @@
   "best_slct_rank": 8,
   "worst_slct_rank": 30,
   "make_pct": 100.0,
-  "seed_1_pct": 0.03,
-  "seed_2_pct": 2.41,
-  "seed_3_pct": 12.91,
-  "seed_4_pct": 25.27,
-  "seed_5_pct": 32.47,
-  "seed_6_pct": 21.11,
-  "seed_7_pct": 4.77,
-  "seed_8_pct": 0.86,
-  "seed_9_pct": 0.15,
+  "seed_1_pct": 0.04,
+  "seed_2_pct": 2.36,
+  "seed_3_pct": 12.97,
+  "seed_4_pct": 25.58,
+  "seed_5_pct": 32.31,
+  "seed_6_pct": 20.91,
+  "seed_7_pct": 4.79,
+  "seed_8_pct": 0.9,
+  "seed_9_pct": 0.12,
   "seed_10_pct": 0.02,
   "seed_11_pct": 0.0,
   "seed_12_pct": 0.0,
@@ -1099,13 +1099,13 @@
     "losses": 1,
     "sims": 4135,
     "make_pct": 100.0,
-    "avg_seed": 4.46
+    "avg_seed": 4.45
    },
    {
     "losses": 2,
     "sims": 3240,
     "make_pct": 100.0,
-    "avg_seed": 5.27
+    "avg_seed": 5.26
    },
    {
     "losses": 3,
@@ -1116,70 +1116,6 @@
    {
     "losses": 4,
     "sims": 90,
-    "make_pct": 100.0,
-    "avg_seed": 6.81
-   }
-  ]
- },
- {
-  "team_abbr": "ARK",
-  "team_displayName": "Arkansas Razorbacks",
-  "conference": "SEC",
-  "current_seed": 5,
-  "current_slct_rank": 18,
-  "current_net_rank": 16,
-  "remaining_games": 4,
-  "avg_slct_rank": 18.2,
-  "best_slct_rank": 9,
-  "worst_slct_rank": 29,
-  "make_pct": 100.0,
-  "seed_1_pct": 0.06,
-  "seed_2_pct": 2.2,
-  "seed_3_pct": 12.24,
-  "seed_4_pct": 25.37,
-  "seed_5_pct": 34.09,
-  "seed_6_pct": 20.5,
-  "seed_7_pct": 4.58,
-  "seed_8_pct": 0.74,
-  "seed_9_pct": 0.2,
-  "seed_10_pct": 0.02,
-  "seed_11_pct": 0.0,
-  "seed_12_pct": 0.0,
-  "seed_13_pct": 0.0,
-  "seed_14_pct": 0.0,
-  "seed_15_pct": 0.0,
-  "seed_16_pct": 0.0,
-  "out_pct": 0.0,
-  "most_likely_seed": 5,
-  "avg_seed_if_make": 4.76,
-  "seed_by_losses": [
-   {
-    "losses": 0,
-    "sims": 1405,
-    "make_pct": 100.0,
-    "avg_seed": 3.68
-   },
-   {
-    "losses": 1,
-    "sims": 4565,
-    "make_pct": 100.0,
-    "avg_seed": 4.48
-   },
-   {
-    "losses": 2,
-    "sims": 3169,
-    "make_pct": 100.0,
-    "avg_seed": 5.28
-   },
-   {
-    "losses": 3,
-    "sims": 784,
-    "make_pct": 100.0,
-    "avg_seed": 6.05
-   },
-   {
-    "losses": 4,
-    "sims": 77,
     "make_pct": 100.0,
     "avg_seed": 6.82
    }
@@ -1198,13 +1134,13 @@
   "worst_slct_rank": 31,
   "make_pct": 100.0,
   "seed_1_pct": 0.07,
-  "seed_2_pct": 2.15,
-  "seed_3_pct": 11.06,
-  "seed_4_pct": 25.25,
-  "seed_5_pct": 33.38,
-  "seed_6_pct": 22.06,
-  "seed_7_pct": 4.77,
-  "seed_8_pct": 1.03,
+  "seed_2_pct": 2.08,
+  "seed_3_pct": 11.28,
+  "seed_4_pct": 25.04,
+  "seed_5_pct": 33.5,
+  "seed_6_pct": 21.92,
+  "seed_7_pct": 4.84,
+  "seed_8_pct": 1.04,
   "seed_9_pct": 0.22,
   "seed_10_pct": 0.0,
   "seed_11_pct": 0.01,
@@ -1245,7 +1181,71 @@
     "losses": 4,
     "sims": 48,
     "make_pct": 100.0,
-    "avg_seed": 7.02
+    "avg_seed": 7.04
+   }
+  ]
+ },
+ {
+  "team_abbr": "ARK",
+  "team_displayName": "Arkansas Razorbacks",
+  "conference": "SEC",
+  "current_seed": 5,
+  "current_slct_rank": 18,
+  "current_net_rank": 16,
+  "remaining_games": 4,
+  "avg_slct_rank": 18.3,
+  "best_slct_rank": 9,
+  "worst_slct_rank": 29,
+  "make_pct": 100.0,
+  "seed_1_pct": 0.04,
+  "seed_2_pct": 2.25,
+  "seed_3_pct": 11.78,
+  "seed_4_pct": 25.85,
+  "seed_5_pct": 33.31,
+  "seed_6_pct": 21.35,
+  "seed_7_pct": 4.41,
+  "seed_8_pct": 0.78,
+  "seed_9_pct": 0.2,
+  "seed_10_pct": 0.03,
+  "seed_11_pct": 0.0,
+  "seed_12_pct": 0.0,
+  "seed_13_pct": 0.0,
+  "seed_14_pct": 0.0,
+  "seed_15_pct": 0.0,
+  "seed_16_pct": 0.0,
+  "out_pct": 0.0,
+  "most_likely_seed": 5,
+  "avg_seed_if_make": 4.77,
+  "seed_by_losses": [
+   {
+    "losses": 0,
+    "sims": 1394,
+    "make_pct": 100.0,
+    "avg_seed": 3.72
+   },
+   {
+    "losses": 1,
+    "sims": 4565,
+    "make_pct": 100.0,
+    "avg_seed": 4.48
+   },
+   {
+    "losses": 2,
+    "sims": 3131,
+    "make_pct": 100.0,
+    "avg_seed": 5.28
+   },
+   {
+    "losses": 3,
+    "sims": 836,
+    "make_pct": 100.0,
+    "avg_seed": 6.05
+   },
+   {
+    "losses": 4,
+    "sims": 74,
+    "make_pct": 100.0,
+    "avg_seed": 6.84
    }
   ]
  },
@@ -1257,20 +1257,20 @@
   "current_slct_rank": 21,
   "current_net_rank": 21,
   "remaining_games": 4,
-  "avg_slct_rank": 19.7,
-  "best_slct_rank": 10,
+  "avg_slct_rank": 19.6,
+  "best_slct_rank": 11,
   "worst_slct_rank": 31,
   "make_pct": 100.0,
   "seed_1_pct": 0.03,
-  "seed_2_pct": 0.9,
-  "seed_3_pct": 6.22,
-  "seed_4_pct": 19.05,
-  "seed_5_pct": 34.29,
-  "seed_6_pct": 29.13,
-  "seed_7_pct": 8.24,
-  "seed_8_pct": 1.73,
-  "seed_9_pct": 0.36,
-  "seed_10_pct": 0.03,
+  "seed_2_pct": 0.88,
+  "seed_3_pct": 6.26,
+  "seed_4_pct": 18.84,
+  "seed_5_pct": 34.61,
+  "seed_6_pct": 29.02,
+  "seed_7_pct": 8.33,
+  "seed_8_pct": 1.6,
+  "seed_9_pct": 0.37,
+  "seed_10_pct": 0.04,
   "seed_11_pct": 0.02,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
@@ -1297,19 +1297,19 @@
     "losses": 2,
     "sims": 3056,
     "make_pct": 100.0,
-    "avg_seed": 5.74
+    "avg_seed": 5.73
    },
    {
     "losses": 3,
     "sims": 690,
     "make_pct": 100.0,
-    "avg_seed": 6.45
+    "avg_seed": 6.46
    },
    {
     "losses": 4,
     "sims": 30,
     "make_pct": 100.0,
-    "avg_seed": 7.17
+    "avg_seed": 7.13
    }
   ]
  },
@@ -1326,16 +1326,16 @@
   "worst_slct_rank": 36,
   "make_pct": 100.0,
   "seed_1_pct": 0.02,
-  "seed_2_pct": 0.58,
-  "seed_3_pct": 5.42,
+  "seed_2_pct": 0.62,
+  "seed_3_pct": 5.37,
   "seed_4_pct": 17.94,
-  "seed_5_pct": 31.81,
-  "seed_6_pct": 30.99,
-  "seed_7_pct": 10.05,
-  "seed_8_pct": 2.45,
-  "seed_9_pct": 0.61,
+  "seed_5_pct": 32.18,
+  "seed_6_pct": 30.52,
+  "seed_7_pct": 10.25,
+  "seed_8_pct": 2.4,
+  "seed_9_pct": 0.58,
   "seed_10_pct": 0.11,
-  "seed_11_pct": 0.02,
+  "seed_11_pct": 0.01,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
@@ -1355,25 +1355,25 @@
     "losses": 1,
     "sims": 4186,
     "make_pct": 100.0,
-    "avg_seed": 5.15
+    "avg_seed": 5.14
    },
    {
     "losses": 2,
     "sims": 2805,
     "make_pct": 100.0,
-    "avg_seed": 5.89
+    "avg_seed": 5.9
    },
    {
     "losses": 3,
     "sims": 733,
     "make_pct": 100.0,
-    "avg_seed": 6.69
+    "avg_seed": 6.68
    },
    {
     "losses": 4,
     "sims": 61,
     "make_pct": 100.0,
-    "avg_seed": 7.44
+    "avg_seed": 7.46
    }
   ]
  },
@@ -1387,25 +1387,25 @@
   "remaining_games": 4,
   "avg_slct_rank": 23.0,
   "best_slct_rank": 13,
-  "worst_slct_rank": 36,
-  "make_pct": 100.0,
+  "worst_slct_rank": 37,
+  "make_pct": 99.99,
   "seed_1_pct": 0.0,
-  "seed_2_pct": 0.03,
-  "seed_3_pct": 0.75,
-  "seed_4_pct": 3.69,
-  "seed_5_pct": 15.36,
-  "seed_6_pct": 37.76,
-  "seed_7_pct": 25.81,
-  "seed_8_pct": 10.96,
-  "seed_9_pct": 4.15,
-  "seed_10_pct": 1.33,
-  "seed_11_pct": 0.16,
+  "seed_2_pct": 0.04,
+  "seed_3_pct": 0.78,
+  "seed_4_pct": 3.72,
+  "seed_5_pct": 15.34,
+  "seed_6_pct": 37.8,
+  "seed_7_pct": 25.54,
+  "seed_8_pct": 11.15,
+  "seed_9_pct": 4.28,
+  "seed_10_pct": 1.16,
+  "seed_11_pct": 0.18,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.0,
+  "out_pct": 0.01,
   "most_likely_seed": 6,
   "avg_seed_if_make": 6.41,
   "seed_by_losses": [
@@ -1436,8 +1436,8 @@
    {
     "losses": 4,
     "sims": 376,
-    "make_pct": 100.0,
-    "avg_seed": 8.2
+    "make_pct": 99.7,
+    "avg_seed": 8.18
    }
   ]
  },
@@ -1451,57 +1451,57 @@
   "remaining_games": 4,
   "avg_slct_rank": 25.7,
   "best_slct_rank": 18,
-  "worst_slct_rank": 42,
-  "make_pct": 99.93,
+  "worst_slct_rank": 41,
+  "make_pct": 99.96,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.01,
-  "seed_3_pct": 0.04,
-  "seed_4_pct": 1.21,
-  "seed_5_pct": 7.39,
-  "seed_6_pct": 27.88,
-  "seed_7_pct": 33.02,
-  "seed_8_pct": 17.91,
-  "seed_9_pct": 8.96,
-  "seed_10_pct": 2.95,
-  "seed_11_pct": 0.56,
-  "seed_12_pct": 0.0,
+  "seed_3_pct": 0.06,
+  "seed_4_pct": 1.1,
+  "seed_5_pct": 7.02,
+  "seed_6_pct": 28.31,
+  "seed_7_pct": 33.55,
+  "seed_8_pct": 17.69,
+  "seed_9_pct": 8.64,
+  "seed_10_pct": 2.97,
+  "seed_11_pct": 0.6,
+  "seed_12_pct": 0.01,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.07,
+  "out_pct": 0.04,
   "most_likely_seed": 7,
   "avg_seed_if_make": 7.0,
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 692,
+    "sims": 669,
     "make_pct": 100.0,
-    "avg_seed": 5.76
+    "avg_seed": 5.8
    },
    {
     "losses": 1,
-    "sims": 4378,
+    "sims": 4393,
     "make_pct": 100.0,
-    "avg_seed": 6.57
+    "avg_seed": 6.55
    },
    {
     "losses": 2,
-    "sims": 3949,
+    "sims": 3982,
     "make_pct": 100.0,
     "avg_seed": 7.37
    },
    {
     "losses": 3,
-    "sims": 929,
-    "make_pct": 99.9,
-    "avg_seed": 8.34
+    "sims": 913,
+    "make_pct": 100.0,
+    "avg_seed": 8.35
    },
    {
     "losses": 4,
-    "sims": 52,
-    "make_pct": 88.5,
-    "avg_seed": 9.35
+    "sims": 43,
+    "make_pct": 90.7,
+    "avg_seed": 9.54
    }
   ]
  },
@@ -1515,25 +1515,25 @@
   "remaining_games": 4,
   "avg_slct_rank": 26.3,
   "best_slct_rank": 19,
-  "worst_slct_rank": 46,
-  "make_pct": 99.84,
+  "worst_slct_rank": 44,
+  "make_pct": 99.81,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
-  "seed_3_pct": 0.06,
-  "seed_4_pct": 0.45,
-  "seed_5_pct": 4.75,
-  "seed_6_pct": 21.12,
-  "seed_7_pct": 30.92,
-  "seed_8_pct": 22.41,
-  "seed_9_pct": 12.8,
-  "seed_10_pct": 6.03,
-  "seed_11_pct": 1.3,
+  "seed_3_pct": 0.07,
+  "seed_4_pct": 0.47,
+  "seed_5_pct": 4.71,
+  "seed_6_pct": 20.82,
+  "seed_7_pct": 31.14,
+  "seed_8_pct": 22.48,
+  "seed_9_pct": 12.91,
+  "seed_10_pct": 5.9,
+  "seed_11_pct": 1.31,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.16,
+  "out_pct": 0.19,
   "most_likely_seed": 7,
   "avg_seed_if_make": 7.39,
   "seed_by_losses": [
@@ -1547,7 +1547,7 @@
     "losses": 1,
     "sims": 4736,
     "make_pct": 100.0,
-    "avg_seed": 7.08
+    "avg_seed": 7.09
    },
    {
     "losses": 2,
@@ -1559,12 +1559,12 @@
     "losses": 3,
     "sims": 686,
     "make_pct": 99.6,
-    "avg_seed": 8.94
+    "avg_seed": 8.96
    },
    {
     "losses": 4,
     "sims": 65,
-    "make_pct": 80.0,
+    "make_pct": 75.4,
     "avg_seed": 9.94
    }
   ]
@@ -1580,24 +1580,24 @@
   "avg_slct_rank": 27.2,
   "best_slct_rank": 20,
   "worst_slct_rank": 46,
-  "make_pct": 99.7,
+  "make_pct": 99.75,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.02,
-  "seed_4_pct": 0.63,
-  "seed_5_pct": 5.14,
-  "seed_6_pct": 25.82,
-  "seed_7_pct": 31.72,
-  "seed_8_pct": 20.21,
-  "seed_9_pct": 10.79,
-  "seed_10_pct": 4.31,
+  "seed_4_pct": 0.58,
+  "seed_5_pct": 5.31,
+  "seed_6_pct": 25.7,
+  "seed_7_pct": 31.77,
+  "seed_8_pct": 20.08,
+  "seed_9_pct": 10.61,
+  "seed_10_pct": 4.62,
   "seed_11_pct": 1.06,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.3,
+  "out_pct": 0.25,
   "most_likely_seed": 7,
   "avg_seed_if_make": 7.21,
   "seed_by_losses": [
@@ -1605,7 +1605,7 @@
     "losses": 0,
     "sims": 3522,
     "make_pct": 100.0,
-    "avg_seed": 6.43
+    "avg_seed": 6.42
    },
    {
     "losses": 1,
@@ -1617,19 +1617,19 @@
     "losses": 2,
     "sims": 1775,
     "make_pct": 100.0,
-    "avg_seed": 8.26
+    "avg_seed": 8.27
    },
    {
     "losses": 3,
     "sims": 259,
-    "make_pct": 92.3,
-    "avg_seed": 9.39
+    "make_pct": 92.7,
+    "avg_seed": 9.42
    },
    {
     "losses": 4,
     "sims": 16,
-    "make_pct": 37.5,
-    "avg_seed": 10.83
+    "make_pct": 62.5,
+    "avg_seed": 10.9
    }
   ]
  },
@@ -1643,44 +1643,44 @@
   "remaining_games": 2,
   "avg_slct_rank": 30.9,
   "best_slct_rank": 23,
-  "worst_slct_rank": 42,
-  "make_pct": 99.24,
+  "worst_slct_rank": 43,
+  "make_pct": 99.3,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
-  "seed_3_pct": 0.0,
-  "seed_4_pct": 0.1,
-  "seed_5_pct": 1.49,
-  "seed_6_pct": 11.81,
-  "seed_7_pct": 27.08,
-  "seed_8_pct": 27.0,
-  "seed_9_pct": 19.16,
-  "seed_10_pct": 9.86,
-  "seed_11_pct": 2.73,
-  "seed_12_pct": 0.01,
+  "seed_3_pct": 0.01,
+  "seed_4_pct": 0.09,
+  "seed_5_pct": 1.53,
+  "seed_6_pct": 11.82,
+  "seed_7_pct": 26.76,
+  "seed_8_pct": 27.9,
+  "seed_9_pct": 19.17,
+  "seed_10_pct": 9.26,
+  "seed_11_pct": 2.76,
+  "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.76,
-  "most_likely_seed": 7,
+  "out_pct": 0.7,
+  "most_likely_seed": 8,
   "avg_seed_if_make": 7.91,
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 2744,
+    "sims": 2713,
     "make_pct": 100.0,
     "avg_seed": 7.05
    },
    {
     "losses": 1,
-    "sims": 5404,
+    "sims": 5531,
     "make_pct": 100.0,
     "avg_seed": 7.98
    },
    {
     "losses": 2,
-    "sims": 1852,
-    "make_pct": 95.9,
+    "sims": 1756,
+    "make_pct": 96.0,
     "avg_seed": 9.05
    }
   ]
@@ -1696,24 +1696,24 @@
   "avg_slct_rank": 30.6,
   "best_slct_rank": 24,
   "worst_slct_rank": 51,
-  "make_pct": 99.12,
+  "make_pct": 99.06,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.07,
-  "seed_5_pct": 0.77,
-  "seed_6_pct": 9.23,
-  "seed_7_pct": 26.0,
-  "seed_8_pct": 28.61,
-  "seed_9_pct": 20.15,
-  "seed_10_pct": 11.02,
-  "seed_11_pct": 3.27,
+  "seed_5_pct": 0.75,
+  "seed_6_pct": 9.36,
+  "seed_7_pct": 25.94,
+  "seed_8_pct": 28.56,
+  "seed_9_pct": 20.02,
+  "seed_10_pct": 11.13,
+  "seed_11_pct": 3.23,
   "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 0.88,
+  "out_pct": 0.94,
   "most_likely_seed": 8,
   "avg_seed_if_make": 8.05,
   "seed_by_losses": [
@@ -1726,20 +1726,20 @@
    {
     "losses": 1,
     "sims": 3385,
-    "make_pct": 99.8,
-    "avg_seed": 8.6
+    "make_pct": 99.7,
+    "avg_seed": 8.59
    },
    {
     "losses": 2,
     "sims": 566,
-    "make_pct": 89.4,
-    "avg_seed": 9.56
+    "make_pct": 88.3,
+    "avg_seed": 9.57
    },
    {
     "losses": 3,
     "sims": 32,
-    "make_pct": 40.6,
-    "avg_seed": 10.62
+    "make_pct": 43.8,
+    "avg_seed": 10.57
    },
    {
     "losses": 4,
@@ -1760,32 +1760,32 @@
   "avg_slct_rank": 30.0,
   "best_slct_rank": 20,
   "worst_slct_rank": 45,
-  "make_pct": 98.69,
+  "make_pct": 98.91,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
-  "seed_3_pct": 0.02,
+  "seed_3_pct": 0.01,
   "seed_4_pct": 0.14,
-  "seed_5_pct": 2.19,
-  "seed_6_pct": 13.46,
-  "seed_7_pct": 26.37,
-  "seed_8_pct": 25.92,
-  "seed_9_pct": 18.21,
-  "seed_10_pct": 9.5,
-  "seed_11_pct": 2.85,
-  "seed_12_pct": 0.03,
+  "seed_5_pct": 2.26,
+  "seed_6_pct": 13.25,
+  "seed_7_pct": 26.58,
+  "seed_8_pct": 25.71,
+  "seed_9_pct": 18.22,
+  "seed_10_pct": 9.69,
+  "seed_11_pct": 3.03,
+  "seed_12_pct": 0.02,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 1.31,
+  "out_pct": 1.09,
   "most_likely_seed": 7,
-  "avg_seed_if_make": 7.85,
+  "avg_seed_if_make": 7.86,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 287,
     "make_pct": 100.0,
-    "avg_seed": 6.24
+    "avg_seed": 6.26
    },
    {
     "losses": 1,
@@ -1797,19 +1797,19 @@
     "losses": 2,
     "sims": 4750,
     "make_pct": 100.0,
-    "avg_seed": 7.8
+    "avg_seed": 7.81
    },
    {
     "losses": 3,
     "sims": 2469,
-    "make_pct": 98.0,
-    "avg_seed": 8.82
+    "make_pct": 98.2,
+    "avg_seed": 8.83
    },
    {
     "losses": 4,
     "sims": 291,
-    "make_pct": 71.8,
-    "avg_seed": 9.72
+    "make_pct": 77.7,
+    "avg_seed": 9.78
    }
   ]
  },
@@ -1824,24 +1824,24 @@
   "avg_slct_rank": 30.0,
   "best_slct_rank": 20,
   "worst_slct_rank": 46,
-  "make_pct": 98.66,
+  "make_pct": 98.74,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.02,
-  "seed_4_pct": 0.28,
-  "seed_5_pct": 2.38,
-  "seed_6_pct": 13.19,
-  "seed_7_pct": 25.07,
-  "seed_8_pct": 24.79,
-  "seed_9_pct": 18.73,
-  "seed_10_pct": 10.67,
-  "seed_11_pct": 3.52,
+  "seed_4_pct": 0.29,
+  "seed_5_pct": 2.49,
+  "seed_6_pct": 13.1,
+  "seed_7_pct": 25.06,
+  "seed_8_pct": 24.88,
+  "seed_9_pct": 18.57,
+  "seed_10_pct": 10.77,
+  "seed_11_pct": 3.55,
   "seed_12_pct": 0.01,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 1.34,
+  "out_pct": 1.26,
   "most_likely_seed": 7,
   "avg_seed_if_make": 7.91,
   "seed_by_losses": [
@@ -1866,14 +1866,14 @@
    {
     "losses": 3,
     "sims": 2358,
-    "make_pct": 98.2,
+    "make_pct": 98.4,
     "avg_seed": 8.93
    },
    {
     "losses": 4,
     "sims": 389,
-    "make_pct": 76.6,
-    "avg_seed": 9.88
+    "make_pct": 77.1,
+    "avg_seed": 9.86
    }
   ]
  },
@@ -1886,26 +1886,26 @@
   "current_net_rank": 24,
   "remaining_games": 4,
   "avg_slct_rank": 31.2,
-  "best_slct_rank": 22,
+  "best_slct_rank": 21,
   "worst_slct_rank": 48,
-  "make_pct": 98.39,
+  "make_pct": 98.37,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.06,
-  "seed_5_pct": 1.39,
-  "seed_6_pct": 10.95,
-  "seed_7_pct": 24.07,
-  "seed_8_pct": 26.7,
-  "seed_9_pct": 20.05,
-  "seed_10_pct": 11.74,
-  "seed_11_pct": 3.42,
+  "seed_5_pct": 1.33,
+  "seed_6_pct": 10.94,
+  "seed_7_pct": 24.11,
+  "seed_8_pct": 26.73,
+  "seed_9_pct": 19.96,
+  "seed_10_pct": 11.84,
+  "seed_11_pct": 3.39,
   "seed_12_pct": 0.01,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 1.61,
+  "out_pct": 1.63,
   "most_likely_seed": 8,
   "avg_seed_if_make": 8.04,
   "seed_by_losses": [
@@ -1913,31 +1913,31 @@
     "losses": 0,
     "sims": 476,
     "make_pct": 100.0,
-    "avg_seed": 6.59
+    "avg_seed": 6.6
    },
    {
     "losses": 1,
     "sims": 2932,
     "make_pct": 100.0,
-    "avg_seed": 7.3
+    "avg_seed": 7.29
    },
    {
     "losses": 2,
     "sims": 4631,
     "make_pct": 100.0,
-    "avg_seed": 8.2
+    "avg_seed": 8.21
    },
    {
     "losses": 3,
     "sims": 1790,
-    "make_pct": 95.0,
+    "make_pct": 95.1,
     "avg_seed": 9.14
    },
    {
     "losses": 4,
     "sims": 171,
-    "make_pct": 58.5,
-    "avg_seed": 9.97
+    "make_pct": 56.1,
+    "avg_seed": 10.03
    }
   ]
  },
@@ -1952,24 +1952,24 @@
   "avg_slct_rank": 32.0,
   "best_slct_rank": 22,
   "worst_slct_rank": 50,
-  "make_pct": 96.41,
+  "make_pct": 96.57,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
-  "seed_4_pct": 0.08,
-  "seed_5_pct": 1.25,
-  "seed_6_pct": 10.76,
-  "seed_7_pct": 23.51,
-  "seed_8_pct": 24.55,
-  "seed_9_pct": 19.74,
-  "seed_10_pct": 12.09,
-  "seed_11_pct": 4.42,
-  "seed_12_pct": 0.01,
+  "seed_4_pct": 0.1,
+  "seed_5_pct": 1.27,
+  "seed_6_pct": 10.78,
+  "seed_7_pct": 23.47,
+  "seed_8_pct": 24.66,
+  "seed_9_pct": 19.77,
+  "seed_10_pct": 11.99,
+  "seed_11_pct": 4.53,
+  "seed_12_pct": 0.0,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 3.59,
+  "out_pct": 3.43,
   "most_likely_seed": 8,
   "avg_seed_if_make": 8.08,
   "seed_by_losses": [
@@ -1988,20 +1988,20 @@
    {
     "losses": 2,
     "sims": 2741,
-    "make_pct": 96.9,
-    "avg_seed": 8.86
+    "make_pct": 97.1,
+    "avg_seed": 8.85
    },
    {
     "losses": 3,
     "sims": 772,
-    "make_pct": 71.5,
-    "avg_seed": 9.89
+    "make_pct": 72.7,
+    "avg_seed": 9.88
    },
    {
     "losses": 4,
     "sims": 81,
-    "make_pct": 33.3,
-    "avg_seed": 10.63
+    "make_pct": 34.6,
+    "avg_seed": 10.68
    }
   ]
  },
@@ -2016,24 +2016,24 @@
   "avg_slct_rank": 35.0,
   "best_slct_rank": 22,
   "worst_slct_rank": 49,
-  "make_pct": 92.06,
+  "make_pct": 92.21,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.02,
-  "seed_5_pct": 0.27,
-  "seed_6_pct": 3.0,
-  "seed_7_pct": 11.72,
+  "seed_5_pct": 0.28,
+  "seed_6_pct": 3.07,
+  "seed_7_pct": 11.61,
   "seed_8_pct": 18.52,
-  "seed_9_pct": 23.99,
-  "seed_10_pct": 22.51,
-  "seed_11_pct": 11.99,
+  "seed_9_pct": 23.96,
+  "seed_10_pct": 22.64,
+  "seed_11_pct": 12.07,
   "seed_12_pct": 0.04,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 7.94,
+  "out_pct": 7.79,
   "most_likely_seed": 9,
   "avg_seed_if_make": 8.94,
   "seed_by_losses": [
@@ -2041,7 +2041,7 @@
     "losses": 0,
     "sims": 629,
     "make_pct": 100.0,
-    "avg_seed": 7.34
+    "avg_seed": 7.35
    },
    {
     "losses": 1,
@@ -2058,14 +2058,14 @@
    {
     "losses": 3,
     "sims": 1930,
-    "make_pct": 69.6,
-    "avg_seed": 10.1
+    "make_pct": 70.4,
+    "avg_seed": 10.09
    },
    {
     "losses": 4,
     "sims": 145,
-    "make_pct": 23.4,
-    "avg_seed": 10.44
+    "make_pct": 22.8,
+    "avg_seed": 10.52
    }
   ]
  },
@@ -2078,26 +2078,26 @@
   "current_net_rank": 39,
   "remaining_games": 3,
   "avg_slct_rank": 36.5,
-  "best_slct_rank": 24,
+  "best_slct_rank": 23,
   "worst_slct_rank": 49,
-  "make_pct": 91.97,
+  "make_pct": 92.02,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.01,
   "seed_5_pct": 0.07,
-  "seed_6_pct": 1.64,
-  "seed_7_pct": 6.87,
-  "seed_8_pct": 14.66,
-  "seed_9_pct": 23.6,
-  "seed_10_pct": 27.71,
-  "seed_11_pct": 17.23,
-  "seed_12_pct": 0.18,
+  "seed_6_pct": 1.62,
+  "seed_7_pct": 6.84,
+  "seed_8_pct": 14.58,
+  "seed_9_pct": 23.7,
+  "seed_10_pct": 27.53,
+  "seed_11_pct": 17.52,
+  "seed_12_pct": 0.15,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 8.03,
+  "out_pct": 7.98,
   "most_likely_seed": 10,
   "avg_seed_if_make": 9.32,
   "seed_by_losses": [
@@ -2105,24 +2105,24 @@
     "losses": 0,
     "sims": 1032,
     "make_pct": 100.0,
-    "avg_seed": 8.12
+    "avg_seed": 8.13
    },
    {
     "losses": 1,
     "sims": 4145,
-    "make_pct": 99.4,
-    "avg_seed": 8.99
+    "make_pct": 99.5,
+    "avg_seed": 9.0
    },
    {
     "losses": 2,
     "sims": 4423,
-    "make_pct": 87.7,
+    "make_pct": 87.6,
     "avg_seed": 9.93
    },
    {
     "losses": 3,
     "sims": 400,
-    "make_pct": 41.5,
+    "make_pct": 42.2,
     "avg_seed": 10.51
    }
   ]
@@ -2136,34 +2136,34 @@
   "current_net_rank": 37,
   "remaining_games": 4,
   "avg_slct_rank": 35.5,
-  "best_slct_rank": 22,
+  "best_slct_rank": 23,
   "worst_slct_rank": 50,
-  "make_pct": 91.58,
+  "make_pct": 91.7,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
-  "seed_4_pct": 0.03,
-  "seed_5_pct": 0.4,
-  "seed_6_pct": 3.84,
-  "seed_7_pct": 11.75,
-  "seed_8_pct": 19.81,
-  "seed_9_pct": 24.31,
-  "seed_10_pct": 21.31,
-  "seed_11_pct": 10.07,
-  "seed_12_pct": 0.06,
+  "seed_4_pct": 0.02,
+  "seed_5_pct": 0.39,
+  "seed_6_pct": 3.85,
+  "seed_7_pct": 11.8,
+  "seed_8_pct": 19.96,
+  "seed_9_pct": 24.23,
+  "seed_10_pct": 21.42,
+  "seed_11_pct": 9.95,
+  "seed_12_pct": 0.08,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 8.42,
+  "out_pct": 8.3,
   "most_likely_seed": 9,
-  "avg_seed_if_make": 8.84,
+  "avg_seed_if_make": 8.83,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 622,
     "make_pct": 100.0,
-    "avg_seed": 7.22
+    "avg_seed": 7.21
    },
    {
     "losses": 1,
@@ -2174,20 +2174,20 @@
    {
     "losses": 2,
     "sims": 4441,
-    "make_pct": 96.9,
-    "avg_seed": 9.17
+    "make_pct": 96.8,
+    "avg_seed": 9.16
    },
    {
     "losses": 3,
     "sims": 1698,
-    "make_pct": 66.9,
-    "avg_seed": 9.99
+    "make_pct": 67.8,
+    "avg_seed": 10.0
    },
    {
     "losses": 4,
     "sims": 191,
-    "make_pct": 25.1,
-    "avg_seed": 10.71
+    "make_pct": 25.7,
+    "avg_seed": 10.65
    }
   ]
  },
@@ -2199,27 +2199,27 @@
   "current_slct_rank": 32,
   "current_net_rank": 48,
   "remaining_games": 4,
-  "avg_slct_rank": 35.5,
-  "best_slct_rank": 22,
+  "avg_slct_rank": 35.4,
+  "best_slct_rank": 21,
   "worst_slct_rank": 50,
-  "make_pct": 90.29,
+  "make_pct": 90.47,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
-  "seed_4_pct": 0.01,
-  "seed_5_pct": 0.09,
-  "seed_6_pct": 1.66,
-  "seed_7_pct": 7.86,
-  "seed_8_pct": 15.3,
-  "seed_9_pct": 21.61,
-  "seed_10_pct": 25.3,
-  "seed_11_pct": 18.21,
-  "seed_12_pct": 0.24,
+  "seed_4_pct": 0.0,
+  "seed_5_pct": 0.11,
+  "seed_6_pct": 1.71,
+  "seed_7_pct": 7.65,
+  "seed_8_pct": 15.35,
+  "seed_9_pct": 22.1,
+  "seed_10_pct": 25.04,
+  "seed_11_pct": 18.24,
+  "seed_12_pct": 0.26,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 9.71,
+  "out_pct": 9.53,
   "most_likely_seed": 10,
   "avg_seed_if_make": 9.29,
   "seed_by_losses": [
@@ -2238,19 +2238,19 @@
    {
     "losses": 2,
     "sims": 4162,
-    "make_pct": 99.1,
-    "avg_seed": 9.38
+    "make_pct": 99.2,
+    "avg_seed": 9.37
    },
    {
     "losses": 3,
     "sims": 2670,
-    "make_pct": 79.1,
-    "avg_seed": 10.19
+    "make_pct": 79.4,
+    "avg_seed": 10.2
    },
    {
     "losses": 4,
     "sims": 563,
-    "make_pct": 33.0,
+    "make_pct": 34.3,
     "avg_seed": 10.79
    }
   ]
@@ -2266,24 +2266,24 @@
   "avg_slct_rank": 35.8,
   "best_slct_rank": 23,
   "worst_slct_rank": 51,
-  "make_pct": 89.69,
+  "make_pct": 89.41,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
-  "seed_5_pct": 0.21,
-  "seed_6_pct": 3.31,
-  "seed_7_pct": 11.03,
-  "seed_8_pct": 18.04,
-  "seed_9_pct": 23.17,
-  "seed_10_pct": 21.44,
-  "seed_11_pct": 12.39,
-  "seed_12_pct": 0.1,
+  "seed_5_pct": 0.2,
+  "seed_6_pct": 3.36,
+  "seed_7_pct": 11.0,
+  "seed_8_pct": 17.95,
+  "seed_9_pct": 23.28,
+  "seed_10_pct": 21.18,
+  "seed_11_pct": 12.31,
+  "seed_12_pct": 0.13,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 10.31,
+  "out_pct": 10.59,
   "most_likely_seed": 9,
   "avg_seed_if_make": 8.95,
   "seed_by_losses": [
@@ -2291,31 +2291,31 @@
     "losses": 0,
     "sims": 906,
     "make_pct": 100.0,
-    "avg_seed": 7.49
+    "avg_seed": 7.5
    },
    {
     "losses": 1,
     "sims": 3326,
     "make_pct": 100.0,
-    "avg_seed": 8.44
+    "avg_seed": 8.43
    },
    {
     "losses": 2,
     "sims": 3861,
-    "make_pct": 95.3,
-    "avg_seed": 9.41
+    "make_pct": 94.9,
+    "avg_seed": 9.42
    },
    {
     "losses": 3,
     "sims": 1647,
-    "make_pct": 63.0,
-    "avg_seed": 10.2
+    "make_pct": 62.3,
+    "avg_seed": 10.19
    },
    {
     "losses": 4,
     "sims": 260,
     "make_pct": 8.1,
-    "avg_seed": 10.76
+    "avg_seed": 10.86
    }
   ]
  },
@@ -2336,12 +2336,12 @@
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.19,
-  "seed_6_pct": 2.69,
-  "seed_7_pct": 11.25,
-  "seed_8_pct": 18.78,
-  "seed_9_pct": 24.01,
-  "seed_10_pct": 21.34,
-  "seed_11_pct": 8.94,
+  "seed_6_pct": 2.73,
+  "seed_7_pct": 11.31,
+  "seed_8_pct": 18.71,
+  "seed_9_pct": 23.71,
+  "seed_10_pct": 21.59,
+  "seed_11_pct": 8.96,
   "seed_12_pct": 0.01,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
@@ -2366,8 +2366,8 @@
    {
     "losses": 2,
     "sims": 3509,
-    "make_pct": 92.8,
-    "avg_seed": 9.58
+    "make_pct": 92.7,
+    "avg_seed": 9.59
    },
    {
     "losses": 3,
@@ -2394,50 +2394,50 @@
   "avg_slct_rank": 38.0,
   "best_slct_rank": 25,
   "worst_slct_rank": 53,
-  "make_pct": 83.28,
+  "make_pct": 82.79,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.01,
   "seed_5_pct": 0.06,
-  "seed_6_pct": 1.4,
-  "seed_7_pct": 7.11,
-  "seed_8_pct": 14.3,
-  "seed_9_pct": 20.74,
-  "seed_10_pct": 23.65,
-  "seed_11_pct": 15.83,
+  "seed_6_pct": 1.45,
+  "seed_7_pct": 7.07,
+  "seed_8_pct": 13.84,
+  "seed_9_pct": 20.42,
+  "seed_10_pct": 24.22,
+  "seed_11_pct": 15.54,
   "seed_12_pct": 0.18,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 16.72,
+  "out_pct": 17.21,
   "most_likely_seed": 10,
-  "avg_seed_if_make": 9.27,
+  "avg_seed_if_make": 9.28,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 1034,
     "make_pct": 100.0,
-    "avg_seed": 8.02
+    "avg_seed": 8.03
    },
    {
     "losses": 1,
     "sims": 3569,
-    "make_pct": 99.4,
-    "avg_seed": 8.91
+    "make_pct": 99.1,
+    "avg_seed": 8.93
    },
    {
     "losses": 2,
     "sims": 3866,
-    "make_pct": 82.9,
-    "avg_seed": 9.86
+    "make_pct": 81.5,
+    "avg_seed": 9.87
    },
    {
     "losses": 3,
     "sims": 1354,
-    "make_pct": 39.3,
-    "avg_seed": 10.56
+    "make_pct": 40.5,
+    "avg_seed": 10.54
    },
    {
     "losses": 4,
@@ -2455,27 +2455,27 @@
   "current_slct_rank": 43,
   "current_net_rank": 35,
   "remaining_games": 4,
-  "avg_slct_rank": 39.1,
-  "best_slct_rank": 25,
+  "avg_slct_rank": 39.0,
+  "best_slct_rank": 24,
   "worst_slct_rank": 53,
-  "make_pct": 78.8,
+  "make_pct": 79.09,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
-  "seed_4_pct": 0.0,
-  "seed_5_pct": 0.03,
-  "seed_6_pct": 0.92,
-  "seed_7_pct": 4.92,
-  "seed_8_pct": 11.49,
-  "seed_9_pct": 18.2,
-  "seed_10_pct": 23.91,
-  "seed_11_pct": 19.08,
-  "seed_12_pct": 0.24,
+  "seed_4_pct": 0.01,
+  "seed_5_pct": 0.02,
+  "seed_6_pct": 0.88,
+  "seed_7_pct": 4.99,
+  "seed_8_pct": 11.26,
+  "seed_9_pct": 18.48,
+  "seed_10_pct": 24.2,
+  "seed_11_pct": 18.99,
+  "seed_12_pct": 0.25,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 21.2,
+  "out_pct": 20.91,
   "most_likely_seed": 10,
   "avg_seed_if_make": 9.49,
   "seed_by_losses": [
@@ -2494,19 +2494,19 @@
    {
     "losses": 2,
     "sims": 4317,
-    "make_pct": 91.2,
-    "avg_seed": 9.73
+    "make_pct": 91.3,
+    "avg_seed": 9.74
    },
    {
     "losses": 3,
     "sims": 2598,
-    "make_pct": 45.8,
-    "avg_seed": 10.51
+    "make_pct": 46.7,
+    "avg_seed": 10.5
    },
    {
     "losses": 4,
     "sims": 367,
-    "make_pct": 11.4,
+    "make_pct": 11.2,
     "avg_seed": 11.05
    }
   ]
@@ -2521,45 +2521,45 @@
   "remaining_games": 2,
   "avg_slct_rank": 40.4,
   "best_slct_rank": 29,
-  "worst_slct_rank": 50,
-  "make_pct": 76.66,
+  "worst_slct_rank": 51,
+  "make_pct": 76.1,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
-  "seed_5_pct": 0.02,
-  "seed_6_pct": 0.27,
-  "seed_7_pct": 2.32,
-  "seed_8_pct": 7.38,
-  "seed_9_pct": 15.64,
-  "seed_10_pct": 26.93,
-  "seed_11_pct": 23.84,
-  "seed_12_pct": 0.26,
+  "seed_5_pct": 0.04,
+  "seed_6_pct": 0.21,
+  "seed_7_pct": 2.23,
+  "seed_8_pct": 7.14,
+  "seed_9_pct": 16.01,
+  "seed_10_pct": 26.25,
+  "seed_11_pct": 23.93,
+  "seed_12_pct": 0.29,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 23.34,
+  "out_pct": 23.9,
   "most_likely_seed": 10,
   "avg_seed_if_make": 9.82,
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 2746,
-    "make_pct": 98.9,
-    "avg_seed": 9.22
+    "sims": 2680,
+    "make_pct": 98.5,
+    "avg_seed": 9.23
    },
    {
     "losses": 1,
-    "sims": 6725,
-    "make_pct": 71.6,
-    "avg_seed": 10.13
+    "sims": 6792,
+    "make_pct": 71.2,
+    "avg_seed": 10.12
    },
    {
     "losses": 2,
-    "sims": 529,
+    "sims": 528,
     "make_pct": 25.0,
-    "avg_seed": 10.66
+    "avg_seed": 10.7
    }
   ]
  },
@@ -2573,57 +2573,57 @@
   "remaining_games": 4,
   "avg_slct_rank": 40.2,
   "best_slct_rank": 25,
-  "worst_slct_rank": 54,
-  "make_pct": 72.04,
+  "worst_slct_rank": 55,
+  "make_pct": 72.19,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
-  "seed_5_pct": 0.05,
-  "seed_6_pct": 0.79,
-  "seed_7_pct": 4.17,
-  "seed_8_pct": 9.72,
-  "seed_9_pct": 15.88,
-  "seed_10_pct": 22.2,
-  "seed_11_pct": 18.91,
-  "seed_12_pct": 0.32,
+  "seed_5_pct": 0.07,
+  "seed_6_pct": 0.86,
+  "seed_7_pct": 4.07,
+  "seed_8_pct": 9.81,
+  "seed_9_pct": 16.01,
+  "seed_10_pct": 22.11,
+  "seed_11_pct": 18.97,
+  "seed_12_pct": 0.29,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 27.96,
+  "out_pct": 27.81,
   "most_likely_seed": 10,
   "avg_seed_if_make": 9.56,
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 261,
+    "sims": 280,
     "make_pct": 100.0,
-    "avg_seed": 7.77
+    "avg_seed": 7.69
    },
    {
     "losses": 1,
-    "sims": 1909,
-    "make_pct": 99.6,
-    "avg_seed": 8.77
+    "sims": 1849,
+    "make_pct": 99.7,
+    "avg_seed": 8.8
    },
    {
     "losses": 2,
-    "sims": 4146,
-    "make_pct": 88.4,
-    "avg_seed": 9.75
+    "sims": 4228,
+    "make_pct": 89.4,
+    "avg_seed": 9.73
    },
    {
     "losses": 3,
-    "sims": 3114,
-    "make_pct": 42.5,
-    "avg_seed": 10.48
+    "sims": 3078,
+    "make_pct": 41.3,
+    "avg_seed": 10.5
    },
    {
     "losses": 4,
-    "sims": 570,
-    "make_pct": 8.6,
-    "avg_seed": 10.92
+    "sims": 565,
+    "make_pct": 8.5,
+    "avg_seed": 10.98
    }
   ]
  },
@@ -2635,58 +2635,58 @@
   "current_slct_rank": 39,
   "current_net_rank": 43,
   "remaining_games": 4,
-  "avg_slct_rank": 40.4,
+  "avg_slct_rank": 40.3,
   "best_slct_rank": 24,
   "worst_slct_rank": 53,
-  "make_pct": 70.11,
+  "make_pct": 69.9,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
-  "seed_5_pct": 0.01,
-  "seed_6_pct": 0.54,
-  "seed_7_pct": 3.16,
-  "seed_8_pct": 7.92,
-  "seed_9_pct": 14.16,
-  "seed_10_pct": 21.56,
-  "seed_11_pct": 22.31,
-  "seed_12_pct": 0.45,
+  "seed_5_pct": 0.04,
+  "seed_6_pct": 0.5,
+  "seed_7_pct": 3.09,
+  "seed_8_pct": 8.05,
+  "seed_9_pct": 14.28,
+  "seed_10_pct": 21.81,
+  "seed_11_pct": 21.73,
+  "seed_12_pct": 0.4,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 29.89,
-  "most_likely_seed": 11,
-  "avg_seed_if_make": 9.74,
+  "out_pct": 30.1,
+  "most_likely_seed": 10,
+  "avg_seed_if_make": 9.72,
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 184,
+    "sims": 177,
     "make_pct": 100.0,
-    "avg_seed": 7.92
+    "avg_seed": 7.9
    },
    {
     "losses": 1,
-    "sims": 1572,
-    "make_pct": 99.9,
-    "avg_seed": 8.85
+    "sims": 1602,
+    "make_pct": 100.0,
+    "avg_seed": 8.86
    },
    {
     "losses": 2,
-    "sims": 3656,
-    "make_pct": 92.8,
-    "avg_seed": 9.81
+    "sims": 3683,
+    "make_pct": 92.3,
+    "avg_seed": 9.8
    },
    {
     "losses": 3,
-    "sims": 3428,
-    "make_pct": 50.4,
-    "avg_seed": 10.5
+    "sims": 3382,
+    "make_pct": 49.7,
+    "avg_seed": 10.49
    },
    {
     "losses": 4,
-    "sims": 1160,
-    "make_pct": 11.8,
+    "sims": 1156,
+    "make_pct": 11.2,
     "avg_seed": 10.89
    }
   ]
@@ -2700,34 +2700,34 @@
   "current_net_rank": 89,
   "remaining_games": 4,
   "avg_slct_rank": 45.1,
-  "best_slct_rank": 36,
+  "best_slct_rank": 35,
   "worst_slct_rank": 71,
-  "make_pct": 45.37,
+  "make_pct": 45.5,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
-  "seed_7_pct": 0.04,
-  "seed_8_pct": 0.48,
-  "seed_9_pct": 2.21,
-  "seed_10_pct": 9.97,
-  "seed_11_pct": 30.87,
-  "seed_12_pct": 1.79,
-  "seed_13_pct": 0.01,
+  "seed_7_pct": 0.02,
+  "seed_8_pct": 0.49,
+  "seed_9_pct": 2.29,
+  "seed_10_pct": 10.19,
+  "seed_11_pct": 30.63,
+  "seed_12_pct": 1.86,
+  "seed_13_pct": 0.02,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 54.63,
+  "out_pct": 54.5,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.69,
+  "avg_seed_if_make": 10.68,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 4462,
-    "make_pct": 77.6,
-    "avg_seed": 10.58
+    "make_pct": 77.9,
+    "avg_seed": 10.57
    },
    {
     "losses": 1,
@@ -2739,7 +2739,7 @@
     "losses": 2,
     "sims": 1349,
     "make_pct": 3.0,
-    "avg_seed": 11.3
+    "avg_seed": 11.28
    },
    {
     "losses": 3,
@@ -2766,26 +2766,26 @@
   "avg_slct_rank": 44.7,
   "best_slct_rank": 30,
   "worst_slct_rank": 62,
-  "make_pct": 45.18,
+  "make_pct": 45.35,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.01,
-  "seed_6_pct": 0.06,
-  "seed_7_pct": 0.57,
-  "seed_8_pct": 2.7,
-  "seed_9_pct": 6.1,
-  "seed_10_pct": 13.35,
-  "seed_11_pct": 21.68,
-  "seed_12_pct": 0.71,
-  "seed_13_pct": 0.0,
+  "seed_6_pct": 0.07,
+  "seed_7_pct": 0.55,
+  "seed_8_pct": 2.67,
+  "seed_9_pct": 5.74,
+  "seed_10_pct": 13.45,
+  "seed_11_pct": 22.1,
+  "seed_12_pct": 0.75,
+  "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 54.82,
+  "out_pct": 54.65,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.21,
+  "avg_seed_if_make": 10.23,
   "seed_by_losses": [
    {
     "losses": 0,
@@ -2796,20 +2796,20 @@
    {
     "losses": 1,
     "sims": 2914,
-    "make_pct": 81.6,
-    "avg_seed": 10.11
+    "make_pct": 81.4,
+    "avg_seed": 10.14
    },
    {
     "losses": 2,
     "sims": 4079,
-    "make_pct": 35.2,
-    "avg_seed": 10.72
+    "make_pct": 35.8,
+    "avg_seed": 10.73
    },
    {
     "losses": 3,
     "sims": 2058,
     "make_pct": 5.2,
-    "avg_seed": 11.07
+    "avg_seed": 11.05
    },
    {
     "losses": 4,
@@ -2830,120 +2830,56 @@
   "avg_slct_rank": 46.6,
   "best_slct_rank": 28,
   "worst_slct_rank": 57,
-  "make_pct": 31.65,
+  "make_pct": 32.03,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.04,
-  "seed_7_pct": 0.28,
-  "seed_8_pct": 1.12,
-  "seed_9_pct": 3.25,
-  "seed_10_pct": 8.09,
-  "seed_11_pct": 17.81,
-  "seed_12_pct": 1.05,
-  "seed_13_pct": 0.01,
+  "seed_7_pct": 0.26,
+  "seed_8_pct": 1.16,
+  "seed_9_pct": 3.08,
+  "seed_10_pct": 8.17,
+  "seed_11_pct": 18.21,
+  "seed_12_pct": 1.11,
+  "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 68.35,
+  "out_pct": 67.97,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.42,
+  "avg_seed_if_make": 10.44,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 111,
     "make_pct": 100.0,
-    "avg_seed": 9.12
+    "avg_seed": 9.1
    },
    {
     "losses": 1,
     "sims": 1061,
-    "make_pct": 93.3,
+    "make_pct": 93.5,
     "avg_seed": 10.01
    },
    {
     "losses": 2,
     "sims": 3247,
-    "make_pct": 49.2,
-    "avg_seed": 10.6
+    "make_pct": 50.0,
+    "avg_seed": 10.62
    },
    {
     "losses": 3,
     "sims": 3924,
-    "make_pct": 11.2,
-    "avg_seed": 11.03
+    "make_pct": 11.5,
+    "avg_seed": 11.04
    },
    {
     "losses": 4,
     "sims": 1657,
     "make_pct": 1.4,
-    "avg_seed": 11.12
-   }
-  ]
- },
- {
-  "team_abbr": "USC",
-  "team_displayName": "USC Trojans",
-  "conference": "Big Ten",
-  "current_seed": 11,
-  "current_slct_rank": 46,
-  "current_net_rank": 66,
-  "remaining_games": 4,
-  "avg_slct_rank": 47.5,
-  "best_slct_rank": 27,
-  "worst_slct_rank": 59,
-  "make_pct": 27.02,
-  "seed_1_pct": 0.0,
-  "seed_2_pct": 0.0,
-  "seed_3_pct": 0.0,
-  "seed_4_pct": 0.0,
-  "seed_5_pct": 0.0,
-  "seed_6_pct": 0.02,
-  "seed_7_pct": 0.21,
-  "seed_8_pct": 0.69,
-  "seed_9_pct": 2.6,
-  "seed_10_pct": 6.54,
-  "seed_11_pct": 15.58,
-  "seed_12_pct": 1.35,
-  "seed_13_pct": 0.03,
-  "seed_14_pct": 0.0,
-  "seed_15_pct": 0.0,
-  "seed_16_pct": 0.0,
-  "out_pct": 72.98,
-  "most_likely_seed": 11,
-  "avg_seed_if_make": 10.51,
-  "seed_by_losses": [
-   {
-    "losses": 0,
-    "sims": 65,
-    "make_pct": 100.0,
-    "avg_seed": 9.17
-   },
-   {
-    "losses": 1,
-    "sims": 666,
-    "make_pct": 94.9,
-    "avg_seed": 9.91
-   },
-   {
-    "losses": 2,
-    "sims": 2551,
-    "make_pct": 54.4,
-    "avg_seed": 10.59
-   },
-   {
-    "losses": 3,
-    "sims": 4241,
-    "make_pct": 14.0,
-    "avg_seed": 11.05
-   },
-   {
-    "losses": 4,
-    "sims": 2477,
-    "make_pct": 1.0,
-    "avg_seed": 11.33
+    "avg_seed": 11.17
    }
   ]
  },
@@ -2956,46 +2892,46 @@
   "current_net_rank": 46,
   "remaining_games": 4,
   "avg_slct_rank": 47.5,
-  "best_slct_rank": 34,
+  "best_slct_rank": 33,
   "worst_slct_rank": 64,
-  "make_pct": 26.73,
+  "make_pct": 26.86,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
-  "seed_7_pct": 0.16,
-  "seed_8_pct": 0.92,
-  "seed_9_pct": 2.61,
-  "seed_10_pct": 7.28,
-  "seed_11_pct": 14.93,
-  "seed_12_pct": 0.83,
+  "seed_7_pct": 0.17,
+  "seed_8_pct": 1.03,
+  "seed_9_pct": 2.47,
+  "seed_10_pct": 7.51,
+  "seed_11_pct": 14.86,
+  "seed_12_pct": 0.82,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 73.27,
+  "out_pct": 73.14,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.44,
+  "avg_seed_if_make": 10.43,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 378,
-    "make_pct": 94.7,
-    "avg_seed": 9.6
+    "make_pct": 95.8,
+    "avg_seed": 9.59
    },
    {
     "losses": 1,
     "sims": 2888,
-    "make_pct": 56.0,
-    "avg_seed": 10.4
+    "make_pct": 55.8,
+    "avg_seed": 10.39
    },
    {
     "losses": 2,
     "sims": 4068,
-    "make_pct": 15.8,
-    "avg_seed": 10.93
+    "make_pct": 16.2,
+    "avg_seed": 10.92
    },
    {
     "losses": 3,
@@ -3012,6 +2948,70 @@
   ]
  },
  {
+  "team_abbr": "USC",
+  "team_displayName": "USC Trojans",
+  "conference": "Big Ten",
+  "current_seed": 11,
+  "current_slct_rank": 46,
+  "current_net_rank": 66,
+  "remaining_games": 4,
+  "avg_slct_rank": 47.5,
+  "best_slct_rank": 28,
+  "worst_slct_rank": 59,
+  "make_pct": 26.6,
+  "seed_1_pct": 0.0,
+  "seed_2_pct": 0.0,
+  "seed_3_pct": 0.0,
+  "seed_4_pct": 0.0,
+  "seed_5_pct": 0.0,
+  "seed_6_pct": 0.02,
+  "seed_7_pct": 0.21,
+  "seed_8_pct": 0.66,
+  "seed_9_pct": 2.84,
+  "seed_10_pct": 6.1,
+  "seed_11_pct": 15.54,
+  "seed_12_pct": 1.21,
+  "seed_13_pct": 0.02,
+  "seed_14_pct": 0.0,
+  "seed_15_pct": 0.0,
+  "seed_16_pct": 0.0,
+  "out_pct": 73.4,
+  "most_likely_seed": 11,
+  "avg_seed_if_make": 10.49,
+  "seed_by_losses": [
+   {
+    "losses": 0,
+    "sims": 65,
+    "make_pct": 100.0,
+    "avg_seed": 9.12
+   },
+   {
+    "losses": 1,
+    "sims": 666,
+    "make_pct": 94.3,
+    "avg_seed": 9.9
+   },
+   {
+    "losses": 2,
+    "sims": 2551,
+    "make_pct": 53.2,
+    "avg_seed": 10.59
+   },
+   {
+    "losses": 3,
+    "sims": 4241,
+    "make_pct": 13.8,
+    "avg_seed": 11.03
+   },
+   {
+    "losses": 4,
+    "sims": 2477,
+    "make_pct": 1.0,
+    "avg_seed": 11.33
+   }
+  ]
+ },
+ {
   "team_abbr": "VT",
   "team_displayName": "Virginia Tech Hokies",
   "conference": "ACC",
@@ -3020,9 +3020,9 @@
   "current_net_rank": 51,
   "remaining_games": 3,
   "avg_slct_rank": 49.4,
-  "best_slct_rank": 38,
+  "best_slct_rank": 37,
   "worst_slct_rank": 62,
-  "make_pct": 13.25,
+  "make_pct": 13.22,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3030,36 +3030,36 @@
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
   "seed_7_pct": 0.02,
-  "seed_8_pct": 0.12,
-  "seed_9_pct": 0.49,
-  "seed_10_pct": 2.24,
-  "seed_11_pct": 9.36,
-  "seed_12_pct": 1.01,
+  "seed_8_pct": 0.15,
+  "seed_9_pct": 0.43,
+  "seed_10_pct": 2.29,
+  "seed_11_pct": 9.27,
+  "seed_12_pct": 1.05,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 86.75,
+  "out_pct": 86.78,
   "most_likely_seed": 11,
   "avg_seed_if_make": 10.8,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 315,
-    "make_pct": 74.0,
+    "make_pct": 78.7,
     "avg_seed": 10.3
    },
    {
     "losses": 1,
     "sims": 2789,
-    "make_pct": 28.3,
-    "avg_seed": 10.82
+    "make_pct": 27.6,
+    "avg_seed": 10.83
    },
    {
     "losses": 2,
     "sims": 6009,
-    "make_pct": 5.0,
-    "avg_seed": 11.13
+    "make_pct": 5.1,
+    "avg_seed": 11.15
    },
    {
     "losses": 3,
@@ -3080,7 +3080,7 @@
   "avg_slct_rank": 50.1,
   "best_slct_rank": 41,
   "worst_slct_rank": 70,
-  "make_pct": 11.82,
+  "make_pct": 11.7,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3088,30 +3088,30 @@
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
   "seed_7_pct": 0.0,
-  "seed_8_pct": 0.05,
-  "seed_9_pct": 0.28,
-  "seed_10_pct": 1.48,
-  "seed_11_pct": 8.94,
-  "seed_12_pct": 1.05,
-  "seed_13_pct": 0.02,
+  "seed_8_pct": 0.04,
+  "seed_9_pct": 0.24,
+  "seed_10_pct": 1.55,
+  "seed_11_pct": 8.78,
+  "seed_12_pct": 1.06,
+  "seed_13_pct": 0.03,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 88.18,
+  "out_pct": 88.3,
   "most_likely_seed": 11,
   "avg_seed_if_make": 10.91,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 4045,
-    "make_pct": 24.9,
+    "make_pct": 24.6,
     "avg_seed": 10.86
    },
    {
     "losses": 1,
     "sims": 4677,
     "make_pct": 3.7,
-    "avg_seed": 11.2
+    "avg_seed": 11.22
    },
    {
     "losses": 2,
@@ -3136,28 +3136,28 @@
   "current_net_rank": 44,
   "remaining_games": 4,
   "avg_slct_rank": 52.1,
-  "best_slct_rank": 38,
+  "best_slct_rank": 37,
   "worst_slct_rank": 72,
-  "make_pct": 10.5,
+  "make_pct": 10.45,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
   "seed_4_pct": 0.0,
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
-  "seed_7_pct": 0.03,
-  "seed_8_pct": 0.19,
-  "seed_9_pct": 0.55,
-  "seed_10_pct": 2.24,
-  "seed_11_pct": 6.83,
-  "seed_12_pct": 0.66,
+  "seed_7_pct": 0.04,
+  "seed_8_pct": 0.15,
+  "seed_9_pct": 0.59,
+  "seed_10_pct": 2.25,
+  "seed_11_pct": 6.79,
+  "seed_12_pct": 0.63,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 89.5,
+  "out_pct": 89.55,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.68,
+  "avg_seed_if_make": 10.67,
   "seed_by_losses": [
    {
     "losses": 0,
@@ -3168,14 +3168,14 @@
    {
     "losses": 1,
     "sims": 2687,
-    "make_pct": 19.5,
-    "avg_seed": 10.88
+    "make_pct": 19.2,
+    "avg_seed": 10.87
    },
    {
     "losses": 2,
     "sims": 3998,
     "make_pct": 2.3,
-    "avg_seed": 11.26
+    "avg_seed": 11.24
    },
    {
     "losses": 3,
@@ -3202,7 +3202,7 @@
   "avg_slct_rank": 52.0,
   "best_slct_rank": 39,
   "worst_slct_rank": 72,
-  "make_pct": 10.31,
+  "make_pct": 10.09,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3210,30 +3210,30 @@
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
   "seed_7_pct": 0.01,
-  "seed_8_pct": 0.08,
-  "seed_9_pct": 0.32,
-  "seed_10_pct": 1.62,
-  "seed_11_pct": 7.44,
-  "seed_12_pct": 0.83,
+  "seed_8_pct": 0.06,
+  "seed_9_pct": 0.37,
+  "seed_10_pct": 1.54,
+  "seed_11_pct": 7.25,
+  "seed_12_pct": 0.85,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 89.69,
+  "out_pct": 89.91,
   "most_likely_seed": 11,
   "avg_seed_if_make": 10.84,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 714,
-    "make_pct": 57.3,
-    "avg_seed": 10.57
+    "make_pct": 55.5,
+    "avg_seed": 10.56
    },
    {
     "losses": 1,
     "sims": 3043,
-    "make_pct": 17.5,
-    "avg_seed": 10.97
+    "make_pct": 17.3,
+    "avg_seed": 10.98
    },
    {
     "losses": 2,
@@ -3264,9 +3264,9 @@
   "current_net_rank": 68,
   "remaining_games": 2,
   "avg_slct_rank": 51.6,
-  "best_slct_rank": 44,
+  "best_slct_rank": 45,
   "worst_slct_rank": 67,
-  "make_pct": 4.33,
+  "make_pct": 4.28,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3276,22 +3276,22 @@
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.02,
-  "seed_10_pct": 0.24,
-  "seed_11_pct": 3.58,
-  "seed_12_pct": 0.47,
+  "seed_10_pct": 0.2,
+  "seed_11_pct": 3.59,
+  "seed_12_pct": 0.45,
   "seed_13_pct": 0.02,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 95.67,
+  "out_pct": 95.72,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.05,
+  "avg_seed_if_make": 11.06,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 5474,
-    "make_pct": 7.1,
-    "avg_seed": 11.04
+    "make_pct": 7.0,
+    "avg_seed": 11.05
    },
    {
     "losses": 1,
@@ -3318,7 +3318,7 @@
   "avg_slct_rank": 54.2,
   "best_slct_rank": 41,
   "worst_slct_rank": 65,
-  "make_pct": 3.34,
+  "make_pct": 3.42,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3328,34 +3328,34 @@
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.05,
-  "seed_10_pct": 0.49,
-  "seed_11_pct": 2.38,
-  "seed_12_pct": 0.41,
+  "seed_10_pct": 0.51,
+  "seed_11_pct": 2.47,
+  "seed_12_pct": 0.38,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 96.66,
+  "out_pct": 96.58,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 10.95,
+  "avg_seed_if_make": 10.94,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 176,
-    "make_pct": 47.7,
-    "avg_seed": 10.64
+    "make_pct": 50.6,
+    "avg_seed": 10.62
    },
    {
     "losses": 1,
     "sims": 1916,
-    "make_pct": 10.3,
-    "avg_seed": 11.02
+    "make_pct": 10.5,
+    "avg_seed": 11.0
    },
    {
     "losses": 2,
     "sims": 5010,
     "make_pct": 1.0,
-    "avg_seed": 11.2
+    "avg_seed": 11.24
    },
    {
     "losses": 3,
@@ -3376,7 +3376,7 @@
   "avg_slct_rank": 60.1,
   "best_slct_rank": 42,
   "worst_slct_rank": 79,
-  "make_pct": 1.2,
+  "make_pct": 1.23,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3386,27 +3386,27 @@
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.05,
-  "seed_10_pct": 0.09,
-  "seed_11_pct": 0.81,
-  "seed_12_pct": 0.23,
+  "seed_10_pct": 0.08,
+  "seed_11_pct": 0.84,
+  "seed_12_pct": 0.24,
   "seed_13_pct": 0.02,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 98.8,
+  "out_pct": 98.77,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.07,
+  "avg_seed_if_make": 11.08,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 96,
-    "make_pct": 39.6,
-    "avg_seed": 10.61
+    "make_pct": 40.6,
+    "avg_seed": 10.67
    },
    {
     "losses": 1,
     "sims": 1180,
-    "make_pct": 5.8,
+    "make_pct": 6.0,
     "avg_seed": 11.17
    },
    {
@@ -3440,7 +3440,7 @@
   "avg_slct_rank": 60.8,
   "best_slct_rank": 43,
   "worst_slct_rank": 82,
-  "make_pct": 1.12,
+  "make_pct": 1.2,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3451,27 +3451,27 @@
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.01,
   "seed_10_pct": 0.06,
-  "seed_11_pct": 0.81,
-  "seed_12_pct": 0.24,
+  "seed_11_pct": 0.88,
+  "seed_12_pct": 0.25,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 98.88,
+  "out_pct": 98.8,
   "most_likely_seed": 11,
   "avg_seed_if_make": 11.14,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 356,
-    "make_pct": 16.0,
-    "avg_seed": 11.0
+    "make_pct": 18.0,
+    "avg_seed": 11.02
    },
    {
     "losses": 1,
     "sims": 2072,
-    "make_pct": 2.6,
-    "avg_seed": 11.28
+    "make_pct": 2.7,
+    "avg_seed": 11.27
    },
    {
     "losses": 2,
@@ -3504,7 +3504,7 @@
   "avg_slct_rank": 61.1,
   "best_slct_rank": 40,
   "worst_slct_rank": 78,
-  "make_pct": 0.8,
+  "make_pct": 0.83,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3513,35 +3513,35 @@
   "seed_6_pct": 0.0,
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
-  "seed_9_pct": 0.0,
-  "seed_10_pct": 0.03,
-  "seed_11_pct": 0.6,
-  "seed_12_pct": 0.16,
+  "seed_9_pct": 0.01,
+  "seed_10_pct": 0.04,
+  "seed_11_pct": 0.66,
+  "seed_12_pct": 0.11,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 99.2,
+  "out_pct": 99.17,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.19,
+  "avg_seed_if_make": 11.08,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 46,
-    "make_pct": 43.5,
-    "avg_seed": 11.0
+    "make_pct": 54.3,
+    "avg_seed": 10.84
    },
    {
     "losses": 1,
     "sims": 614,
-    "make_pct": 6.8,
-    "avg_seed": 11.14
+    "make_pct": 6.5,
+    "avg_seed": 11.07
    },
    {
     "losses": 2,
     "sims": 2682,
     "make_pct": 0.6,
-    "avg_seed": 11.53
+    "avg_seed": 11.47
    },
    {
     "losses": 3,
@@ -3568,7 +3568,7 @@
   "avg_slct_rank": 61.3,
   "best_slct_rank": 42,
   "worst_slct_rank": 80,
-  "make_pct": 0.53,
+  "make_pct": 0.48,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3576,30 +3576,30 @@
   "seed_5_pct": 0.0,
   "seed_6_pct": 0.0,
   "seed_7_pct": 0.0,
-  "seed_8_pct": 0.01,
+  "seed_8_pct": 0.0,
   "seed_9_pct": 0.01,
-  "seed_10_pct": 0.03,
-  "seed_11_pct": 0.35,
-  "seed_12_pct": 0.13,
+  "seed_10_pct": 0.04,
+  "seed_11_pct": 0.31,
+  "seed_12_pct": 0.12,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 99.47,
+  "out_pct": 99.52,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.09,
+  "avg_seed_if_make": 11.12,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 37,
-    "make_pct": 37.8,
-    "avg_seed": 10.64
+    "make_pct": 27.0,
+    "avg_seed": 10.9
    },
    {
     "losses": 1,
     "sims": 764,
-    "make_pct": 5.1,
-    "avg_seed": 11.26
+    "make_pct": 5.0,
+    "avg_seed": 11.18
    },
    {
     "losses": 2,
@@ -3632,7 +3632,7 @@
   "avg_slct_rank": 62.6,
   "best_slct_rank": 43,
   "worst_slct_rank": 81,
-  "make_pct": 0.47,
+  "make_pct": 0.45,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
   "seed_3_pct": 0.0,
@@ -3642,28 +3642,28 @@
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
-  "seed_10_pct": 0.05,
-  "seed_11_pct": 0.34,
+  "seed_10_pct": 0.04,
+  "seed_11_pct": 0.33,
   "seed_12_pct": 0.07,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
-  "out_pct": 99.53,
+  "out_pct": 99.55,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.09,
+  "avg_seed_if_make": 11.11,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 42,
-    "make_pct": 33.3,
-    "avg_seed": 10.79
+    "make_pct": 31.0,
+    "avg_seed": 10.85
    },
    {
     "losses": 1,
     "sims": 799,
-    "make_pct": 4.1,
-    "avg_seed": 11.21
+    "make_pct": 4.0,
+    "avg_seed": 11.22
    },
    {
     "losses": 2,
@@ -3680,70 +3680,6 @@
    {
     "losses": 4,
     "sims": 1135,
-    "make_pct": 0.0,
-    "avg_seed": null
-   }
-  ]
- },
- {
-  "team_abbr": "BOIS",
-  "team_displayName": "Boise State Broncos",
-  "conference": "Mountain West",
-  "current_seed": null,
-  "current_slct_rank": 65,
-  "current_net_rank": 58,
-  "remaining_games": 4,
-  "avg_slct_rank": 65.3,
-  "best_slct_rank": 47,
-  "worst_slct_rank": 90,
-  "make_pct": 0.3,
-  "seed_1_pct": 0.0,
-  "seed_2_pct": 0.0,
-  "seed_3_pct": 0.0,
-  "seed_4_pct": 0.0,
-  "seed_5_pct": 0.0,
-  "seed_6_pct": 0.0,
-  "seed_7_pct": 0.0,
-  "seed_8_pct": 0.0,
-  "seed_9_pct": 0.0,
-  "seed_10_pct": 0.0,
-  "seed_11_pct": 0.21,
-  "seed_12_pct": 0.09,
-  "seed_13_pct": 0.0,
-  "seed_14_pct": 0.0,
-  "seed_15_pct": 0.0,
-  "seed_16_pct": 0.0,
-  "out_pct": 99.7,
-  "most_likely_seed": 11,
-  "avg_seed_if_make": 11.3,
-  "seed_by_losses": [
-   {
-    "losses": 0,
-    "sims": 1190,
-    "make_pct": 2.3,
-    "avg_seed": 11.33
-   },
-   {
-    "losses": 1,
-    "sims": 3412,
-    "make_pct": 0.1,
-    "avg_seed": 11.0
-   },
-   {
-    "losses": 2,
-    "sims": 3618,
-    "make_pct": 0.0,
-    "avg_seed": null
-   },
-   {
-    "losses": 3,
-    "sims": 1520,
-    "make_pct": 0.0,
-    "avg_seed": null
-   },
-   {
-    "losses": 4,
-    "sims": 260,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -3808,6 +3744,70 @@
   ]
  },
  {
+  "team_abbr": "BOIS",
+  "team_displayName": "Boise State Broncos",
+  "conference": "Mountain West",
+  "current_seed": null,
+  "current_slct_rank": 65,
+  "current_net_rank": 58,
+  "remaining_games": 4,
+  "avg_slct_rank": 65.3,
+  "best_slct_rank": 47,
+  "worst_slct_rank": 91,
+  "make_pct": 0.26,
+  "seed_1_pct": 0.0,
+  "seed_2_pct": 0.0,
+  "seed_3_pct": 0.0,
+  "seed_4_pct": 0.0,
+  "seed_5_pct": 0.0,
+  "seed_6_pct": 0.0,
+  "seed_7_pct": 0.0,
+  "seed_8_pct": 0.0,
+  "seed_9_pct": 0.0,
+  "seed_10_pct": 0.0,
+  "seed_11_pct": 0.17,
+  "seed_12_pct": 0.09,
+  "seed_13_pct": 0.0,
+  "seed_14_pct": 0.0,
+  "seed_15_pct": 0.0,
+  "seed_16_pct": 0.0,
+  "out_pct": 99.74,
+  "most_likely_seed": 11,
+  "avg_seed_if_make": 11.35,
+  "seed_by_losses": [
+   {
+    "losses": 0,
+    "sims": 1190,
+    "make_pct": 1.9,
+    "avg_seed": 11.39
+   },
+   {
+    "losses": 1,
+    "sims": 3412,
+    "make_pct": 0.1,
+    "avg_seed": 11.0
+   },
+   {
+    "losses": 2,
+    "sims": 3618,
+    "make_pct": 0.0,
+    "avg_seed": null
+   },
+   {
+    "losses": 3,
+    "sims": 1520,
+    "make_pct": 0.0,
+    "avg_seed": null
+   },
+   {
+    "losses": 4,
+    "sims": 260,
+    "make_pct": 0.0,
+    "avg_seed": null
+   }
+  ]
+ },
+ {
   "team_abbr": "NEV",
   "team_displayName": "Nevada Wolf Pack",
   "conference": "Mountain West",
@@ -3829,21 +3829,21 @@
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
   "seed_10_pct": 0.0,
-  "seed_11_pct": 0.13,
-  "seed_12_pct": 0.04,
+  "seed_11_pct": 0.14,
+  "seed_12_pct": 0.03,
   "seed_13_pct": 0.01,
   "seed_14_pct": 0.0,
   "seed_15_pct": 0.0,
   "seed_16_pct": 0.0,
   "out_pct": 99.82,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.33,
+  "avg_seed_if_make": 11.28,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 1498,
     "make_pct": 1.1,
-    "avg_seed": 11.38
+    "avg_seed": 11.31
    },
    {
     "losses": 1,
@@ -3950,8 +3950,8 @@
   "seed_7_pct": 0.0,
   "seed_8_pct": 0.0,
   "seed_9_pct": 0.0,
-  "seed_10_pct": 0.0,
-  "seed_11_pct": 0.08,
+  "seed_10_pct": 0.01,
+  "seed_11_pct": 0.07,
   "seed_12_pct": 0.01,
   "seed_13_pct": 0.0,
   "seed_14_pct": 0.0,
@@ -3959,13 +3959,13 @@
   "seed_16_pct": 0.0,
   "out_pct": 99.91,
   "most_likely_seed": 11,
-  "avg_seed_if_make": 11.11,
+  "avg_seed_if_make": 11.0,
   "seed_by_losses": [
    {
     "losses": 0,
     "sims": 148,
     "make_pct": 6.1,
-    "avg_seed": 11.11
+    "avg_seed": 11.0
    },
    {
     "losses": 1,
@@ -4003,7 +4003,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 68.3,
   "best_slct_rank": 47,
-  "worst_slct_rank": 87,
+  "worst_slct_rank": 86,
   "make_pct": 0.08,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4067,7 +4067,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 63.9,
   "best_slct_rank": 52,
-  "worst_slct_rank": 91,
+  "worst_slct_rank": 92,
   "make_pct": 0.04,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4253,7 +4253,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 65.6,
   "best_slct_rank": 56,
-  "worst_slct_rank": 93,
+  "worst_slct_rank": 92,
   "make_pct": 0.02,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4439,7 +4439,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 74.4,
   "best_slct_rank": 52,
-  "worst_slct_rank": 96,
+  "worst_slct_rank": 97,
   "make_pct": 0.01,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4503,7 +4503,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 77.1,
   "best_slct_rank": 52,
-  "worst_slct_rank": 93,
+  "worst_slct_rank": 94,
   "make_pct": 0.01,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4933,7 +4933,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 77.4,
   "best_slct_rank": 57,
-  "worst_slct_rank": 95,
+  "worst_slct_rank": 94,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -4991,7 +4991,7 @@
   "remaining_games": 1,
   "avg_slct_rank": 77.7,
   "best_slct_rank": 70,
-  "worst_slct_rank": 90,
+  "worst_slct_rank": 89,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -5100,7 +5100,7 @@
   "current_net_rank": 88,
   "remaining_games": 4,
   "avg_slct_rank": 82.5,
-  "best_slct_rank": 58,
+  "best_slct_rank": 57,
   "worst_slct_rank": 104,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -5292,7 +5292,7 @@
   "current_net_rank": 91,
   "remaining_games": 4,
   "avg_slct_rank": 86.0,
-  "best_slct_rank": 58,
+  "best_slct_rank": 56,
   "worst_slct_rank": 98,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -5317,31 +5317,31 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 2,
+    "sims": 5,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 1,
-    "sims": 159,
+    "sims": 157,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 2,
-    "sims": 1616,
+    "sims": 1579,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 3,
-    "sims": 4696,
+    "sims": 4739,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 4,
-    "sims": 3527,
+    "sims": 3520,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -5485,7 +5485,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 92.4,
   "best_slct_rank": 74,
-  "worst_slct_rank": 121,
+  "worst_slct_rank": 122,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -5785,9 +5785,9 @@
   "current_slct_rank": 94,
   "current_net_rank": 128,
   "remaining_games": 4,
-  "avg_slct_rank": 97.2,
-  "best_slct_rank": 76,
-  "worst_slct_rank": 110,
+  "avg_slct_rank": 97.1,
+  "best_slct_rank": 70,
+  "worst_slct_rank": 111,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -5810,26 +5810,32 @@
   "avg_seed_if_make": null,
   "seed_by_losses": [
    {
+    "losses": 0,
+    "sims": 1,
+    "make_pct": 0.0,
+    "avg_seed": null
+   },
+   {
     "losses": 1,
-    "sims": 39,
+    "sims": 34,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 2,
-    "sims": 860,
+    "sims": 852,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 3,
-    "sims": 5752,
+    "sims": 5798,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 4,
-    "sims": 3349,
+    "sims": 3315,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -6570,7 +6576,7 @@
   "current_net_rank": 81,
   "remaining_games": 2,
   "avg_slct_rank": 106.6,
-  "best_slct_rank": 93,
+  "best_slct_rank": 94,
   "worst_slct_rank": 130,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -6744,7 +6750,7 @@
   "current_net_rank": 99,
   "remaining_games": 4,
   "avg_slct_rank": 113.2,
-  "best_slct_rank": 81,
+  "best_slct_rank": 82,
   "worst_slct_rank": 130,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -6769,31 +6775,31 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 3,
+    "sims": 5,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 1,
-    "sims": 191,
+    "sims": 185,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 2,
-    "sims": 1543,
+    "sims": 1567,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 3,
-    "sims": 4472,
+    "sims": 4438,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 4,
-    "sims": 3791,
+    "sims": 3805,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -7145,7 +7151,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 115.6,
   "best_slct_rank": 92,
-  "worst_slct_rank": 164,
+  "worst_slct_rank": 165,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -7208,7 +7214,7 @@
   "current_net_rank": 131,
   "remaining_games": 2,
   "avg_slct_rank": 118.7,
-  "best_slct_rank": 103,
+  "best_slct_rank": 104,
   "worst_slct_rank": 144,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -7261,7 +7267,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 118.8,
   "best_slct_rank": 97,
-  "worst_slct_rank": 169,
+  "worst_slct_rank": 170,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -7532,7 +7538,7 @@
   "current_net_rank": 102,
   "remaining_games": 4,
   "avg_slct_rank": 123.7,
-  "best_slct_rank": 87,
+  "best_slct_rank": 86,
   "worst_slct_rank": 141,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -7694,7 +7700,7 @@
   "current_net_rank": 106,
   "remaining_games": 4,
   "avg_slct_rank": 129.3,
-  "best_slct_rank": 93,
+  "best_slct_rank": 94,
   "worst_slct_rank": 154,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -7875,7 +7881,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 131.5,
   "best_slct_rank": 103,
-  "worst_slct_rank": 172,
+  "worst_slct_rank": 173,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -7931,7 +7937,7 @@
   "current_slct_rank": 124,
   "current_net_rank": 155,
   "remaining_games": 4,
-  "avg_slct_rank": 133.0,
+  "avg_slct_rank": 132.9,
   "best_slct_rank": 99,
   "worst_slct_rank": 173,
   "make_pct": 0.0,
@@ -7997,7 +8003,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 133.9,
   "best_slct_rank": 96,
-  "worst_slct_rank": 171,
+  "worst_slct_rank": 170,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -8421,7 +8427,7 @@
   "remaining_games": 2,
   "avg_slct_rank": 142.4,
   "best_slct_rank": 126,
-  "worst_slct_rank": 184,
+  "worst_slct_rank": 183,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -8629,7 +8635,7 @@
   "remaining_games": 4,
   "avg_slct_rank": 145.9,
   "best_slct_rank": 116,
-  "worst_slct_rank": 196,
+  "worst_slct_rank": 197,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -8808,7 +8814,7 @@
   "current_net_rank": 183,
   "remaining_games": 2,
   "avg_slct_rank": 150.0,
-  "best_slct_rank": 126,
+  "best_slct_rank": 125,
   "worst_slct_rank": 177,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -8913,7 +8919,7 @@
   "remaining_games": 2,
   "avg_slct_rank": 152.7,
   "best_slct_rank": 128,
-  "worst_slct_rank": 173,
+  "worst_slct_rank": 174,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -9879,7 +9885,7 @@
   "current_slct_rank": 166,
   "current_net_rank": 203,
   "remaining_games": 2,
-  "avg_slct_rank": 161.4,
+  "avg_slct_rank": 161.3,
   "best_slct_rank": 141,
   "worst_slct_rank": 195,
   "make_pct": 0.0,
@@ -9985,7 +9991,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 161.5,
   "best_slct_rank": 129,
-  "worst_slct_rank": 198,
+  "worst_slct_rank": 197,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -10041,7 +10047,7 @@
   "current_slct_rank": 171,
   "current_net_rank": 121,
   "remaining_games": 2,
-  "avg_slct_rank": 166.0,
+  "avg_slct_rank": 165.9,
   "best_slct_rank": 148,
   "worst_slct_rank": 198,
   "make_pct": 0.0,
@@ -10151,7 +10157,7 @@
   "current_slct_rank": 173,
   "current_net_rank": 111,
   "remaining_games": 2,
-  "avg_slct_rank": 168.8,
+  "avg_slct_rank": 169.0,
   "best_slct_rank": 147,
   "worst_slct_rank": 199,
   "make_pct": 0.0,
@@ -10177,19 +10183,19 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 4509,
+    "sims": 4441,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 1,
-    "sims": 4592,
+    "sims": 4639,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 2,
-    "sims": 899,
+    "sims": 920,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -10263,7 +10269,7 @@
   "remaining_games": 2,
   "avg_slct_rank": 171.8,
   "best_slct_rank": 144,
-  "worst_slct_rank": 199,
+  "worst_slct_rank": 200,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -10372,7 +10378,7 @@
   "current_net_rank": 182,
   "remaining_games": 1,
   "avg_slct_rank": 174.6,
-  "best_slct_rank": 158,
+  "best_slct_rank": 159,
   "worst_slct_rank": 195,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -10471,7 +10477,7 @@
   "remaining_games": 2,
   "avg_slct_rank": 175.7,
   "best_slct_rank": 151,
-  "worst_slct_rank": 204,
+  "worst_slct_rank": 205,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -10800,7 +10806,7 @@
   "current_net_rank": 222,
   "remaining_games": 2,
   "avg_slct_rank": 179.6,
-  "best_slct_rank": 152,
+  "best_slct_rank": 153,
   "worst_slct_rank": 208,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -10915,7 +10921,7 @@
   "current_slct_rank": 181,
   "current_net_rank": 155,
   "remaining_games": 2,
-  "avg_slct_rank": 182.7,
+  "avg_slct_rank": 182.5,
   "best_slct_rank": 153,
   "worst_slct_rank": 207,
   "make_pct": 0.0,
@@ -10941,19 +10947,19 @@
   "seed_by_losses": [
    {
     "losses": 0,
-    "sims": 1987,
+    "sims": 1988,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 1,
-    "sims": 5006,
+    "sims": 5093,
     "make_pct": 0.0,
     "avg_seed": null
    },
    {
     "losses": 2,
-    "sims": 3007,
+    "sims": 2919,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -11091,7 +11097,7 @@
   "remaining_games": 2,
   "avg_slct_rank": 185.3,
   "best_slct_rank": 169,
-  "worst_slct_rank": 219,
+  "worst_slct_rank": 220,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -11192,58 +11198,6 @@
   ]
  },
  {
-  "team_abbr": "WOF",
-  "team_displayName": "Wofford Terriers",
-  "conference": "SoCon",
-  "current_seed": null,
-  "current_slct_rank": 190,
-  "current_net_rank": 256,
-  "remaining_games": 2,
-  "avg_slct_rank": 188.5,
-  "best_slct_rank": 165,
-  "worst_slct_rank": 217,
-  "make_pct": 0.0,
-  "seed_1_pct": 0.0,
-  "seed_2_pct": 0.0,
-  "seed_3_pct": 0.0,
-  "seed_4_pct": 0.0,
-  "seed_5_pct": 0.0,
-  "seed_6_pct": 0.0,
-  "seed_7_pct": 0.0,
-  "seed_8_pct": 0.0,
-  "seed_9_pct": 0.0,
-  "seed_10_pct": 0.0,
-  "seed_11_pct": 0.0,
-  "seed_12_pct": 0.0,
-  "seed_13_pct": 0.0,
-  "seed_14_pct": 0.0,
-  "seed_15_pct": 0.0,
-  "seed_16_pct": 0.0,
-  "out_pct": 100.0,
-  "most_likely_seed": null,
-  "avg_seed_if_make": null,
-  "seed_by_losses": [
-   {
-    "losses": 0,
-    "sims": 1358,
-    "make_pct": 0.0,
-    "avg_seed": null
-   },
-   {
-    "losses": 1,
-    "sims": 7687,
-    "make_pct": 0.0,
-    "avg_seed": null
-   },
-   {
-    "losses": 2,
-    "sims": 955,
-    "make_pct": 0.0,
-    "avg_seed": null
-   }
-  ]
- },
- {
   "team_abbr": "BGSU",
   "team_displayName": "Bowling Green Falcons",
   "conference": "MAC",
@@ -11296,6 +11250,58 @@
    {
     "losses": 3,
     "sims": 169,
+    "make_pct": 0.0,
+    "avg_seed": null
+   }
+  ]
+ },
+ {
+  "team_abbr": "WOF",
+  "team_displayName": "Wofford Terriers",
+  "conference": "SoCon",
+  "current_seed": null,
+  "current_slct_rank": 190,
+  "current_net_rank": 256,
+  "remaining_games": 2,
+  "avg_slct_rank": 188.6,
+  "best_slct_rank": 165,
+  "worst_slct_rank": 217,
+  "make_pct": 0.0,
+  "seed_1_pct": 0.0,
+  "seed_2_pct": 0.0,
+  "seed_3_pct": 0.0,
+  "seed_4_pct": 0.0,
+  "seed_5_pct": 0.0,
+  "seed_6_pct": 0.0,
+  "seed_7_pct": 0.0,
+  "seed_8_pct": 0.0,
+  "seed_9_pct": 0.0,
+  "seed_10_pct": 0.0,
+  "seed_11_pct": 0.0,
+  "seed_12_pct": 0.0,
+  "seed_13_pct": 0.0,
+  "seed_14_pct": 0.0,
+  "seed_15_pct": 0.0,
+  "seed_16_pct": 0.0,
+  "out_pct": 100.0,
+  "most_likely_seed": null,
+  "avg_seed_if_make": null,
+  "seed_by_losses": [
+   {
+    "losses": 0,
+    "sims": 1358,
+    "make_pct": 0.0,
+    "avg_seed": null
+   },
+   {
+    "losses": 1,
+    "sims": 7687,
+    "make_pct": 0.0,
+    "avg_seed": null
+   },
+   {
+    "losses": 2,
+    "sims": 955,
     "make_pct": 0.0,
     "avg_seed": null
    }
@@ -11496,7 +11502,7 @@
   "current_net_rank": 227,
   "remaining_games": 3,
   "avg_slct_rank": 197.3,
-  "best_slct_rank": 151,
+  "best_slct_rank": 152,
   "worst_slct_rank": 222,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -11606,7 +11612,7 @@
   "current_net_rank": 211,
   "remaining_games": 3,
   "avg_slct_rank": 198.1,
-  "best_slct_rank": 157,
+  "best_slct_rank": 158,
   "worst_slct_rank": 225,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -11792,7 +11798,7 @@
   "current_net_rank": 184,
   "remaining_games": 3,
   "avg_slct_rank": 200.2,
-  "best_slct_rank": 172,
+  "best_slct_rank": 171,
   "worst_slct_rank": 239,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -11850,7 +11856,7 @@
   "current_net_rank": 158,
   "remaining_games": 4,
   "avg_slct_rank": 200.6,
-  "best_slct_rank": 163,
+  "best_slct_rank": 164,
   "worst_slct_rank": 248,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -12394,7 +12400,7 @@
   "current_net_rank": 193,
   "remaining_games": 3,
   "avg_slct_rank": 208.3,
-  "best_slct_rank": 178,
+  "best_slct_rank": 177,
   "worst_slct_rank": 244,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -12846,7 +12852,7 @@
   "current_net_rank": 254,
   "remaining_games": 2,
   "avg_slct_rank": 215.4,
-  "best_slct_rank": 189,
+  "best_slct_rank": 188,
   "worst_slct_rank": 242,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -12996,7 +13002,7 @@
   "current_net_rank": 177,
   "remaining_games": 2,
   "avg_slct_rank": 218.5,
-  "best_slct_rank": 191,
+  "best_slct_rank": 192,
   "worst_slct_rank": 240,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -13141,7 +13147,7 @@
   "remaining_games": 3,
   "avg_slct_rank": 222.1,
   "best_slct_rank": 195,
-  "worst_slct_rank": 258,
+  "worst_slct_rank": 259,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -15000,8 +15006,8 @@
   "current_net_rank": 319,
   "remaining_games": 3,
   "avg_slct_rank": 257.1,
-  "best_slct_rank": 234,
-  "worst_slct_rank": 293,
+  "best_slct_rank": 235,
+  "worst_slct_rank": 294,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
   "seed_2_pct": 0.0,
@@ -15167,8 +15173,8 @@
   "current_slct_rank": 256,
   "current_net_rank": 297,
   "remaining_games": 2,
-  "avg_slct_rank": 260.5,
-  "best_slct_rank": 234,
+  "avg_slct_rank": 260.4,
+  "best_slct_rank": 235,
   "worst_slct_rank": 279,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
@@ -15846,7 +15852,7 @@
   "current_net_rank": 348,
   "remaining_games": 4,
   "avg_slct_rank": 272.5,
-  "best_slct_rank": 238,
+  "best_slct_rank": 237,
   "worst_slct_rank": 303,
   "make_pct": 0.0,
   "seed_1_pct": 0.0,
