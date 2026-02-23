@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:title" content="AIB College Basketball Ratings 2025-26">
+<meta property="og:description" content="College basketball rankings, bracketology, and analytics powered by AI Bracketology">
+<meta property="og:image" content="https://ai-bracketology.github.io/cbb-rankings/docs/new_header.png">
+<meta property="og:url" content="https://ai-bracketology.github.io/cbb-rankings/docs/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 <meta http-equiv="Pragma" content="no-cache">
 <script>
@@ -734,6 +742,9 @@
   .compare-table td.team-cell a:hover { text-decoration: underline; }
   .compare-table tbody tr:hover { background: rgba(88,166,255,.06); }
   .compare-table .best-val { font-weight: 800; color: var(--green); }
+  .compare-table th.compare-sortable { cursor: pointer; user-select: none; }
+  .compare-table th.compare-sortable:hover { color: var(--accent); }
+  .compare-table th.compare-sorted { color: var(--accent); }
 
   /* game list cells (best wins / worst losses) */
   .compare-table td.game-list-cell {
@@ -1953,18 +1964,18 @@ const COMPARE_COLS = [
   { key: "conference",       label: "Conf",         align: "left" },
   { key: "record",           label: "Record",       align: "center" },
   { key: "streak",           label: "Streak",       align: "center", cls: v => v?.[0] === "W" ? "net-pos" : v?.[0] === "L" ? "net-neg" : "" },
-  { key: "net_srs",          label: "Total AdjE",   align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
-  { key: "sos",              label: "SOS",           align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
-  { key: "nc_sos",           label: "NC SOS",        align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
-  { key: "season_wab",       label: "WAB",           align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(1), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
-  { key: "q1a_record",       label: "Q1A",           align: "center", quadTip: "q1a" },
-  { key: "q1_record",        label: "Q1",            align: "center", quadTip: 1 },
-  { key: "q2_record",        label: "Q2",            align: "center", quadTip: 2 },
-  { key: "q12_record",       label: "Q1+Q2",         align: "center" },
-  { key: "q3_record",        label: "Q3",            align: "center", quadTip: 3 },
-  { key: "q4_record",        label: "Q4",            align: "center", quadTip: 4 },
-  { key: "slct",             label: "SLCT",           align: "center", fmt: v => v?.toFixed(2), best: "high" },
-  { key: "seed",             label: "SEED",           align: "center", fmt: v => v?.toFixed(2), best: "high" },
+  { key: "net_srs",          label: "Total AdjE",   align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high", sort: "high" },
+  { key: "sos",              label: "SOS",           align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high", sort: "high" },
+  { key: "nc_sos",           label: "NC SOS",        align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high", sort: "high" },
+  { key: "season_wab",       label: "WAB",           align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(1), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high", sort: "high" },
+  { key: "q1a_record",       label: "Q1A",           align: "center", quadTip: "q1a", sort: "high", sortKey: "q1a_w" },
+  { key: "q1_record",        label: "Q1",            align: "center", quadTip: 1, sort: "high", sortKey: "q1_w" },
+  { key: "q2_record",        label: "Q2",            align: "center", quadTip: 2, sort: "high", sortKey: "q2_w" },
+  { key: "q12_record",       label: "Q1+Q2",         align: "center", sort: "high", sortKey: "q12_w" },
+  { key: "q3_record",        label: "Q3",            align: "center", quadTip: 3, sort: "high", sortKey: "q3_w" },
+  { key: "q4_record",        label: "Q4",            align: "center", quadTip: 4, sort: "high", sortKey: "q4_w" },
+  { key: "slct",             label: "SLCT",           align: "center", fmt: v => v?.toFixed(2), best: "high", sort: "high" },
+  { key: "seed",             label: "SEED",           align: "center", fmt: v => v?.toFixed(2), best: "high", sort: "high" },
   { key: "_best3wins",       label: "Best 3 Wins",    align: "left",  custom: true },
   { key: "_worst3losses",    label: "Worst 3 Losses", align: "left",  custom: true },
 ];
@@ -1972,27 +1983,27 @@ const COMPARE_COLS = [
 const COMPARE_SHEETS_COLS = [
   { key: "team_displayName", label: "Team",         align: "left",   link: true },
   { key: "conference",       label: "Conf",         align: "left" },
-  { key: "net_srs",          label: "AIB AdjE",     align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high" },
+  { key: "net_srs",          label: "AIB AdjE",     align: "center", fmt: v => (v >= 0 ? "+" : "") + v?.toFixed(2), cls: v => v > 0 ? "net-pos" : v < 0 ? "net-neg" : "", best: "high", sort: "high" },
   /* Resume ranks */
-  { key: "_NET",             label: "NET",           align: "center", sheet: true, best: "low", sectionStart: true },
-  { key: "_KPI",             label: "KPI",           align: "center", sheet: true, best: "low" },
-  { key: "_SOR",             label: "SOR",           align: "center", sheet: true, best: "low" },
-  { key: "_WAB",             label: "WAB",           align: "center", sheet: true, best: "low" },
-  { key: "_resAvg",          label: "Res Avg",       align: "center", sheet: true, best: "low", sectionEnd: true,
+  { key: "_NET",             label: "NET",           align: "center", sheet: true, best: "low", sectionStart: true, sort: "low" },
+  { key: "_KPI",             label: "KPI",           align: "center", sheet: true, best: "low", sort: "low" },
+  { key: "_SOR",             label: "SOR",           align: "center", sheet: true, best: "low", sort: "low" },
+  { key: "_WAB",             label: "WAB",           align: "center", sheet: true, best: "low", sort: "low" },
+  { key: "_resAvg",          label: "Res Avg",       align: "center", sheet: true, best: "low", sectionEnd: true, sort: "low",
     fmt: v => v != null ? v.toFixed(1) : "–" },
   /* Predictive ranks */
-  { key: "_BPI",             label: "BPI",           align: "center", sheet: true, best: "low", sectionStart: true },
-  { key: "_POM",             label: "KP",            align: "center", sheet: true, best: "low" },
-  { key: "_TRK",             label: "TRK",           align: "center", sheet: true, best: "low" },
-  { key: "_predAvg",         label: "Pred Avg",      align: "center", sheet: true, best: "low", sectionEnd: true,
+  { key: "_BPI",             label: "BPI",           align: "center", sheet: true, best: "low", sectionStart: true, sort: "low" },
+  { key: "_POM",             label: "KP",            align: "center", sheet: true, best: "low", sort: "low" },
+  { key: "_TRK",             label: "TRK",           align: "center", sheet: true, best: "low", sort: "low" },
+  { key: "_predAvg",         label: "Pred Avg",      align: "center", sheet: true, best: "low", sectionEnd: true, sort: "low",
     fmt: v => v != null ? v.toFixed(1) : "–" },
   /* Quadrant records */
-  { key: "q1a_record",       label: "Q1A",           align: "center", quadTip: "q1a" },
-  { key: "q1_record",        label: "Q1",            align: "center", quadTip: 1 },
-  { key: "q2_record",        label: "Q2",            align: "center", quadTip: 2 },
-  { key: "q12_record",       label: "Q1+Q2",         align: "center" },
-  { key: "q3_record",        label: "Q3",            align: "center", quadTip: 3 },
-  { key: "q4_record",        label: "Q4",            align: "center", quadTip: 4 },
+  { key: "q1a_record",       label: "Q1A",           align: "center", quadTip: "q1a", sort: "high", sortKey: "q1a_w" },
+  { key: "q1_record",        label: "Q1",            align: "center", quadTip: 1, sort: "high", sortKey: "q1_w" },
+  { key: "q2_record",        label: "Q2",            align: "center", quadTip: 2, sort: "high", sortKey: "q2_w" },
+  { key: "q12_record",       label: "Q1+Q2",         align: "center", sort: "high", sortKey: "q12_w" },
+  { key: "q3_record",        label: "Q3",            align: "center", quadTip: 3, sort: "high", sortKey: "q3_w" },
+  { key: "q4_record",        label: "Q4",            align: "center", quadTip: 4, sort: "high", sortKey: "q4_w" },
   /* Best/worst games */
   { key: "_best3wins",       label: "Best 3 Wins",    align: "left",  custom: true },
   { key: "_worst3losses",    label: "Worst 3 Losses", align: "left",  custom: true },
@@ -2000,6 +2011,8 @@ const COMPARE_SHEETS_COLS = [
 
 let compareTeams = [];  // array of team_abbr strings
 let compareShowSheets = false;  // toggle for teamsheet ranks view
+let compareSortCol = null;   // key of column currently sorted by
+let compareSortAsc = true;   // true = ascending (low to high)
 
 function renderCompareTags() {
   const tagsEl = document.getElementById("compareTags");
@@ -2118,8 +2131,37 @@ function renderCompareTable() {
     let cls = "";
     if (c.sectionStart) cls += " section-start";
     if (c.sectionEnd) cls += " section-end";
-    return `<th class="${cls}" style="text-align:${c.align || 'center'}">${c.label}</th>`;
+    const sk = c.sortKey || c.key;
+    const isSorted = compareSortCol === sk;
+    const arrow = isSorted ? (compareSortAsc ? " ▲" : " ▼") : "";
+    const sortCls = c.sort ? " compare-sortable" : "";
+    const sortAttr = c.sort ? ` data-sort-key="${sk}" data-sort-dir="${c.sort}"` : "";
+    return `<th class="${cls}${sortCls}${isSorted ? ' compare-sorted' : ''}" style="text-align:${c.align || 'center'}"${sortAttr}>${c.label}${arrow}</th>`;
   }).join("");
+
+  /* attach sort click handlers */
+  thead.querySelectorAll(".compare-sortable").forEach(th => {
+    th.addEventListener("click", () => {
+      const sk = th.dataset.sortKey;
+      const defaultDir = th.dataset.sortDir;  /* "high" or "low" */
+      if (compareSortCol === sk) {
+        compareSortAsc = !compareSortAsc;  /* toggle direction */
+      } else {
+        compareSortCol = sk;
+        compareSortAsc = defaultDir === "low";  /* low = asc first, high = desc first */
+      }
+      renderCompareTable();
+    });
+  });
+
+  /* sort teams if a sort column is active */
+  if (compareSortCol) {
+    teams.sort((a, b) => {
+      const va = a[compareSortCol] ?? (compareSortAsc ? Infinity : -Infinity);
+      const vb = b[compareSortCol] ?? (compareSortAsc ? Infinity : -Infinity);
+      return compareSortAsc ? va - vb : vb - va;
+    });
+  }
 
   /* rows */
   const tbody = document.getElementById("compareTbody");
