@@ -34,10 +34,10 @@
   "NET": 4,
   "KPI": 10,
   "SOR": 12,
-  "WAB": 7,
+  "WAB": 8,
   "BPI": 6,
   "POM": 4,
-  "TRK": 6
+  "TRK": 5
  },
  "GONZ": {
   "team": "Gonzaga",
@@ -46,14 +46,14 @@
   "SOR": 9,
   "WAB": 14,
   "BPI": 8,
-  "POM": 9,
-  "TRK": 16
+  "POM": 10,
+  "TRK": 15
  },
  "PUR": {
   "team": "Purdue",
   "NET": 6,
   "KPI": 5,
-  "SOR": 6,
+  "SOR": 5,
   "WAB": 5,
   "BPI": 9,
   "POM": 7,
@@ -64,30 +64,30 @@
   "NET": 7,
   "KPI": 9,
   "SOR": 11,
-  "WAB": 11,
+  "WAB": 12,
   "BPI": 5,
   "POM": 5,
-  "TRK": 5
- },
- "HOU": {
-  "team": "Houston",
-  "NET": 8,
-  "KPI": 7,
-  "SOR": 5,
-  "WAB": 6,
-  "BPI": 4,
-  "POM": 6,
   "TRK": 4
  },
  "ISU": {
   "team": "Iowa State",
-  "NET": 9,
+  "NET": 8,
   "KPI": 8,
-  "SOR": 8,
-  "WAB": 9,
+  "SOR": 7,
+  "WAB": 10,
   "BPI": 7,
   "POM": 8,
   "TRK": 8
+ },
+ "HOU": {
+  "team": "Houston",
+  "NET": 9,
+  "KPI": 7,
+  "SOR": 8,
+  "WAB": 6,
+  "BPI": 4,
+  "POM": 6,
+  "TRK": 6
  },
  "CONN": {
   "team": "Connecticut",
@@ -103,9 +103,9 @@
   "team": "Nebraska",
   "NET": 11,
   "KPI": 19,
-  "SOR": 7,
-  "WAB": 8,
-  "BPI": 18,
+  "SOR": 6,
+  "WAB": 9,
+  "BPI": 19,
   "POM": 12,
   "TRK": 11
  },
@@ -113,25 +113,35 @@
   "team": "Michigan State",
   "NET": 12,
   "KPI": 15,
-  "SOR": 14,
-  "WAB": 12,
+  "SOR": 15,
+  "WAB": 13,
   "BPI": 13,
-  "POM": 10,
-  "TRK": 17
+  "POM": 9,
+  "TRK": 16
+ },
+ "KU": {
+  "team": "Kansas",
+  "NET": 13,
+  "KPI": 6,
+  "SOR": 14,
+  "WAB": 7,
+  "BPI": 16,
+  "POM": 15,
+  "TRK": 12
  },
  "LOU": {
   "team": "Louisville",
-  "NET": 13,
+  "NET": 14,
   "KPI": 26,
-  "SOR": 25,
+  "SOR": 26,
   "WAB": 23,
   "BPI": 10,
-  "POM": 15,
-  "TRK": 14
+  "POM": 17,
+  "TRK": 17
  },
  "TTU": {
   "team": "Texas Tech",
-  "NET": 14,
+  "NET": 15,
   "KPI": 11,
   "SOR": 18,
   "WAB": 16,
@@ -141,51 +151,41 @@
  },
  "UVA": {
   "team": "Virginia",
-  "NET": 15,
+  "NET": 16,
   "KPI": 13,
   "SOR": 13,
   "WAB": 15,
   "BPI": 23,
-  "POM": 18,
+  "POM": 19,
   "TRK": 18
  },
  "VAN": {
   "team": "Vanderbilt",
-  "NET": 16,
+  "NET": 17,
   "KPI": 14,
   "SOR": 20,
-  "WAB": 20,
+  "WAB": 21,
   "BPI": 14,
   "POM": 13,
-  "TRK": 12
+  "TRK": 13
  },
  "TENN": {
   "team": "Tennessee",
-  "NET": 17,
+  "NET": 18,
   "KPI": 20,
   "SOR": 16,
   "WAB": 17,
   "BPI": 12,
   "POM": 14,
-  "TRK": 13
- },
- "KU": {
-  "team": "Kansas",
-  "NET": 18,
-  "KPI": 6,
-  "SOR": 15,
-  "WAB": 13,
-  "BPI": 19,
-  "POM": 19,
-  "TRK": 15
+  "TRK": 14
  },
  "BYU": {
   "team": "BYU",
   "NET": 19,
   "KPI": 23,
-  "SOR": 21,
-  "WAB": 18,
-  "BPI": 17,
+  "SOR": 22,
+  "WAB": 19,
+  "BPI": 18,
   "POM": 21,
   "TRK": 25
  },
@@ -194,9 +194,9 @@
   "NET": 20,
   "KPI": 21,
   "SOR": 17,
-  "WAB": 19,
+  "WAB": 20,
   "BPI": 21,
-  "POM": 17,
+  "POM": 18,
   "TRK": 21
  },
  "ALA": {
@@ -204,8 +204,8 @@
   "NET": 21,
   "KPI": 12,
   "SOR": 10,
-  "WAB": 10,
-  "BPI": 16,
+  "WAB": 11,
+  "BPI": 17,
   "POM": 20,
   "TRK": 20
  },
@@ -213,7 +213,7 @@
   "team": "Saint Louis",
   "NET": 22,
   "KPI": 25,
-  "SOR": 26,
+  "SOR": 25,
   "WAB": 30,
   "BPI": 24,
   "POM": 24,
@@ -224,7 +224,7 @@
   "NET": 23,
   "KPI": 17,
   "SOR": 19,
-  "WAB": 21,
+  "WAB": 22,
   "BPI": 15,
   "POM": 22,
   "TRK": 19
@@ -239,9 +239,19 @@
   "POM": 23,
   "TRK": 24
  },
+ "UNC": {
+  "team": "North Carolina",
+  "NET": 25,
+  "KPI": 16,
+  "SOR": 21,
+  "WAB": 18,
+  "BPI": 30,
+  "POM": 30,
+  "TRK": 28
+ },
  "SMC": {
   "team": "Saint Mary's College",
-  "NET": 25,
+  "NET": 26,
   "KPI": 31,
   "SOR": 33,
   "WAB": 29,
@@ -251,23 +261,13 @@
  },
  "NCSU": {
   "team": "North Carolina State",
-  "NET": 26,
+  "NET": 27,
   "KPI": 24,
   "SOR": 37,
   "WAB": 31,
   "BPI": 25,
   "POM": 25,
   "TRK": 23
- },
- "UNC": {
-  "team": "North Carolina",
-  "NET": 27,
-  "KPI": 16,
-  "SOR": 23,
-  "WAB": 22,
-  "BPI": 32,
-  "POM": 30,
-  "TRK": 28
  },
  "IOWA": {
   "team": "Iowa",
@@ -304,7 +304,7 @@
   "NET": 31,
   "KPI": 30,
   "SOR": 35,
-  "WAB": 35,
+  "WAB": 34,
   "BPI": 39,
   "POM": 33,
   "TRK": 33
@@ -319,25 +319,25 @@
   "POM": 29,
   "TRK": 27
  },
- "AUB": {
-  "team": "Auburn",
-  "NET": 33,
-  "KPI": 33,
-  "SOR": 39,
-  "WAB": 39,
-  "BPI": 26,
-  "POM": 34,
-  "TRK": 37
- },
  "UGA": {
   "team": "Georgia",
-  "NET": 34,
+  "NET": 33,
   "KPI": 35,
   "SOR": 31,
   "WAB": 36,
   "BPI": 40,
   "POM": 38,
   "TRK": 41
+ },
+ "AUB": {
+  "team": "Auburn",
+  "NET": 34,
+  "KPI": 33,
+  "SOR": 39,
+  "WAB": 39,
+  "BPI": 26,
+  "POM": 34,
+  "TRK": 37
  },
  "MIA": {
   "team": "Miami (FL)",
@@ -347,7 +347,7 @@
   "WAB": 32,
   "BPI": 41,
   "POM": 39,
-  "TRK": 44
+  "TRK": 43
  },
  "IU": {
   "team": "Indiana",
@@ -355,7 +355,7 @@
   "KPI": 51,
   "SOR": 42,
   "WAB": 43,
-  "BPI": 31,
+  "BPI": 32,
   "POM": 41,
   "TRK": 30
  },
@@ -367,7 +367,7 @@
   "WAB": 45,
   "BPI": 38,
   "POM": 36,
-  "TRK": 36
+  "TRK": 35
  },
  "CLEM": {
   "team": "Clemson",
@@ -375,9 +375,9 @@
   "KPI": 32,
   "SOR": 41,
   "WAB": 37,
-  "BPI": 30,
+  "BPI": 31,
   "POM": 40,
-  "TRK": 35
+  "TRK": 36
  },
  "TEX": {
   "team": "Texas",
@@ -433,11 +433,11 @@
   "team": "San Diego State",
   "NET": 44,
   "KPI": 45,
-  "SOR": 58,
-  "WAB": 54,
+  "SOR": 57,
+  "WAB": 53,
   "BPI": 55,
   "POM": 45,
-  "TRK": 43
+  "TRK": 44
  },
  "VCU": {
   "team": "VCU",
@@ -473,8 +473,8 @@
   "team": "Miami (OH)",
   "NET": 48,
   "KPI": 44,
-  "SOR": 22,
-  "WAB": 34,
+  "SOR": 23,
+  "WAB": 35,
   "BPI": 84,
   "POM": 84,
   "TRK": 76
@@ -513,7 +513,7 @@
   "team": "South Florida",
   "NET": 52,
   "KPI": 39,
-  "SOR": 61,
+  "SOR": 62,
   "WAB": 66,
   "BPI": 65,
   "POM": 55,
@@ -524,10 +524,10 @@
   "NET": 53,
   "KPI": 55,
   "SOR": 53,
-  "WAB": 55,
+  "WAB": 54,
   "BPI": 57,
   "POM": 51,
-  "TRK": 62
+  "TRK": 63
  },
  "BEL": {
   "team": "Belmont",
@@ -537,17 +537,17 @@
   "WAB": 52,
   "BPI": 93,
   "POM": 54,
-  "TRK": 68
+  "TRK": 70
  },
  "TLSA": {
   "team": "Tulsa",
   "NET": 55,
   "KPI": 62,
   "SOR": 60,
-  "WAB": 68,
+  "WAB": 67,
   "BPI": 72,
-  "POM": 64,
-  "TRK": 67
+  "POM": 63,
+  "TRK": 69
  },
  "WASH": {
   "team": "Washington",
@@ -563,11 +563,11 @@
   "team": "McNeese",
   "NET": 57,
   "KPI": 87,
-  "SOR": 57,
-  "WAB": 58,
-  "BPI": 59,
-  "POM": 61,
-  "TRK": 78
+  "SOR": 56,
+  "WAB": 57,
+  "BPI": 60,
+  "POM": 62,
+  "TRK": 77
  },
  "USC": {
   "team": "USC",
@@ -589,19 +589,9 @@
   "POM": 66,
   "TRK": 57
  },
- "AKR": {
-  "team": "Akron",
-  "NET": 60,
-  "KPI": 74,
-  "SOR": 65,
-  "WAB": 63,
-  "BPI": 78,
-  "POM": 68,
-  "TRK": 73
- },
  "MIZ": {
   "team": "Missouri",
-  "NET": 61,
+  "NET": 60,
   "KPI": 47,
   "SOR": 40,
   "WAB": 42,
@@ -609,12 +599,22 @@
   "POM": 52,
   "TRK": 47
  },
+ "AKR": {
+  "team": "Akron",
+  "NET": 61,
+  "KPI": 74,
+  "SOR": 65,
+  "WAB": 63,
+  "BPI": 78,
+  "POM": 68,
+  "TRK": 73
+ },
  "BOIS": {
   "team": "Boise State",
   "NET": 62,
   "KPI": 64,
   "SOR": 83,
-  "WAB": 61,
+  "WAB": 60,
   "BPI": 79,
   "POM": 60,
   "TRK": 59
@@ -623,21 +623,21 @@
   "team": "West Virginia",
   "NET": 63,
   "KPI": 68,
-  "SOR": 62,
-  "WAB": 60,
+  "SOR": 61,
+  "WAB": 59,
   "BPI": 46,
   "POM": 59,
-  "TRK": 63
+  "TRK": 62
  },
  "YALE": {
   "team": "Yale",
   "NET": 64,
   "KPI": 48,
-  "SOR": 56,
-  "WAB": 57,
+  "SOR": 55,
+  "WAB": 56,
   "BPI": 100,
-  "POM": 77,
-  "TRK": 90
+  "POM": 78,
+  "TRK": 91
  },
  "WAKE": {
   "team": "Wake Forest",
@@ -657,7 +657,7 @@
   "WAB": 64,
   "BPI": 77,
   "POM": 67,
-  "TRK": 71
+  "TRK": 72
  },
  "LSU": {
   "team": "LSU",
@@ -674,9 +674,9 @@
   "NET": 68,
   "KPI": 63,
   "SOR": 64,
-  "WAB": 62,
+  "WAB": 61,
   "BPI": 87,
-  "POM": 63,
+  "POM": 64,
   "TRK": 60
  },
  "COLO": {
@@ -695,8 +695,8 @@
   "KPI": 104,
   "SOR": 70,
   "WAB": 74,
-  "BPI": 60,
-  "POM": 91,
+  "BPI": 59,
+  "POM": 90,
   "TRK": 93
  },
  "OU": {
@@ -717,13 +717,13 @@
   "WAB": 70,
   "BPI": 85,
   "POM": 74,
-  "TRK": 75
+  "TRK": 74
  },
  "MINN": {
   "team": "Minnesota",
   "NET": 73,
   "KPI": 106,
-  "SOR": 91,
+  "SOR": 90,
   "WAB": 91,
   "BPI": 68,
   "POM": 72,
@@ -737,7 +737,7 @@
   "WAB": 71,
   "BPI": 81,
   "POM": 71,
-  "TRK": 70
+  "TRK": 68
  },
  "GCU": {
   "team": "Grand Canyon",
@@ -746,18 +746,18 @@
   "SOR": 84,
   "WAB": 77,
   "BPI": 76,
-  "POM": 62,
+  "POM": 61,
   "TRK": 52
  },
  "SYR": {
   "team": "Syracuse",
   "NET": 76,
   "KPI": 77,
-  "SOR": 80,
+  "SOR": 79,
   "WAB": 73,
   "BPI": 70,
-  "POM": 78,
-  "TRK": 72
+  "POM": 77,
+  "TRK": 71
  },
  "UVU": {
   "team": "Utah Valley",
@@ -777,7 +777,7 @@
   "WAB": 106,
   "BPI": 54,
   "POM": 65,
-  "TRK": 66
+  "TRK": 65
  },
  "NU": {
   "team": "Northwestern",
@@ -787,31 +787,21 @@
   "WAB": 101,
   "BPI": 66,
   "POM": 70,
-  "TRK": 65
+  "TRK": 66
  },
  "BUT": {
   "team": "Butler",
   "NET": 80,
   "KPI": 80,
-  "SOR": 79,
-  "WAB": 84,
+  "SOR": 80,
+  "WAB": 83,
   "BPI": 61,
   "POM": 83,
-  "TRK": 69
- },
- "SFA": {
-  "team": "Stephen F. Austin",
-  "NET": 81,
-  "KPI": 85,
-  "SOR": 54,
-  "WAB": 53,
-  "BPI": 111,
-  "POM": 89,
-  "TRK": 74
+  "TRK": 67
  },
  "CREI": {
   "team": "Creighton",
-  "NET": 82,
+  "NET": 81,
   "KPI": 72,
   "SOR": 69,
   "WAB": 78,
@@ -821,27 +811,27 @@
  },
  "OKST": {
   "team": "Oklahoma State",
-  "NET": 83,
+  "NET": 82,
   "KPI": 61,
-  "SOR": 59,
-  "WAB": 59,
+  "SOR": 58,
+  "WAB": 58,
   "BPI": 80,
   "POM": 73,
   "TRK": 86
  },
  "DAY": {
   "team": "Dayton",
-  "NET": 84,
+  "NET": 83,
   "KPI": 66,
   "SOR": 72,
   "WAB": 79,
   "BPI": 69,
   "POM": 86,
-  "TRK": 87
+  "TRK": 88
  },
  "UNI": {
   "team": "Northern Iowa",
-  "NET": 85,
+  "NET": 84,
   "KPI": 81,
   "SOR": 120,
   "WAB": 118,
@@ -851,7 +841,7 @@
  },
  "WICH": {
   "team": "Wichita State",
-  "NET": 86,
+  "NET": 85,
   "KPI": 79,
   "SOR": 102,
   "WAB": 103,
@@ -861,20 +851,30 @@
  },
  "GW": {
   "team": "George Washington",
-  "NET": 87,
+  "NET": 86,
   "KPI": 109,
   "SOR": 123,
   "WAB": 127,
   "BPI": 71,
   "POM": 80,
-  "TRK": 77
+  "TRK": 75
+ },
+ "SFA": {
+  "team": "Stephen F. Austin",
+  "NET": 87,
+  "KPI": 85,
+  "SOR": 59,
+  "WAB": 62,
+  "BPI": 114,
+  "POM": 91,
+  "TRK": 78
  },
  "CSU": {
   "team": "Colorado State",
   "NET": 88,
   "KPI": 76,
-  "SOR": 90,
-  "WAB": 83,
+  "SOR": 91,
+  "WAB": 84,
   "BPI": 86,
   "POM": 88,
   "TRK": 89
@@ -884,7 +884,7 @@
   "NET": 89,
   "KPI": 105,
   "SOR": 107,
-  "WAB": 105,
+  "WAB": 104,
   "BPI": 75,
   "POM": 87,
   "TRK": 92
@@ -893,11 +893,11 @@
   "team": "Liberty",
   "NET": 90,
   "KPI": 65,
-  "SOR": 55,
-  "WAB": 56,
+  "SOR": 54,
+  "WAB": 55,
   "BPI": 98,
   "POM": 104,
-  "TRK": 104
+  "TRK": 105
  },
  "MISS": {
   "team": "Ole Miss",
@@ -914,7 +914,7 @@
   "NET": 92,
   "KPI": 69,
   "SOR": 66,
-  "WAB": 67,
+  "WAB": 68,
   "BPI": 106,
   "POM": 103,
   "TRK": 129
@@ -924,7 +924,7 @@
   "NET": 93,
   "KPI": 88,
   "SOR": 87,
-  "WAB": 98,
+  "WAB": 96,
   "BPI": 74,
   "POM": 79,
   "TRK": 79
@@ -936,7 +936,7 @@
   "SOR": 129,
   "WAB": 128,
   "BPI": 101,
-  "POM": 98,
+  "POM": 99,
   "TRK": 106
  },
  "HOF": {
@@ -947,7 +947,7 @@
   "WAB": 124,
   "BPI": 107,
   "POM": 94,
-  "TRK": 97
+  "TRK": 98
  },
  "MSST": {
   "team": "Mississippi State",
@@ -956,7 +956,7 @@
   "SOR": 81,
   "WAB": 88,
   "BPI": 64,
-  "POM": 90,
+  "POM": 89,
   "TRK": 81
  },
  "WYO": {
@@ -977,7 +977,7 @@
   "WAB": 94,
   "BPI": 94,
   "POM": 96,
-  "TRK": 88
+  "TRK": 87
  },
  "GMU": {
   "team": "George Mason",
@@ -1007,15 +1007,15 @@
   "WAB": 97,
   "BPI": 117,
   "POM": 116,
-  "TRK": 124
+  "TRK": 125
  },
  "SHSU": {
   "team": "Sam Houston State",
   "NET": 102,
   "KPI": 111,
   "SOR": 94,
-  "WAB": 96,
-  "BPI": 112,
+  "WAB": 98,
+  "BPI": 111,
   "POM": 107,
   "TRK": 108
  },
@@ -1034,10 +1034,10 @@
   "NET": 104,
   "KPI": 115,
   "SOR": 111,
-  "WAB": 104,
+  "WAB": 105,
   "BPI": 121,
   "POM": 110,
-  "TRK": 110
+  "TRK": 111
  },
  "SC": {
   "team": "South Carolina",
@@ -1047,7 +1047,7 @@
   "WAB": 108,
   "BPI": 89,
   "POM": 92,
-  "TRK": 98
+  "TRK": 97
  },
  "NDSU": {
   "team": "North Dakota State",
@@ -1076,7 +1076,7 @@
   "SOR": 86,
   "WAB": 86,
   "BPI": 152,
-  "POM": 141,
+  "POM": 142,
   "TRK": 138
  },
  "PRST": {
@@ -1095,17 +1095,17 @@
   "KPI": 175,
   "SOR": 100,
   "WAB": 90,
-  "BPI": 146,
+  "BPI": 147,
   "POM": 147,
   "TRK": 155
  },
  "WRST": {
   "team": "Wright State",
-  "NET": 147,
+  "NET": 146,
   "KPI": 170,
-  "SOR": 175,
-  "WAB": 177,
-  "BPI": 147,
+  "SOR": 176,
+  "WAB": 175,
+  "BPI": 148,
   "POM": 156,
   "TRK": 127
  },
@@ -1121,31 +1121,31 @@
  },
  "APP": {
   "team": "Appalachian State",
-  "NET": 182,
+  "NET": 183,
   "KPI": 164,
   "SOR": 173,
-  "WAB": 181,
+  "WAB": 180,
   "BPI": 155,
-  "POM": 181,
-  "TRK": 167
+  "POM": 182,
+  "TRK": 168
  },
  "LIU": {
   "team": "Long Island",
-  "NET": 198,
+  "NET": 199,
   "KPI": 213,
   "SOR": 169,
   "WAB": 139,
-  "BPI": 222,
+  "BPI": 221,
   "POM": 216,
-  "TRK": 233
+  "TRK": 234
  },
  "HOW": {
   "team": "Howard",
-  "NET": 209,
+  "NET": 210,
   "KPI": 253,
   "SOR": 223,
   "WAB": 160,
-  "BPI": 217,
+  "BPI": 216,
   "POM": 218,
   "TRK": 204
  },
@@ -1165,18 +1165,18 @@
   "KPI": 228,
   "SOR": 146,
   "WAB": 123,
-  "BPI": 221,
+  "BPI": 220,
   "POM": 231,
   "TRK": 228
  },
  "BCU": {
   "team": "Bethune-Cookman",
-  "NET": 254,
+  "NET": 255,
   "KPI": 235,
-  "SOR": 183,
-  "WAB": 158,
-  "BPI": 242,
+  "SOR": 184,
+  "WAB": 157,
+  "BPI": 243,
   "POM": 234,
-  "TRK": 221
+  "TRK": 220
  }
 }
