@@ -317,6 +317,7 @@
 
 const HOME_ADV = 3.0;  // points of home advantage for projected scores
 const AVG_POSS = 68.9; // national average tempo for projected scores
+const SCORE_SCALE = 1.10; // calibration: SRS efficiencies normalized to 100 underpredict by ~10%
 
 const COLS = [
   { key: "winner_name",      label: "Winner",          fmt: v => v, align: "left" },
@@ -587,8 +588,8 @@ function renderPlayedDate() {
         let winProjOE = winOE, loseProjOE = loseOE;
         if (winLoc === "H") { winProjOE += HOME_ADV / 2; loseProjOE -= HOME_ADV / 2; }
         else if (winLoc === "A") { winProjOE -= HOME_ADV / 2; loseProjOE += HOME_ADV / 2; }
-        const winProjPtsRaw  = winProjOE * loseDE / 100 * poss / 100;
-        const loseProjPtsRaw = loseProjOE * winDE / 100 * poss / 100;
+        const winProjPtsRaw  = winProjOE * loseDE / 100 * poss / 100 * SCORE_SCALE;
+        const loseProjPtsRaw = loseProjOE * winDE / 100 * poss / 100 * SCORE_SCALE;
         let winProjPts  = Math.round(winProjPtsRaw);
         let loseProjPts = Math.round(loseProjPtsRaw);
         /* break ties: bump the team with the higher raw score */
@@ -600,7 +601,9 @@ function renderPlayedDate() {
         const projFav = winProjPts >= loseProjPts ? winName : loseName;
         const projHi  = Math.max(winProjPts, loseProjPts);
         const projLo  = Math.min(winProjPts, loseProjPts);
-        expectedMarginStr = `${projFav} ${projHi} - ${projLo}`;
+        /* check if projected score matches actual exactly */
+        const exactMatch = (projHi === winPts && projLo === losePts && projFav === winName);
+        expectedMarginStr = `${projFav} ${projHi} - ${projLo}${exactMatch ? " ⭐" : ""}`;
       }
 
       /* ball score = combined AdjE */
@@ -761,8 +764,8 @@ function renderFutureDate() {
       const poss = homeT * awayT / AVG_POSS;
       let adjHomeOE = homeOE, adjAwayOE = awayOE;
       if (!g.neutralSite) { adjHomeOE += HOME_ADV / 2; adjAwayOE -= HOME_ADV / 2; }
-      const homeProjPtsRaw = adjHomeOE * awayDE / 100 * poss / 100;
-      const awayProjPtsRaw = adjAwayOE * homeDE / 100 * poss / 100;
+      const homeProjPtsRaw = adjHomeOE * awayDE / 100 * poss / 100 * SCORE_SCALE;
+      const awayProjPtsRaw = adjAwayOE * homeDE / 100 * poss / 100 * SCORE_SCALE;
       let homeProjPts = Math.round(homeProjPtsRaw);
       let awayProjPts = Math.round(awayProjPtsRaw);
       /* break ties: bump the team with the higher raw score */

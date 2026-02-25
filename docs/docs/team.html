@@ -1320,6 +1320,7 @@ Promise.all([
     const K_WAB = 0.17;
     const HOME_ADV_WAB = 3.0;
     const AVG_POSS = 68.9;
+    const SCORE_SCALE = 1.10; // calibration: SRS efficiencies normalized to 100 underpredict by ~10%
 
     // Compute bubble EM: average net_srs of teams ranked 35-55 by net_srs
     const allTeamArr = Object.values(ALL_TEAMS);
@@ -1397,8 +1398,8 @@ Promise.all([
         let adjTeamOE = teamOE, adjOppOE = oppOE;
         if (g.homeAway === "home") { adjTeamOE += HOME_ADV_WAB / 2; adjOppOE -= HOME_ADV_WAB / 2; }
         else if (g.homeAway === "away") { adjTeamOE -= HOME_ADV_WAB / 2; adjOppOE += HOME_ADV_WAB / 2; }
-        const teamProjPtsRaw = adjTeamOE * oppDE / 100 * poss / 100;
-        const oppProjPtsRaw  = adjOppOE * teamDE / 100 * poss / 100;
+        const teamProjPtsRaw = adjTeamOE * oppDE / 100 * poss / 100 * SCORE_SCALE;
+        const oppProjPtsRaw  = adjOppOE * teamDE / 100 * poss / 100 * SCORE_SCALE;
         let teamProjPts = Math.round(teamProjPtsRaw);
         let oppProjPts  = Math.round(oppProjPtsRaw);
         /* break ties: bump the team with the higher raw score */
