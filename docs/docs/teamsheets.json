@@ -38,7 +38,7 @@
  "ILL": {
   "team": "Illinois",
   "NET": 4,
-  "KPI": 10,
+  "KPI": 13,
   "SOR": 14,
   "WAB": 12,
   "BPI": 6,
@@ -74,7 +74,7 @@
  "PUR": {
   "team": "Purdue",
   "NET": 7,
-  "KPI": 5,
+  "KPI": 6,
   "SOR": 13,
   "WAB": 6,
   "BPI": 9,
@@ -122,7 +122,7 @@
  "MSU": {
   "team": "Michigan State",
   "NET": 11,
-  "KPI": 15,
+  "KPI": 9,
   "SOR": 9,
   "WAB": 5,
   "BPI": 13,
@@ -158,7 +158,7 @@
  "KU": {
   "team": "Kansas",
   "NET": 14,
-  "KPI": 6,
+  "KPI": 5,
   "SOR": 15,
   "WAB": 9,
   "BPI": 16,
@@ -170,7 +170,7 @@
  "TTU": {
   "team": "Texas Tech",
   "NET": 15,
-  "KPI": 9,
+  "KPI": 10,
   "SOR": 17,
   "WAB": 16,
   "BPI": 18,
@@ -194,7 +194,7 @@
  "VAN": {
   "team": "Vanderbilt",
   "NET": 17,
-  "KPI": 14,
+  "KPI": 15,
   "SOR": 18,
   "WAB": 17,
   "BPI": 14,
@@ -218,7 +218,7 @@
  "ALA": {
   "team": "Alabama",
   "NET": 19,
-  "KPI": 13,
+  "KPI": 14,
   "SOR": 11,
   "WAB": 13,
   "BPI": 15,
@@ -290,7 +290,7 @@
  "USU": {
   "team": "Utah State",
   "NET": 25,
-  "KPI": 21,
+  "KPI": 22,
   "SOR": 37,
   "WAB": 31,
   "BPI": 27,
@@ -374,7 +374,7 @@
  "MIA": {
   "team": "Miami (FL)",
   "NET": 32,
-  "KPI": 32,
+  "KPI": 33,
   "SOR": 29,
   "WAB": 28,
   "BPI": 41,
@@ -410,7 +410,7 @@
  "AUB": {
   "team": "Auburn",
   "NET": 35,
-  "KPI": 37,
+  "KPI": 39,
   "SOR": 41,
   "WAB": 42,
   "BPI": 25,
@@ -422,7 +422,7 @@
  "CLEM": {
   "team": "Clemson",
   "NET": 36,
-  "KPI": 33,
+  "KPI": 32,
   "SOR": 38,
   "WAB": 38,
   "BPI": 33,
@@ -446,7 +446,7 @@
  "OSU": {
   "team": "Ohio State",
   "NET": 38,
-  "KPI": 61,
+  "KPI": 62,
   "SOR": 45,
   "WAB": 46,
   "BPI": 39,
@@ -470,7 +470,7 @@
  "TEX": {
   "team": "Texas",
   "NET": 40,
-  "KPI": 58,
+  "KPI": 59,
   "SOR": 42,
   "WAB": 44,
   "BPI": 37,
@@ -482,7 +482,7 @@
  "SCU": {
   "team": "Santa Clara",
   "NET": 41,
-  "KPI": 45,
+  "KPI": 44,
   "SOR": 43,
   "WAB": 41,
   "BPI": 50,
@@ -518,7 +518,7 @@
  "UCF": {
   "team": "UCF",
   "NET": 44,
-  "KPI": 22,
+  "KPI": 21,
   "SOR": 25,
   "WAB": 25,
   "BPI": 51,
@@ -554,7 +554,7 @@
  "VCU": {
   "team": "VCU",
   "NET": 47,
-  "KPI": 36,
+  "KPI": 38,
   "SOR": 49,
   "WAB": 48,
   "BPI": 45,
@@ -578,7 +578,7 @@
  "TLSA": {
   "team": "Tulsa",
   "NET": 49,
-  "KPI": 55,
+  "KPI": 54,
   "SOR": 58,
   "WAB": 64,
   "BPI": 68,
@@ -590,7 +590,7 @@
  "USF": {
   "team": "South Florida",
   "NET": 50,
-  "KPI": 39,
+  "KPI": 36,
   "SOR": 60,
   "WAB": 63,
   "BPI": 58,
@@ -602,7 +602,7 @@
  "BAY": {
   "team": "Baylor",
   "NET": 51,
-  "KPI": 73,
+  "KPI": 77,
   "SOR": 71,
   "WAB": 70,
   "BPI": 43,
@@ -614,7 +614,7 @@
  "BEL": {
   "team": "Belmont",
   "NET": 52,
-  "KPI": 38,
+  "KPI": 37,
   "SOR": 50,
   "WAB": 51,
   "BPI": 88,
@@ -662,7 +662,7 @@
  "HALL": {
   "team": "Seton Hall",
   "NET": 56,
-  "KPI": 59,
+  "KPI": 58,
   "SOR": 52,
   "WAB": 56,
   "BPI": 57,
@@ -686,7 +686,7 @@
  "MIZ": {
   "team": "Missouri",
   "NET": 58,
-  "KPI": 44,
+  "KPI": 45,
   "SOR": 34,
   "WAB": 35,
   "BPI": 42,
@@ -698,7 +698,7 @@
  "MCN": {
   "team": "McNeese",
   "NET": 59,
-  "KPI": 86,
+  "KPI": 87,
   "SOR": 57,
   "WAB": 57,
   "BPI": 59,
@@ -722,7 +722,7 @@
  "BOIS": {
   "team": "Boise State",
   "NET": 61,
-  "KPI": 62,
+  "KPI": 61,
   "SOR": 82,
   "WAB": 60,
   "BPI": 78,
@@ -734,7 +734,7 @@
  "USC": {
   "team": "USC",
   "NET": 62,
-  "KPI": 54,
+  "KPI": 53,
   "SOR": 48,
   "WAB": 47,
   "BPI": 56,
@@ -770,7 +770,7 @@
  "LSU": {
   "team": "LSU",
   "NET": 65,
-  "KPI": 90,
+  "KPI": 94,
   "SOR": 72,
   "WAB": 75,
   "BPI": 49,
@@ -818,7 +818,7 @@
  "NU": {
   "team": "Northwestern",
   "NET": 69,
-  "KPI": 108,
+  "KPI": 111,
   "SOR": 89,
   "WAB": 89,
   "BPI": 63,
@@ -830,7 +830,7 @@
  "COLO": {
   "team": "Colorado",
   "NET": 70,
-  "KPI": 65,
+  "KPI": 66,
   "SOR": 74,
   "WAB": 74,
   "BPI": 86,
@@ -842,7 +842,7 @@
  "MINN": {
   "team": "Minnesota",
   "NET": 71,
-  "KPI": 102,
+  "KPI": 101,
   "SOR": 91,
   "WAB": 92,
   "BPI": 67,
@@ -854,7 +854,7 @@
  "GCU": {
   "team": "Grand Canyon",
   "NET": 72,
-  "KPI": 69,
+  "KPI": 68,
   "SOR": 83,
   "WAB": 77,
   "BPI": 74,
@@ -866,7 +866,7 @@
  "STAN": {
   "team": "Stanford",
   "NET": 73,
-  "KPI": 53,
+  "KPI": 57,
   "SOR": 73,
   "WAB": 66,
   "BPI": 82,
@@ -878,7 +878,7 @@
  "ASU": {
   "team": "Arizona State",
   "NET": 74,
-  "KPI": 67,
+  "KPI": 65,
   "SOR": 69,
   "WAB": 68,
   "BPI": 91,
@@ -890,7 +890,7 @@
  "HPU": {
   "team": "High Point",
   "NET": 75,
-  "KPI": 101,
+  "KPI": 100,
   "SOR": 70,
   "WAB": 71,
   "BPI": 61,
@@ -902,7 +902,7 @@
  "DAY": {
   "team": "Dayton",
   "NET": 76,
-  "KPI": 57,
+  "KPI": 55,
   "SOR": 65,
   "WAB": 72,
   "BPI": 70,
@@ -914,7 +914,7 @@
  "PROV": {
   "team": "Providence",
   "NET": 77,
-  "KPI": 88,
+  "KPI": 90,
   "SOR": 93,
   "WAB": 100,
   "BPI": 55,
@@ -926,7 +926,7 @@
  "SYR": {
   "team": "Syracuse",
   "NET": 78,
-  "KPI": 75,
+  "KPI": 74,
   "SOR": 77,
   "WAB": 73,
   "BPI": 72,
@@ -986,7 +986,7 @@
  "WICH": {
   "team": "Wichita State",
   "NET": 83,
-  "KPI": 77,
+  "KPI": 73,
   "SOR": 94,
   "WAB": 95,
   "BPI": 92,
@@ -998,7 +998,7 @@
  "CREI": {
   "team": "Creighton",
   "NET": 84,
-  "KPI": 76,
+  "KPI": 75,
   "SOR": 78,
   "WAB": 86,
   "BPI": 65,
@@ -1010,7 +1010,7 @@
  "GW": {
   "team": "George Washington",
   "NET": 85,
-  "KPI": 106,
+  "KPI": 109,
   "SOR": 115,
   "WAB": 124,
   "BPI": 71,
@@ -1034,7 +1034,7 @@
  "CSU": {
   "team": "Colorado State",
   "NET": 87,
-  "KPI": 74,
+  "KPI": 76,
   "SOR": 86,
   "WAB": 81,
   "BPI": 89,
@@ -1046,7 +1046,7 @@
  "SFA": {
   "team": "Stephen F. Austin",
   "NET": 88,
-  "KPI": 99,
+  "KPI": 102,
   "SOR": 61,
   "WAB": 61,
   "BPI": 114,
@@ -1058,7 +1058,7 @@
  "UNCW": {
   "team": "UNCW",
   "NET": 89,
-  "KPI": 68,
+  "KPI": 69,
   "SOR": 64,
   "WAB": 65,
   "BPI": 105,
@@ -1070,7 +1070,7 @@
  "ILST": {
   "team": "Illinois State",
   "NET": 90,
-  "KPI": 96,
+  "KPI": 95,
   "SOR": 116,
   "WAB": 118,
   "BPI": 99,
@@ -1082,7 +1082,7 @@
  "HOF": {
   "team": "Hofstra",
   "NET": 91,
-  "KPI": 93,
+  "KPI": 92,
   "SOR": 117,
   "WAB": 121,
   "BPI": 107,
@@ -1094,7 +1094,7 @@
  "MISS": {
   "team": "Ole Miss",
   "NET": 92,
-  "KPI": 125,
+  "KPI": 128,
   "SOR": 101,
   "WAB": 106,
   "BPI": 62,
@@ -1106,7 +1106,7 @@
  "ND": {
   "team": "Notre Dame",
   "NET": 93,
-  "KPI": 111,
+  "KPI": 112,
   "SOR": 106,
   "WAB": 101,
   "BPI": 87,
@@ -1118,7 +1118,7 @@
  "LIB": {
   "team": "Liberty",
   "NET": 94,
-  "KPI": 66,
+  "KPI": 67,
   "SOR": 59,
   "WAB": 62,
   "BPI": 100,
@@ -1130,7 +1130,7 @@
  "SHSU": {
   "team": "Sam Houston State",
   "NET": 95,
-  "KPI": 113,
+  "KPI": 99,
   "SOR": 90,
   "WAB": 93,
   "BPI": 106,
@@ -1142,7 +1142,7 @@
  "WYO": {
   "team": "Wyoming",
   "NET": 96,
-  "KPI": 105,
+  "KPI": 108,
   "SOR": 114,
   "WAB": 110,
   "BPI": 119,
@@ -1154,7 +1154,7 @@
  "MSST": {
   "team": "Mississippi State",
   "NET": 97,
-  "KPI": 104,
+  "KPI": 106,
   "SOR": 81,
   "WAB": 90,
   "BPI": 66,
@@ -1166,7 +1166,7 @@
  "XAV": {
   "team": "Xavier",
   "NET": 98,
-  "KPI": 103,
+  "KPI": 104,
   "SOR": 88,
   "WAB": 102,
   "BPI": 94,
@@ -1190,7 +1190,7 @@
  "KSU": {
   "team": "Kansas State",
   "NET": 100,
-  "KPI": 114,
+  "KPI": 115,
   "SOR": 108,
   "WAB": 109,
   "BPI": 84,
@@ -1250,7 +1250,7 @@
  "HAW": {
   "team": "Hawaii",
   "NET": 105,
-  "KPI": 118,
+  "KPI": 105,
   "SOR": 107,
   "WAB": 98,
   "BPI": 121,
@@ -1262,7 +1262,7 @@
  "NDSU": {
   "team": "North Dakota State",
   "NET": 124,
-  "KPI": 135,
+  "KPI": 139,
   "SOR": 110,
   "WAB": 99,
   "BPI": 144,
@@ -1274,7 +1274,7 @@
  "ETSU": {
   "team": "East Tennessee State",
   "NET": 125,
-  "KPI": 141,
+  "KPI": 140,
   "SOR": 133,
   "WAB": 128,
   "BPI": 127,
@@ -1286,7 +1286,7 @@
  "NAVY": {
   "team": "Navy",
   "NET": 130,
-  "KPI": 174,
+  "KPI": 176,
   "SOR": 98,
   "WAB": 88,
   "BPI": 136,
@@ -1298,7 +1298,7 @@
  "APSU": {
   "team": "Austin Peay",
   "NET": 142,
-  "KPI": 140,
+  "KPI": 141,
   "SOR": 100,
   "WAB": 97,
   "BPI": 154,
@@ -1310,7 +1310,7 @@
  "PRST": {
   "team": "Portland State",
   "NET": 145,
-  "KPI": 177,
+  "KPI": 191,
   "SOR": 135,
   "WAB": 120,
   "BPI": 193,
@@ -1322,7 +1322,7 @@
  "WRST": {
   "team": "Wright State",
   "NET": 147,
-  "KPI": 164,
+  "KPI": 165,
   "SOR": 169,
   "WAB": 167,
   "BPI": 147,
@@ -1334,7 +1334,7 @@
  "USA": {
   "team": "South Alabama",
   "NET": 166,
-  "KPI": 122,
+  "KPI": 126,
   "SOR": 124,
   "WAB": 129,
   "BPI": 174,
@@ -1358,7 +1358,7 @@
  "LIU": {
   "team": "Long Island",
   "NET": 196,
-  "KPI": 213,
+  "KPI": 214,
   "SOR": 167,
   "WAB": 134,
   "BPI": 216,
@@ -1370,7 +1370,7 @@
  "HOW": {
   "team": "Howard",
   "NET": 210,
-  "KPI": 252,
+  "KPI": 250,
   "SOR": 220,
   "WAB": 151,
   "BPI": 213,
@@ -1382,7 +1382,7 @@
  "UMBC": {
   "team": "UMBC",
   "NET": 238,
-  "KPI": 232,
+  "KPI": 230,
   "SOR": 146,
   "WAB": 117,
   "BPI": 219,
@@ -1394,7 +1394,7 @@
  "BCU": {
   "team": "Bethune-Cookman",
   "NET": 249,
-  "KPI": 235,
+  "KPI": 232,
   "SOR": 177,
   "WAB": 148,
   "BPI": 242,
@@ -1406,7 +1406,7 @@
  "MORE": {
   "team": "Morehead State",
   "NET": 259,
-  "KPI": 212,
+  "KPI": 210,
   "SOR": 201,
   "WAB": 185,
   "BPI": 287,
