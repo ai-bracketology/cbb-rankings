@@ -2297,6 +2297,7 @@ function renderSeedOdds() {
     if (c.key === "team_displayName") th.classList.add("sticky-col");
     thead.appendChild(th);
   });
+  var tbody = document.getElementById("seedOddsTbody");
   var frags = [];
   rows.forEach(function(r, i) {
     var cells = SEED_ODDS_COLS.map(function(c) {
