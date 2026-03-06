@@ -1113,6 +1113,16 @@ footer {
       <div class="nav-sub-item" data-page="seedHistory">Seed History</div>
     </div>
 
+    <!-- FUN! (expandable) -->
+    <div class="nav-item" data-toggle="funStuff">
+      <span class="nav-icon">&#128540;</span>
+      <span class="nav-label">FUN!</span>
+      <span class="nav-expand" id="expandFun">&#9654;</span>
+    </div>
+    <div class="nav-submenu" id="subFunStuff">
+      <div class="nav-sub-item" data-page="timeoutAnalysis">Timeout Analysis</div>
+    </div>
+
     <!-- Blog -->
     <div class="nav-item" data-page="blog">
       <span class="nav-icon">&#128221;</span>
@@ -1634,6 +1644,40 @@ footer {
     </div>
   </div>
 
+  <!-- ===== TIMEOUT ANALYSIS PANEL ===== -->
+  <div class="panel" id="panelTimeoutAnalysis">
+    <div style="max-width:960px;margin:0 auto;">
+      <p style="color:var(--text-dim);font-size:.82rem;margin-bottom:14px;">
+        How does each team's offense perform on the <b>first possession after a timeout</b> (TV, team, or halftime)?
+        Adjusted for opposing defense quality. Sorted by delta (post-timeout AdjOE minus season AdjOE).
+      </p>
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap;">
+        <input type="text" id="toSearchBox" placeholder="Search teams..." style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 12px;color:var(--text);font-size:.82rem;width:220px;">
+        <select id="toConfFilter" style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 12px;color:var(--text);font-size:.82rem;">
+          <option value="">All Conferences</option>
+        </select>
+        <span class="row-count" id="toRowCount"></span>
+      </div>
+      <table id="toTable">
+        <thead>
+          <tr>
+            <th data-col="rank" style="width:36px">#</th>
+            <th data-col="team_name">Team</th>
+            <th data-col="adj_off_rtg">Post-TO AdjOE</th>
+            <th data-col="season_off_rtg">Season AdjOE</th>
+            <th data-col="adj_delta">Delta</th>
+            <th data-col="post_to_poss">Poss</th>
+            <th data-col="post_ts_pct">Post TS%</th>
+            <th data-col="season_ts_pct">Szn TS%</th>
+            <th data-col="post_to_pct">Post TO%</th>
+            <th data-col="season_to_pct">Szn TO%</th>
+          </tr>
+        </thead>
+        <tbody id="toTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- ===== BLOG PANEL ===== -->
   <div class="panel" id="panelBlog">
     <div id="blogPanelContent">
@@ -1860,11 +1904,17 @@ var SHEETS_DATA = [];
 var PLAYERS_DATA = [];
 var SCHEDULE_RAW = {};
 var SEED_HISTORY = {};
+var TIMEOUT_DATA = [];
 
 fetch("seed_history.json")
   .then(function(r){ return r.json(); })
   .then(function(d){ SEED_HISTORY = d; })
   .catch(function(){});
+fetch("timeout_efficiency.json")
+  .then(function(r){ return r.json(); })
+  .then(function(d){ TIMEOUT_DATA = d; if (activePage === "timeoutAnalysis") renderTimeoutAnalysis(); })
+  .catch(function(){});
+
 
 /* Re-render the active page after async data arrives (fixes blank page on refresh) */
 function tryRenderActivePage() {
@@ -1881,6 +1931,7 @@ function tryRenderActivePage() {
   if (activePage === "compare") { renderCompareTable(); }
   if (activePage === "confRatings") { renderConfPower(); }
   if (activePage === "confDetail" && confDetailName) { renderConfDetail(); }
+  if (activePage === "timeoutAnalysis") { renderTimeoutAnalysis(); }
 }
 
 fetch("data.json")
@@ -4210,7 +4261,8 @@ var PAGE_TITLES = {
   tpGameLog: "Team Page — Full Game Log", tpResumeSim: "Team Page — Resume Simulator",
   tpTrends: "Team Page — Trends",
   tpLineups: "Team Page — Lineup Ratings",
-  ppPage: "Player Page"
+  ppPage: "Player Page",
+  timeoutAnalysis: "Timeout Analysis"
 };
 var PAGE_SORT_DEFAULTS = {
   rank: { col: "net_srs", asc: false }, quad: { col: "season_wab", asc: false },
@@ -4285,6 +4337,7 @@ function switchPage(page) {
     renderGamePreview();
   }
   else if (page === "blog") { document.getElementById("panelBlog").classList.add("active"); loadBlogPanel(); }
+  else if (page === "timeoutAnalysis") { document.getElementById("panelTimeoutAnalysis").classList.add("active"); renderTimeoutAnalysis(); }
   else if (page === "ppPage") {
     document.getElementById("panelPlayerPage").classList.add("active");
     renderPlayerPage();
@@ -7965,6 +8018,103 @@ function ppDrawTrends() {
 
 }
 
+/* ================================================================
+   TIMEOUT ANALYSIS
+   ================================================================ */
+var _toSortCol = "adj_delta";
+var _toSortAsc = false;
+
+var _toConfMap = {};  /* team_abbr -> conference, built from DATA */
+var _toConfListBuilt = false;
+
+function _toBuildConfMap() {
+  if (_toConfListBuilt || !DATA.length) return;
+  var confs = {};
+  DATA.forEach(function(t) {
+    if (t.team_abbr && t.conference) {
+      _toConfMap[t.team_abbr] = t.conference;
+      confs[t.conference] = 1;
+    }
+  });
+  var sel = document.getElementById("toConfFilter");
+  Object.keys(confs).sort().forEach(function(c) {
+    var opt = document.createElement("option");
+    opt.value = c; opt.textContent = c;
+    sel.appendChild(opt);
+  });
+  _toConfListBuilt = true;
+}
+
+function renderTimeoutAnalysis() {
+  if (!TIMEOUT_DATA.length) return;
+  _toBuildConfMap();
+  var tbody = document.getElementById("toTbody");
+  var search = (document.getElementById("toSearchBox").value || "").toLowerCase();
+  var confFilter = document.getElementById("toConfFilter").value;
+
+  var filtered = TIMEOUT_DATA;
+  if (search) {
+    filtered = filtered.filter(function(r) {
+      return (r.team_name || "").toLowerCase().indexOf(search) >= 0 ||
+             (r.team_abbr || "").toLowerCase().indexOf(search) >= 0;
+    });
+  }
+  if (confFilter) {
+    filtered = filtered.filter(function(r) {
+      return _toConfMap[r.team_abbr] === confFilter;
+    });
+  }
+
+  /* Sort */
+  var col = _toSortCol;
+  var asc = _toSortAsc;
+  filtered = filtered.slice().sort(function(a, b) {
+    var va = a[col], vb = b[col];
+    if (typeof va === "string") { va = va.toLowerCase(); vb = (vb || "").toLowerCase(); }
+    if (va < vb) return asc ? -1 : 1;
+    if (va > vb) return asc ? 1 : -1;
+    return 0;
+  });
+
+  var frags = [];
+  for (var i = 0; i < filtered.length; i++) {
+    var r = filtered[i];
+    var logo = ppLogoImg(r.team_abbr, 18);
+    var delta = r.adj_delta;
+    var deltaClass = delta >= 0 ? "eff-good" : "eff-bad";
+    var deltaStr = (delta >= 0 ? "+" : "") + delta.toFixed(1);
+
+    frags.push('<tr>'
+      + '<td style="text-align:center;color:var(--text-dim);font-size:.72rem;">' + r.rank + '</td>'
+      + '<td>' + logo + ' <a href="javascript:void(0)" onclick="tpSelectedTeam=\'' + r.team_abbr + '\';switchPage(\'tpOverview\')" style="color:var(--text)">' + r.team_name + '</a></td>'
+      + '<td style="text-align:center;">' + r.adj_off_rtg.toFixed(1) + '</td>'
+      + '<td style="text-align:center;">' + r.season_off_rtg.toFixed(1) + '</td>'
+      + '<td style="text-align:center;font-weight:600;" class="' + deltaClass + '">' + deltaStr + '</td>'
+      + '<td style="text-align:center;">' + r.post_to_poss + '</td>'
+      + '<td style="text-align:center;">' + r.post_ts_pct.toFixed(1) + '%</td>'
+      + '<td style="text-align:center;">' + r.season_ts_pct.toFixed(1) + '%</td>'
+      + '<td style="text-align:center;">' + r.post_to_pct.toFixed(1) + '%</td>'
+      + '<td style="text-align:center;">' + r.season_to_pct.toFixed(1) + '%</td>'
+      + '</tr>');
+  }
+  tbody.innerHTML = frags.join("");
+  document.getElementById("toRowCount").textContent = filtered.length + " teams";
+}
+
+/* Timeout analysis table sorting */
+document.querySelectorAll("#toTable thead th[data-col]").forEach(function(th) {
+  th.addEventListener("click", function() {
+    var col = th.dataset.col;
+    if (_toSortCol === col) { _toSortAsc = !_toSortAsc; }
+    else { _toSortCol = col; _toSortAsc = (col === "team_name"); }
+    renderTimeoutAnalysis();
+  });
+});
+
+/* Timeout analysis search */
+document.getElementById("toSearchBox").addEventListener("input", renderTimeoutAnalysis);
+document.getElementById("toConfFilter").addEventListener("change", renderTimeoutAnalysis);
+
 /* Trends stat selector */
 var _ppTrendsSel = document.getElementById("ppTrendsSelect");
 if (_ppTrendsSel) _ppTrendsSel.addEventListener("change", function() { ppDrawTrends(); });
@@ -8009,6 +8159,8 @@ if (_ppTrendsSel) _ppTrendsSel.addEventListener("change", function() { ppDrawTre
   if (gamePages.indexOf(activePage) >= 0) { document.getElementById("subGameResults").classList.add("open"); document.getElementById("expandGames").classList.add("open"); }
   var confPages = ["confRatings","confDetail"];
   if (confPages.indexOf(activePage) >= 0) { document.getElementById("subConfRatings").classList.add("open"); document.getElementById("expandConf").classList.add("open"); }
+  var funPages = ["timeoutAnalysis"];
+  if (funPages.indexOf(activePage) >= 0) { document.getElementById("subFunStuff").classList.add("open"); document.getElementById("expandFun").classList.add("open"); }
   if (activePage !== "welcome") { var target = activePage; activePage = "__init__"; switchPage(target); }
 })();
 </script>
