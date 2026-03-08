@@ -1142,7 +1142,7 @@ Promise.all([
   // ---- Future Schedule rendering ----
   // what-if state: { 0: "win"|"loss", 1: "win"|"loss", ... }
   const whatifSelections = {};
-  const MAX_LOSSES = 15;   // teams with ≥ this many total losses cannot make the tournament
+  const MAX_LOSSES = 17;   // teams with ≥ this many total losses cannot make the tournament
 
   function computeWabForGame(oppSrs, homeAway, bubbleEM) {
     const K_WAB = 0.17, HOME_ADV_WAB = 3.0, AVG_POSS = 68.9;
