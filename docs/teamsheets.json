@@ -1259,6 +1259,18 @@
   "SOS": 214,
   "NC_SOS": 270
  },
+ "UCI": {
+  "team": "UC Irvine",
+  "NET": 117,
+  "KPI": 110,
+  "SOR": 130,
+  "WAB": 125,
+  "BPI": 114,
+  "POM": 110,
+  "TRK": 110,
+  "SOS": 260,
+  "NC_SOS": 288
+ },
  "NDSU": {
   "team": "North Dakota State",
   "NET": 118,
