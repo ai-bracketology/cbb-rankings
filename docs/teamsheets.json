@@ -1379,6 +1379,18 @@
   "SOS": 294,
   "NC_SOS": 154
  },
+ "QUC": {
+  "team": "Queens",
+  "NET": 191,
+  "KPI": 183,
+  "SOR": 158,
+  "WAB": 147,
+  "BPI": 195,
+  "POM": 186,
+  "TRK": 202,
+  "SOS": 190,
+  "NC_SOS": 30
+ },
  "LIU": {
   "team": "Long Island",
   "NET": 199,
