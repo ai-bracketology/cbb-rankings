@@ -1391,6 +1391,18 @@
   "SOS": 194,
   "NC_SOS": 30
  },
+ "FUR": {
+  "team": "Furman",
+  "NET": 194,
+  "KPI": 177,
+  "SOR": 166,
+  "WAB": 175,
+  "BPI": 171,
+  "POM": 199,
+  "TRK": 204,
+  "SOS": 334,
+  "NC_SOS": 288
+ },
  "LIU": {
   "team": "Long Island",
   "NET": 200,
