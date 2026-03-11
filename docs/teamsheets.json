@@ -1403,6 +1403,18 @@
   "SOS": 193,
   "NC_SOS": 30
  },
+ "SIE": {
+  "team": "Siena",
+  "NET": 189,
+  "KPI": 156,
+  "SOR": 164,
+  "WAB": 164,
+  "BPI": 199,
+  "POM": 196,
+  "TRK": 193,
+  "SOS": 359,
+  "NC_SOS": 337
+ },
  "LIU": {
   "team": "Long Island",
   "NET": 200,
