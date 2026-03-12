@@ -1343,6 +1343,18 @@
   "SOS": 263,
   "NC_SOS": 196
  },
+ "IDHO": {
+  "team": "Idaho",
+  "NET": 152,
+  "KPI": 233,
+  "SOR": 210,
+  "WAB": 205,
+  "BPI": 176,
+  "POM": 152,
+  "TRK": 139,
+  "SOS": 291,
+  "NC_SOS": 302
+ },
  "APSU": {
   "team": "Austin Peay",
   "NET": 165,
@@ -1462,5 +1474,17 @@
   "TRK": 219,
   "SOS": 132,
   "NC_SOS": 3
+ },
+ "LEH": {
+  "team": "Lehigh",
+  "NET": 282,
+  "KPI": 278,
+  "SOR": 296,
+  "WAB": 248,
+  "BPI": 291,
+  "POM": 290,
+  "TRK": 289,
+  "SOS": 312,
+  "NC_SOS": 182
  }
 }
