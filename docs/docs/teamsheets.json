@@ -266,7 +266,7 @@
  "BYU": {
   "team": "BYU",
   "NET": 23,
-  "KPI": 23,
+  "KPI": 22,
   "SOR": 24,
   "WAB": 22,
   "BPI": 18,
@@ -290,7 +290,7 @@
  "WIS": {
   "team": "Wisconsin",
   "NET": 25,
-  "KPI": 22,
+  "KPI": 23,
   "SOR": 19,
   "WAB": 20,
   "BPI": 24,
@@ -650,7 +650,7 @@
  "VT": {
   "team": "Virginia Tech",
   "NET": 55,
-  "KPI": 47,
+  "KPI": 48,
   "SOR": 55,
   "WAB": 51,
   "BPI": 66,
@@ -854,7 +854,7 @@
  "UNI": {
   "team": "Northern Iowa",
   "NET": 72,
-  "KPI": 78,
+  "KPI": 77,
   "SOR": 105,
   "WAB": 99,
   "BPI": 82,
@@ -866,7 +866,7 @@
  "ASU": {
   "team": "Arizona State",
   "NET": 73,
-  "KPI": 59,
+  "KPI": 58,
   "SOR": 59,
   "WAB": 55,
   "BPI": 90,
@@ -890,7 +890,7 @@
  "OKST": {
   "team": "Oklahoma State",
   "NET": 75,
-  "KPI": 48,
+  "KPI": 47,
   "SOR": 53,
   "WAB": 50,
   "BPI": 74,
@@ -926,7 +926,7 @@
  "LSU": {
   "team": "LSU",
   "NET": 78,
-  "KPI": 113,
+  "KPI": 114,
   "SOR": 83,
   "WAB": 89,
   "BPI": 53,
@@ -950,7 +950,7 @@
  "MINN": {
   "team": "Minnesota",
   "NET": 80,
-  "KPI": 99,
+  "KPI": 98,
   "SOR": 88,
   "WAB": 87,
   "BPI": 70,
@@ -986,7 +986,7 @@
  "CREI": {
   "team": "Creighton",
   "NET": 83,
-  "KPI": 84,
+  "KPI": 85,
   "SOR": 80,
   "WAB": 88,
   "BPI": 62,
@@ -1010,7 +1010,7 @@
  "UVU": {
   "team": "Utah Valley",
   "NET": 85,
-  "KPI": 77,
+  "KPI": 78,
   "SOR": 96,
   "WAB": 83,
   "BPI": 113,
@@ -1070,7 +1070,7 @@
  "GTWN": {
   "team": "Georgetown",
   "NET": 90,
-  "KPI": 91,
+  "KPI": 92,
   "SOR": 90,
   "WAB": 96,
   "BPI": 71,
@@ -1094,7 +1094,7 @@
  "GMU": {
   "team": "George Mason",
   "NET": 92,
-  "KPI": 58,
+  "KPI": 59,
   "SOR": 75,
   "WAB": 81,
   "BPI": 85,
@@ -1106,7 +1106,7 @@
  "MARQ": {
   "team": "Marquette",
   "NET": 93,
-  "KPI": 126,
+  "KPI": 125,
   "SOR": 116,
   "WAB": 142,
   "BPI": 76,
@@ -1118,7 +1118,7 @@
  "ND": {
   "team": "Notre Dame",
   "NET": 94,
-  "KPI": 101,
+  "KPI": 100,
   "SOR": 106,
   "WAB": 100,
   "BPI": 88,
@@ -1166,7 +1166,7 @@
  "CBU": {
   "team": "California Baptist",
   "NET": 98,
-  "KPI": 85,
+  "KPI": 83,
   "SOR": 86,
   "WAB": 76,
   "BPI": 137,
@@ -1190,7 +1190,7 @@
  "KSU": {
   "team": "Kansas State",
   "NET": 100,
-  "KPI": 111,
+  "KPI": 112,
   "SOR": 107,
   "WAB": 111,
   "BPI": 87,
@@ -1202,7 +1202,7 @@
  "HAW": {
   "team": "Hawaii",
   "NET": 101,
-  "KPI": 115,
+  "KPI": 108,
   "SOR": 104,
   "WAB": 95,
   "BPI": 122,
@@ -1214,7 +1214,7 @@
  "DEP": {
   "team": "DePaul",
   "NET": 102,
-  "KPI": 107,
+  "KPI": 109,
   "SOR": 95,
   "WAB": 103,
   "BPI": 99,
@@ -1238,7 +1238,7 @@
  "PITT": {
   "team": "Pittsburgh",
   "NET": 104,
-  "KPI": 108,
+  "KPI": 107,
   "SOR": 120,
   "WAB": 127,
   "BPI": 94,
@@ -1286,7 +1286,7 @@
  "UCI": {
   "team": "UC Irvine",
   "NET": 117,
-  "KPI": 98,
+  "KPI": 102,
   "SOR": 132,
   "WAB": 126,
   "BPI": 111,
@@ -1358,7 +1358,7 @@
  "PRST": {
   "team": "Portland State",
   "NET": 146,
-  "KPI": 204,
+  "KPI": 205,
   "SOR": 149,
   "WAB": 133,
   "BPI": 192,
@@ -1406,7 +1406,7 @@
  "MRMK": {
   "team": "Merrimack",
   "NET": 180,
-  "KPI": 110,
+  "KPI": 111,
   "SOR": 133,
   "WAB": 131,
   "BPI": 188,
@@ -1466,7 +1466,7 @@
  "LIU": {
   "team": "Long Island",
   "NET": 198,
-  "KPI": 205,
+  "KPI": 204,
   "SOR": 142,
   "WAB": 122,
   "BPI": 217,
