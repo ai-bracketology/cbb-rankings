@@ -1016,6 +1016,27 @@ footer {
 </head>
 <body>
 
+<!-- ══════ OFFSEASON SPLASH ══════ -->
+<!-- Remove this entire block to restore the live site for next season -->
+<div id="offseasonSplash" style="
+  position:fixed;inset:0;z-index:99999;
+  background:var(--bg);
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;text-align:center;padding:2rem;
+">
+  <img src="favicon.png" alt="AIB" style="width:80px;height:80px;margin-bottom:1.5rem;border-radius:16px;">
+  <h1 style="color:var(--accent);font-size:1.8rem;margin:0 0 .75rem;">AI Bracketology</h1>
+  <p style="color:var(--text);font-size:1.15rem;max-width:480px;line-height:1.6;margin:0 0 1.5rem;">
+    Website undergoing maintenance.<br>
+    Thanks to all for using it this season!<br>
+    See you in <b>2026-27</b> 🏀
+  </p>
+  <p style="color:var(--text-dim);font-size:.82rem;">
+    Follow <a href="https://x.com/ai_bracketology" style="color:var(--accent);text-decoration:none;">@ai_bracketology</a> for updates
+  </p>
+</div>
+<!-- ══════ END OFFSEASON SPLASH ══════ -->
+
 <!-- Mobile hamburger -->
 <button class="mobile-toggle" id="mobileToggle">&#9776;</button>
 <div class="mobile-overlay" id="mobileOverlay"></div>
@@ -1120,6 +1141,7 @@ footer {
       <span class="nav-expand" id="expandFun">&#9654;</span>
     </div>
     <div class="nav-submenu" id="subFunStuff">
+      <div class="nav-sub-item" data-page="bpop">bPOP</div>
       <div class="nav-sub-item" data-page="timeoutAnalysis">Timeout Analysis</div>
     </div>
 
@@ -1644,6 +1666,43 @@ footer {
     </div>
   </div>
 
+  <!-- ===== bPOP PANEL ===== -->
+  <div class="panel" id="panelBpop">
+    <div style="max-width:1060px;margin:0 auto;">
+      <p style="color:var(--text-dim);font-size:.82rem;margin-bottom:6px;">
+        <b>bPOP — Bubble Plays of Pressure.</b> The individual plays from <b>losses</b> this season that had the biggest impact on a bubble team's tournament selection odds.
+      </p>
+      <p style="color:var(--text-dim);font-size:.78rem;margin-bottom:14px;line-height:1.5;">
+        Formula: <code style="background:var(--surface);padding:2px 6px;border-radius:4px;">bPOP = |ΔWP| × |WAB stake| × bubble weight</code><br>
+        <b>ΔWP</b> = win-probability swing caused by the play &nbsp;·&nbsp;
+        <b>WAB stake</b> = max of WAB lost or WAB they could have gained by winning &nbsp;·&nbsp;
+        <b>Bubble weight</b> = Gaussian centered on the SLCT cutline (last at-large team's SLCT score); near-zero for locks and longshots
+      </p>
+      <div style="display:flex;gap:12px;align-items:center;margin-bottom:12px;flex-wrap:wrap;">
+        <input type="text" id="bpopSearchBox" placeholder="Search teams..." style="background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:6px 12px;color:var(--text);font-size:.82rem;width:220px;">
+        <span class="row-count" id="bpopRowCount"></span>
+      </div>
+      <table id="bpopTable">
+        <thead>
+          <tr>
+            <th data-col="rank" style="width:36px">#</th>
+            <th data-col="bpop">bPOP</th>
+            <th data-col="team">Team</th>
+            <th data-col="rank_slct">SLCT Rk</th>
+            <th data-col="opp">Opponent</th>
+            <th data-col="date">Date</th>
+            <th data-col="wab_if_won">WAB<br>If Won</th>
+            <th data-col="wab_actual">WAB<br>Actual</th>
+            <th data-col="delta_wp">ΔWP</th>
+            <th data-col="bubble_weight">Bub Wt</th>
+            <th data-col="play_text" style="min-width:200px">Play</th>
+          </tr>
+        </thead>
+        <tbody id="bpopTbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- ===== TIMEOUT ANALYSIS PANEL ===== -->
   <div class="panel" id="panelTimeoutAnalysis">
     <div style="max-width:960px;margin:0 auto;">
@@ -1905,7 +1964,12 @@ var PLAYERS_DATA = [];
 var SCHEDULE_RAW = {};
 var SEED_HISTORY = {};
 var TIMEOUT_DATA = [];
+var BPOP_DATA = [];
 
+fetch("bpop.json")
+  .then(function(r){ return r.json(); })
+  .then(function(d){ BPOP_DATA = d; if (activePage === "bpop") renderBpop(); })
+  .catch(function(){});
 fetch("seed_history.json")
   .then(function(r){ return r.json(); })
   .then(function(d){ SEED_HISTORY = d; })
@@ -1932,6 +1996,7 @@ function tryRenderActivePage() {
   if (activePage === "confRatings") { renderConfPower(); }
   if (activePage === "confDetail" && confDetailName) { renderConfDetail(); }
   if (activePage === "timeoutAnalysis") { renderTimeoutAnalysis(); }
+  if (activePage === "bpop") { renderBpop(); }
 }
 
 fetch("data.json")
@@ -4262,7 +4327,8 @@ var PAGE_TITLES = {
   tpTrends: "Team Page — Trends",
   tpLineups: "Team Page — Lineup Ratings",
   ppPage: "Player Page",
-  timeoutAnalysis: "Timeout Analysis"
+  timeoutAnalysis: "Timeout Analysis",
+  bpop: "bPOP — Bubble Plays of Pressure"
 };
 var PAGE_SORT_DEFAULTS = {
   rank: { col: "net_srs", asc: false }, quad: { col: "season_wab", asc: false },
@@ -4337,6 +4403,7 @@ function switchPage(page) {
     renderGamePreview();
   }
   else if (page === "blog") { document.getElementById("panelBlog").classList.add("active"); loadBlogPanel(); }
+  else if (page === "bpop") { document.getElementById("panelBpop").classList.add("active"); renderBpop(); }
   else if (page === "timeoutAnalysis") { document.getElementById("panelTimeoutAnalysis").classList.add("active"); renderTimeoutAnalysis(); }
   else if (page === "ppPage") {
     document.getElementById("panelPlayerPage").classList.add("active");
@@ -5170,7 +5237,7 @@ document.getElementById("tpWhatifReset").addEventListener("click", function() {
 });
 
 function tpUpdateWhatIf(wins, losses, futureGames, bubbleEM) {
-  var MAX_LOSSES = 15;
+  var MAX_LOSSES = 17;
   var selectedWins=0, selectedLosses=0, deltaWab=0;
   var currentWab = tpTeamInfo.season_wab || 0;
   var currentMakePct = tpSimTeam ? (tpSimTeam.make_pct||0) : 0;
@@ -8045,6 +8112,75 @@ function _toBuildConfMap() {
   _toConfListBuilt = true;
 }
 
+/* ================================================================
+   bPOP — Bubble Plays of Pressure
+   ================================================================ */
+var _bpopSort = { col: "rank", asc: true };
+
+function renderBpop() {
+  if (!BPOP_DATA.length) return;
+  var tbody = document.getElementById("bpopTbody");
+  var search = (document.getElementById("bpopSearchBox").value || "").toLowerCase();
+
+  var rows = BPOP_DATA.filter(function(r) {
+    if (search && r.team_name.toLowerCase().indexOf(search) < 0 &&
+        r.team.toLowerCase().indexOf(search) < 0 &&
+        r.opp_name.toLowerCase().indexOf(search) < 0 &&
+        r.opp.toLowerCase().indexOf(search) < 0 &&
+        r.play_text.toLowerCase().indexOf(search) < 0) return false;
+    return true;
+  });
+
+  /* Sort */
+  var col = _bpopSort.col, asc = _bpopSort.asc;
+  rows.sort(function(a, b) {
+    var va = a[col], vb = b[col];
+    if (typeof va === "string") va = va.toLowerCase();
+    if (typeof vb === "string") vb = vb.toLowerCase();
+    if (va == null) va = asc ? 9999 : -9999;
+    if (vb == null) vb = asc ? 9999 : -9999;
+    return asc ? (va > vb ? 1 : va < vb ? -1 : 0) : (va < vb ? 1 : va > vb ? -1 : 0);
+  });
+
+  document.getElementById("bpopRowCount").textContent = rows.length + " plays";
+
+  var html = "";
+  rows.forEach(function(r, i) {
+    var wabWonCls = r.wab_if_won >= 0 ? "net-pos" : "net-neg";
+    var wabActCls = r.wab_actual >= 0 ? "net-pos" : "net-neg";
+    var dwpCls = r.delta_wp >= 0 ? "net-pos" : "net-neg";
+    var teamDisplay = '<a href="javascript:void(0)" onclick="goToTeamPage(\'' + r.team.replace(/'/g, "\\'") + '\')" style="color:var(--accent);text-decoration:none">' + ppLogoImg(r.team, 18) + ' ' + r.team_name + '</a>';
+    var oppDisplay = '<a href="javascript:void(0)" onclick="goToTeamPage(\'' + r.opp.replace(/'/g, "\\'") + '\')" style="color:var(--accent);text-decoration:none">' + ppLogoImg(r.opp, 18) + ' ' + r.opp_name + '</a>';
+    html += "<tr>"
+      + "<td>" + r.rank + "</td>"
+      + "<td><b>" + r.bpop.toFixed(3) + "</b></td>"
+      + "<td class='team-cell'>" + teamDisplay + "</td>"
+      + "<td>" + r.rank_slct + "</td>"
+      + "<td class='team-cell'>" + oppDisplay + "</td>"
+      + "<td>" + r.date + "</td>"
+      + "<td class='" + wabWonCls + "'>" + (r.wab_if_won >= 0 ? "+" : "") + r.wab_if_won.toFixed(3) + "</td>"
+      + "<td class='" + wabActCls + "'>" + (r.wab_actual >= 0 ? "+" : "") + r.wab_actual.toFixed(3) + "</td>"
+      + "<td class='" + dwpCls + "'>" + (r.delta_wp >= 0 ? "+" : "") + r.delta_wp.toFixed(1) + "%</td>"
+      + "<td>" + r.bubble_weight.toFixed(3) + "</td>"
+      + "<td style='font-size:.78rem;max-width:320px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;'>" + r.play_text + "</td>"
+      + "</tr>";
+  });
+  tbody.innerHTML = html;
+
+  /* Sortable headers */
+  document.querySelectorAll("#bpopTable thead th[data-col]").forEach(function(th) {
+    th.style.cursor = "pointer";
+    th.onclick = function() {
+      var c = th.getAttribute("data-col");
+      if (_bpopSort.col === c) _bpopSort.asc = !_bpopSort.asc;
+      else { _bpopSort.col = c; _bpopSort.asc = (c === "rank" || c === "rank_slct" || c === "date"); }
+      renderBpop();
+    };
+  });
+}
+
+document.getElementById("bpopSearchBox").addEventListener("input", renderBpop);
+
 function renderTimeoutAnalysis() {
   if (!TIMEOUT_DATA.length) return;
   _toBuildConfMap();
@@ -8159,7 +8295,7 @@ if (_ppTrendsSel) _ppTrendsSel.addEventListener("change", function() { ppDrawTre
   if (gamePages.indexOf(activePage) >= 0) { document.getElementById("subGameResults").classList.add("open"); document.getElementById("expandGames").classList.add("open"); }
   var confPages = ["confRatings","confDetail"];
   if (confPages.indexOf(activePage) >= 0) { document.getElementById("subConfRatings").classList.add("open"); document.getElementById("expandConf").classList.add("open"); }
-  var funPages = ["timeoutAnalysis"];
+  var funPages = ["bpop","timeoutAnalysis"];
   if (funPages.indexOf(activePage) >= 0) { document.getElementById("subFunStuff").classList.add("open"); document.getElementById("expandFun").classList.add("open"); }
   if (activePage !== "welcome") { var target = activePage; activePage = "__init__"; switchPage(target); }
 })();
